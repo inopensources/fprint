@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/leticia/.cache/gnome-builder/install/libfprint-0.7.0/host
+app-id=
+postbuild=
+prebuild=
+default=true
