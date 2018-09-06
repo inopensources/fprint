@@ -1,2 +1,0 @@
-# fprint-infarma
-

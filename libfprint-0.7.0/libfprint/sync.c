@@ -320,6 +320,9 @@ static void verify_stop_cb(struct fp_dev *dev, void *user_data)
 API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 	struct fp_print_data *enrolled_print, struct fp_img **img)
 {
+
+
+
 	struct sync_verify_data *vdata;
 	gboolean stopped = FALSE;
 	int r;
@@ -329,10 +332,14 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		return -EINVAL;
 	}
 
+
 	if (!fp_dev_supports_print_data(dev, enrolled_print)) {
+
 		fp_err("print is not compatible with device");
 		return -EINVAL;
 	}
+
+
 
 	fp_dbg("to be handled by %s", dev->drv->name);
 	vdata = g_malloc0(sizeof(struct sync_verify_data));

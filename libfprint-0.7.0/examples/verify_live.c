@@ -162,7 +162,8 @@ int main(void)
 	struct fp_dscv_dev *ddev;
 	struct fp_dscv_dev **discovered_devs;
 	struct fp_dev *dev;
-	struct fp_print_data *data_user;
+	unsigned char *ret;
+	struct fp_print_data *data;
 
 	r = fp_init();
 
@@ -197,9 +198,28 @@ int main(void)
 	printf("Opened device. It's now time to enroll your finger.\n");
 
 
+	//enroll to save on buffer
 
-	//data = enroll(dev);
-	int result = compare_digital(); //chamada em data.c
+
+	//enroll to compare
+	data = enroll(dev);
+    printf("endereço data on verify.c: %p\n", (void *)data);
+    printf("endereço ret on verify.c: %p\n", (void *)ret);
+	int length = fp_print_data_get_data(data, &ret);
+
+	/*FILE *fp_ret;
+	fp_ret = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/ret.bin", "wb");
+    fwrite(&ret, length, 1, fp_ret);
+    fclose(fp_ret);
+
+
+	FILE *fp_len;
+	fp_len = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/len.txt", "w");
+	fprintf(fp_len, "%d", length);
+	fclose(fp_len);*/
+
+	int result = compare_digital(dev, ret, length); //chamada em data.c
+
 
 
 //	if (!data_user)

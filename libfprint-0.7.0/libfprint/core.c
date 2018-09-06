@@ -738,6 +738,7 @@ API_EXPORTED uint32_t fp_dev_get_devtype(struct fp_dev *dev)
 API_EXPORTED int fp_dev_supports_print_data(struct fp_dev *dev,
 	struct fp_print_data *data)
 {
+
 	return fpi_print_data_compatible(dev->drv->id, dev->devtype,
 		fpi_driver_get_data_type(dev->drv), data->driver_id, data->devtype,
 		data->type);

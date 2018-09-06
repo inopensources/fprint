@@ -370,6 +370,8 @@ gboolean fpi_print_data_compatible(uint16_t driver_id1, uint32_t devtype1,
 	enum fp_print_data_type type1, uint16_t driver_id2, uint32_t devtype2,
 	enum fp_print_data_type type2)
 {
+
+
 	if (driver_id1 != driver_id2) {
 		fp_dbg("driver ID mismatch: %02x vs %02x", driver_id1, driver_id2);
 		return FALSE;
@@ -878,7 +880,10 @@ int verify(struct fp_dev *dev, struct fp_print_data *data)
     do {
         sleep(1);
         printf("\nScan your finger now.\n");
+
         r = fp_verify_finger(dev, data);
+
+
         if (r < 0) {
             printf("verification failed with error %d :(\n", r);
             return r;
@@ -907,79 +912,55 @@ int verify(struct fp_dev *dev, struct fp_print_data *data)
 }
 
 
-API_EXPORTED int compare_digital(void){
+API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char *ret_reload, size_t length_reload){
 
 
     struct fp_dscv_dev *ddev;
     struct fp_dscv_dev **discovered_devs;
-    struct fp_dev *dev;
     struct fp_print_data *data_user;
-    char contents_from_file[42000];
-    unsigned char *contents;
-    char path[] = "/home/leticia/repos/fprint-infarma/ponto_infarma/libfprint-0.7.0/digital2.txt";
 
-    int result = load_from_file(path, &data_user);
+
+    //char path[] = "/home/leticia/repos/fprint-infarma/ponto_infarma/libfprint-0.7.0/ret.txt";
+    //int result = load_from_file(path, &data_user);
+
 /*
-	FILE *fp;
-	fp = fopen(path, "r"); // read mode
-	if(fgets(contents_from_file, sizeof(contents_from_file), fp) != NULL){
-		printf("chegou ao final da string: %s\n", contents_from_file);
-	}
-
-	*//*int c;
-	char token[1];
-	int i;
-
-    int lengthArray = sizeof(contents_from_file)/sizeof(char);
-
-	for(i=0; i<= lengthArray; i++){
-
-	    c = contents_from_file[i];
-	    printf("char: %c", c);
-
-        printf("\noi\n");
-
-        if( (c != '[') && (c != ' ') && (c  != ',') && (c != ']') ){
-            token = append_char(token, c);
-            printf("\noi 2\n");
-            printf("token: %s", token);
-
-        }else{
-            if(token == NULL){
-                //contents.add(token);
-                //token = '';
-            }
-        }
-        if(c == NULL){
-            break;
-        }
-	}*//*
+	FILE *fp_len_reload;
+	fp_len_reload = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/len.txt", "r");
+	fscanf(fp_len_reload, "%d", &length_reload);
+	fclose(fp_len_reload);
 
 
-	fclose(fp);*/
+	FILE *fp_ret_reload;
+	fp_ret_reload = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/ret.bin", "rb");
+	fread(&ret_reload, length_reload, 1, fp_ret_reload);
+	fclose(fp_ret_reload);*/
 
-	//int length = 5;
+/*	gsize length_teste;
+	gchar *contents;
+	GError *err = NULL;
 
-	//contents =
+	g_file_get_contents(path, &contents, &length_teste, &err);*/
 
-	//data_user = fp_print_data_from_data(contents, length);
+
+	data_user = fp_print_data_from_data(ret_reload, length_reload);
+	g_free(ret_reload);
+/*
 
     printf("data_user->driver_id = %d\n", data_user->driver_id);
     printf("data_user->devtype = %d\n", data_user->devtype);
-    printf("data_user->type = %d\n", data_user->type);
+    printf("data_user->type = %d\n", data_user->type);*/
+
     //printf("data_user->prints = %d\n", data_user->prints->length);
 
-    void (*GFUNC) g_print(gpointer data, gpointer user_data){
+     /*void (*GFUNC) g_print(gpointer data, gpointer user_data){
     	printf("size: %d\n", data->length);
     }
 
     g_list_foreach(data_user->prints, (GFunc)g_print, NULL);
-
-
-
-
+*/
+    printf("endereço data_user on data.c: %p\n", (void *)data_user);
+    printf("endereço ret_reload on data.c: %p\n", (void *)ret_reload);
     verify(dev, data_user);
-
     fp_print_data_free(data_user);
 
 

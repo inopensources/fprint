@@ -326,7 +326,7 @@ void fp_set_debug(int level);
 /*Database*/
 struct node_user * connect_postman(void);
 
-int compare_digital(void);
+int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
 
 /* Asynchronous I/O */
 
