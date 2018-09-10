@@ -24,6 +24,7 @@
 #include <stdint.h>
 
 #include <glib.h>
+
 #include <libusb.h>
 
 #include <fprint.h>

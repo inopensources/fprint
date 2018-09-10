@@ -26,6 +26,8 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+
+
 #include <glib.h>
 #include <glib/gstdio.h>
 
@@ -791,87 +793,6 @@ API_EXPORTED int fp_dscv_print_delete(struct fp_dscv_print *print)
 	return r;
 }
 
-///*List methods//
-
-struct node_user * createList(int id, unsigned char *digital){
-
-    printf("Creating list of users..\n");
-
-    struct node_user * head = NULL;
-    head = malloc(sizeof(struct node_user));
-    if (head == NULL) {
-        return head;
-    }
-
-    memcpy(head->digital,(const unsigned char*)&digital,sizeof(digital));
-    //strcpy(head->digital, digital);
-    int lengthDigital = sizeof(head->digital)/sizeof(char);
-    printf("After memcpy> length digital %d\n", lengthDigital);
-
-    head->id = id;
-    head->next = NULL;
-    return head;
-}
-
-
-
-void append(struct node_user * head, int id) {
-
-    struct node_user *current = head;
-    while (current->next != NULL) {
-        current = current->next;
-    }
-
-    /* now we can add a new variable */
-    current->next = malloc(sizeof(struct node_user));
-    current->next->id = id;
-    current->next->next = NULL;
-
-}
-
-///*mocka lista de usuários de postman///
-struct node_user * mockListUser(){
-    printf("Fill list of users..\n");
-	char digital[] = {0,2,3,123,1,0,1,0};
-
-
-    struct node_user * head = createList(0, digital);
-    struct node_user * current=head;
-
-
-    for(int id = 1; id<10; id++){
-        current->next = malloc(sizeof(struct node_user));
-        current->next->id = id;
-        memcpy(current->next->digital ,(const unsigned char*)&digital,sizeof(digital));
-        current->next->next = NULL;
-        current= current->next;
-    }
-    return head;
-}
-
-
-API_EXPORTED struct node_user * connect_postman(void){
-
-    printf("Connnecting to mock database\n");
-    struct node_user * head = mockListUser();
-    /*
-    CURL *hnd = curl_easy_init();
-
-    curl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(hnd, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
-
-    struct curl_slist *headers = NULL;
-    headers = curl_slist_append(headers, "Postman-Token: a3646a34-01e4-47d5-8f1f-5a7db9987a84");
-    headers = curl_slist_append(headers, "Cache-Control: no-cache");
-    headers = curl_slist_append(headers, "Authorization: Basic TUFSQ1VTOjEyMzQ1");
-    curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
-
-    CURLcode ret = curl_easy_perform(hnd);
-
-    //printf(typeof(ret));*/
-
-    return head;
-}
 
 int verify(struct fp_dev *dev, struct fp_print_data *data)
 {
@@ -958,8 +879,7 @@ API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char *ret_reload, 
 
     g_list_foreach(data_user->prints, (GFunc)g_print, NULL);
 */
-    printf("endereço data_user on data.c: %p\n", (void *)data_user);
-    printf("endereço ret_reload on data.c: %p\n", (void *)ret_reload);
+
     verify(dev, data_user);
     fp_print_data_free(data_user);
 

@@ -20,10 +20,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-
+#include <string.h>
+#include <../jsmn/jsmn.h>
 #include <libfprint/fprint.h>
-
 
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 {
@@ -125,7 +124,7 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
 	} while (1);
 }*/
 
-void iterOverList(struct node_user * head){
+/*void iterOverList(struct node_user * head){
 
     struct node_user * current = head;
     int lengthDigital = 0;
@@ -144,18 +143,114 @@ void iterOverList(struct node_user * head){
 
         current = current->next;
     }
+}*/
+
+struct node_user * createList(int id, unsigned char *digital){
+
+
+	struct node_user * head = NULL;
+	head = malloc(sizeof(struct node_user));
+	if (head == NULL) {
+		return head;
+	}
+
+	memcpy(head->digital,(const unsigned char*)&digital,sizeof(digital));
+	//strcpy(head->digital, digital);
+	//int lengthDigital = sizeof(head->digital)/sizeof(char);
+
+	head->id = id;
+	head->next = NULL;
+	return head;
 }
 
 
+/*
+void append(struct node_user * head, int id) {
 
+	struct node_user *current = head;
+	while (current->next != NULL) {
+		current = current->next;
+	}
+
+	*//* now we can add a new variable *//*
+	current->next = malloc(sizeof(struct node_user));
+	current->next->id = id;
+	current->next->next = NULL;
+
+}*/
+
+struct node_user * createListUser(){
+
+    printf("Creating list of users..\n");
+
+	unsigned char *digital;
+    struct node_user * head = createList(0, digital);
+    /*struct node_user * current = head;
+
+
+    for(int id = 1; id<10; id++){
+        current->next = malloc(sizeof(struct node_user));
+        current->next->id = id;
+        memcpy(current->next->digital ,(const unsigned char*)&digital,sizeof(digital));
+        current->next->next = NULL;
+        current= current->next;
+    }*/
+    return head;
+}
+
+struct node_user * connect_postman(void){
+
+	printf("Connnecting to mock database\n");
+	struct node_user * head = createListUser();
+
+
+    CURL *hnd = curl_easy_init();
+
+    curl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_easy_setopt(hnd, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
+
+    struct curl_slist *headers = NULL;
+    headers = curl_slist_append(headers, "Postman-Token: a3646a34-01e4-47d5-8f1f-5a7db9987a84");
+    headers = curl_slist_append(headers, "Cache-Control: no-cache");
+    headers = curl_slist_append(headers, "Authorization: Basic TUFSQ1VTOjEyMzQ1");
+    curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
+
+    CURLcode ret = curl_easy_perform(hnd);
+
+    jsmn_parser parser;
+    jsmntok_t tokens[10];
+    jsmn_init(&parser);
+
+	// js - pointer to JSON string
+    // tokens - an array of tokens available
+    // 10 - number of tokens available
+	//jsmn_parse(&parser, &ret, strlen(ret), tokens, 10);
+
+
+
+    printf("\n%d\n", ret["usuarioId"]);
+
+	return head;
+}
 
 
 
 int main(void)
 {
 
+
+
     printf("Main\n");
-    //struct node_user * head = connect_postman();
+
+	/*char bytes[4]={70,80,2};
+	int i=0;
+
+	for (i=0; i<4; i++)
+	{
+		printf ("%c\t", bytes[i]);
+	}*/
+
+    struct node_user * head = connect_postman();
     //iterOverList(head);
 
 	int r = 1;
@@ -203,9 +298,10 @@ int main(void)
 
 	//enroll to compare
 	data = enroll(dev);
-    printf("endereço data on verify.c: %p\n", (void *)data);
-    printf("endereço ret on verify.c: %p\n", (void *)ret);
+
 	int length = fp_print_data_get_data(data, &ret);
+
+
 
 	/*FILE *fp_ret;
 	fp_ret = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/ret.bin", "wb");

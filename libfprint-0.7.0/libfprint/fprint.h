@@ -29,6 +29,7 @@ extern "C" {
 #include <stdio.h>
 #include <curl/curl.h>
 
+
 /* structs that applications are not allowed to peek into */
 struct fp_dscv_dev;
 struct fp_dscv_print;
@@ -323,10 +324,10 @@ int fp_init(void);
 void fp_exit(void);
 void fp_set_debug(int level);
 
-/*Database*/
-struct node_user * connect_postman(void);
 
 int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
+
+
 
 /* Asynchronous I/O */
 

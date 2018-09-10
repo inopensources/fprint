@@ -234,7 +234,7 @@ AUTOMAKE = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing au
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
+CFLAGS = -g -O2 -lcurl -ljsmn
 CPP = gcc -E
 CPPFLAGS = 
 CRYPTO_CFLAGS = -I/usr/include/nss -I/usr/include/nspr
@@ -242,7 +242,7 @@ CRYPTO_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2
+CXXFLAGS = -g -O2 -lcurl -ljsmn
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -266,7 +266,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/x86_64-linux-gnu-ld -m elf_x86_64
-LDFLAGS = 
+LDFLAGS = -lcurl -ljsmn
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
