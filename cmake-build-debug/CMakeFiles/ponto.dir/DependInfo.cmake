@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/leticia/repos/ponto_infarma/libfprint-0.7.0/examples/cadastro.c" "/home/leticia/repos/ponto_infarma/cmake-build-debug/CMakeFiles/ponto.dir/libfprint-0.7.0/examples/cadastro.c.o"
   "/home/leticia/repos/ponto_infarma/main.c" "/home/leticia/repos/ponto_infarma/cmake-build-debug/CMakeFiles/ponto.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

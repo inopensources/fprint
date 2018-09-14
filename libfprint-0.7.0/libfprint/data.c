@@ -840,45 +840,13 @@ API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char *ret_reload, 
     struct fp_dscv_dev **discovered_devs;
     struct fp_print_data *data_user;
 
-
-    //char path[] = "/home/leticia/repos/fprint-infarma/ponto_infarma/libfprint-0.7.0/ret.txt";
-    //int result = load_from_file(path, &data_user);
-
-/*
-	FILE *fp_len_reload;
-	fp_len_reload = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/len.txt", "r");
-	fscanf(fp_len_reload, "%d", &length_reload);
-	fclose(fp_len_reload);
-
-
-	FILE *fp_ret_reload;
-	fp_ret_reload = fopen("/home/leticia/repos/ponto_infarma/libfprint-0.7.0/ret.bin", "rb");
-	fread(&ret_reload, length_reload, 1, fp_ret_reload);
-	fclose(fp_ret_reload);*/
-
-/*	gsize length_teste;
-	gchar *contents;
-	GError *err = NULL;
-
-	g_file_get_contents(path, &contents, &length_teste, &err);*/
-
+    printf("length reload: %d\n", length_reload);
+	char digital[length_reload];
 
 	data_user = fp_print_data_from_data(ret_reload, length_reload);
-	g_free(ret_reload);
-/*
 
-    printf("data_user->driver_id = %d\n", data_user->driver_id);
-    printf("data_user->devtype = %d\n", data_user->devtype);
-    printf("data_user->type = %d\n", data_user->type);*/
-
-    //printf("data_user->prints = %d\n", data_user->prints->length);
-
-     /*void (*GFUNC) g_print(gpointer data, gpointer user_data){
-    	printf("size: %d\n", data->length);
-    }
-
-    g_list_foreach(data_user->prints, (GFunc)g_print, NULL);
-*/
+	printf("Hello\n");
+	//g_free(ret_reload);
 
     verify(dev, data_user);
     fp_print_data_free(data_user);

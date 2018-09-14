@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/leticia/repos/ponto_infarma/libfprint-0.7.0/examples/cadastro.c
+stdio.h
+-
+curl/curl.h
+-
+string.h
+-
+stdlib.h
+-
+
 /home/leticia/repos/ponto_infarma/main.c
 stdio.h
 -

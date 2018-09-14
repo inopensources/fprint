@@ -325,8 +325,6 @@ void fp_exit(void);
 void fp_set_debug(int level);
 
 
-int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
-
 
 
 /* Asynchronous I/O */
@@ -372,6 +370,11 @@ int fp_async_capture_start(struct fp_dev *dev, int unconditional, fp_capture_cb 
 
 typedef void (*fp_capture_stop_cb)(struct fp_dev *dev, void *user_data);
 int fp_async_capture_stop(struct fp_dev *dev, fp_capture_stop_cb callback, void *user_data);
+
+
+
+int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
+int cadastrar_digital(int id_usuario, char* digital, int tamanho_array);
 
 
 #ifdef __cplusplus

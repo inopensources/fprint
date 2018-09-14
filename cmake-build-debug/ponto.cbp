@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/leticia/repos/ponto_infarma/libfprint-0.7.0/examples/cadastro.c">
+			<Option target="ponto"/>
+		</Unit>
 		<Unit filename="/home/leticia/repos/ponto_infarma/main.c">
 			<Option target="ponto"/>
 		</Unit>

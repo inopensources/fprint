@@ -123,6 +123,33 @@ ponto/fast:
 	$(MAKE) -f CMakeFiles/ponto.dir/build.make CMakeFiles/ponto.dir/build
 .PHONY : ponto/fast
 
+libfprint-0.7.0/examples/cadastro.o: libfprint-0.7.0/examples/cadastro.c.o
+
+.PHONY : libfprint-0.7.0/examples/cadastro.o
+
+# target to build an object file
+libfprint-0.7.0/examples/cadastro.c.o:
+	$(MAKE) -f CMakeFiles/ponto.dir/build.make CMakeFiles/ponto.dir/libfprint-0.7.0/examples/cadastro.c.o
+.PHONY : libfprint-0.7.0/examples/cadastro.c.o
+
+libfprint-0.7.0/examples/cadastro.i: libfprint-0.7.0/examples/cadastro.c.i
+
+.PHONY : libfprint-0.7.0/examples/cadastro.i
+
+# target to preprocess a source file
+libfprint-0.7.0/examples/cadastro.c.i:
+	$(MAKE) -f CMakeFiles/ponto.dir/build.make CMakeFiles/ponto.dir/libfprint-0.7.0/examples/cadastro.c.i
+.PHONY : libfprint-0.7.0/examples/cadastro.c.i
+
+libfprint-0.7.0/examples/cadastro.s: libfprint-0.7.0/examples/cadastro.c.s
+
+.PHONY : libfprint-0.7.0/examples/cadastro.s
+
+# target to generate assembly for a file
+libfprint-0.7.0/examples/cadastro.c.s:
+	$(MAKE) -f CMakeFiles/ponto.dir/build.make CMakeFiles/ponto.dir/libfprint-0.7.0/examples/cadastro.c.s
+.PHONY : libfprint-0.7.0/examples/cadastro.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ponto"
+	@echo "... libfprint-0.7.0/examples/cadastro.o"
+	@echo "... libfprint-0.7.0/examples/cadastro.i"
+	@echo "... libfprint-0.7.0/examples/cadastro.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

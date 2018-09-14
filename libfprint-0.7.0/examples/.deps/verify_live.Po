@@ -59,7 +59,7 @@ verify_live.o: verify_live.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h ../jsmn/jsmn.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h jsmn/jsmn.h \
  ../libfprint/fprint.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -90,7 +90,8 @@ verify_live.o: verify_live.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/curl/easy.h \
  /usr/include/x86_64-linux-gnu/curl/multi.h \
  /usr/include/x86_64-linux-gnu/curl/curl.h \
- /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h
+ /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h /usr/include/assert.h \
+ cadastro.c
 
 /usr/include/stdc-predef.h:
 
@@ -226,7 +227,7 @@ verify_live.o: verify_live.c /usr/include/stdc-predef.h \
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
-../jsmn/jsmn.h:
+jsmn/jsmn.h:
 
 ../libfprint/fprint.h:
 
@@ -297,3 +298,7 @@ verify_live.o: verify_live.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/curl/curl.h:
 
 /usr/include/x86_64-linux-gnu/curl/typecheck-gcc.h:
+
+/usr/include/assert.h:
+
+cadastro.c:

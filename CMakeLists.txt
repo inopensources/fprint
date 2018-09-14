@@ -3,4 +3,4 @@ project(ponto C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(ponto main.c)
+add_executable(ponto main.c libfprint-0.7.0/examples/cadastro.c)
