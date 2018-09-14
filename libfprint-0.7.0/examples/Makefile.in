@@ -89,7 +89,8 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 noinst_PROGRAMS = verify_live$(EXEEXT) enroll$(EXEEXT) verify$(EXEEXT) \
-	img_capture$(EXEEXT) cpp-test$(EXEEXT) $(am__EXEEXT_1)
+	img_capture$(EXEEXT) cpp-test$(EXEEXT) main$(EXEEXT) \
+	$(am__EXEEXT_1)
 @BUILD_X11_EXAMPLES_TRUE@am__append_1 = img_capture_continuous
 subdir = examples
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -132,6 +133,9 @@ img_capture_continuous_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(img_capture_continuous_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
+am_main_OBJECTS = main.$(OBJEXT)
+main_OBJECTS = $(am_main_OBJECTS)
+main_LDADD = $(LDADD)
 am_verify_OBJECTS = verify.$(OBJEXT)
 verify_OBJECTS = $(am_verify_OBJECTS)
 verify_DEPENDENCIES = ../libfprint/libfprint.la
@@ -191,12 +195,12 @@ am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
 SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) $(img_capture_SOURCES) \
-	$(img_capture_continuous_SOURCES) $(verify_SOURCES) \
-	$(verify_live_SOURCES)
+	$(img_capture_continuous_SOURCES) $(main_SOURCES) \
+	$(verify_SOURCES) $(verify_live_SOURCES)
 DIST_SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) \
 	$(img_capture_SOURCES) \
-	$(am__img_capture_continuous_SOURCES_DIST) $(verify_SOURCES) \
-	$(verify_live_SOURCES)
+	$(am__img_capture_continuous_SOURCES_DIST) $(main_SOURCES) \
+	$(verify_SOURCES) $(verify_live_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -370,6 +374,7 @@ verify_SOURCES = verify.c
 verify_LDADD = ../libfprint/libfprint.la
 img_capture_SOURCES = img_capture.c
 img_capture_LDADD = ../libfprint/libfprint.la
+main_SOURCES = main.c
 cpp_test_SOURCES = cpp-test.cpp
 cpp_test_LDADD = ../libfprint/libfprint.la
 @BUILD_X11_EXAMPLES_TRUE@img_capture_continuous_CFLAGS = $(X_CFLAGS) $(XV_CFLAGS)
@@ -434,6 +439,10 @@ img_capture_continuous$(EXEEXT): $(img_capture_continuous_OBJECTS) $(img_capture
 	@rm -f img_capture_continuous$(EXEEXT)
 	$(AM_V_CCLD)$(img_capture_continuous_LINK) $(img_capture_continuous_OBJECTS) $(img_capture_continuous_LDADD) $(LIBS)
 
+main$(EXEEXT): $(main_OBJECTS) $(main_DEPENDENCIES) $(EXTRA_main_DEPENDENCIES) 
+	@rm -f main$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(main_OBJECTS) $(main_LDADD) $(LIBS)
+
 verify$(EXEEXT): $(verify_OBJECTS) $(verify_DEPENDENCIES) $(EXTRA_verify_DEPENDENCIES) 
 	@rm -f verify$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(verify_OBJECTS) $(verify_LDADD) $(LIBS)
@@ -452,6 +461,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/enroll.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/img_capture.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/img_capture_continuous-img_capture_continuous.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/verify.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/verify_live.Po@am__quote@
 

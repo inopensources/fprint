@@ -1,19 +1,13 @@
 //
-// Created by leticia on 12/09/18.
+// Created by leticia on 14/09/18.
 //
 
-#include <stdio.h>
-#include <curl/curl.h>
-#include <string.h>
-#include <stdlib.h>
-#include "remote_database.c"
-#include "device_utils.c"
 #include "utils.c"
+#include "device_utils.c"
 
+void do_point();
 
-void cadastra_user();
-
-void cadastra_user(){
+void do_point(){
 
     ///*Iniciando device*///
 
@@ -54,15 +48,19 @@ void cadastra_user(){
 
     ///*Fim inicialização device*///
 
-    data = enroll(dev);
-    int length = fp_print_data_get_data(data, &ret);
-    post_user(76, fprint_to_string(ret, length), length);
 
-    ///*Encerrando device*///
+    ///*pegando digital de txt*///
+    unsigned char *ret_from_file = read_digital();
+    int length = 12050;
+
+    //data = enroll(dev);
+    int result = compare_digital(dev, ret_from_file, length); //chamada em data.c
+
     out_close:
     fp_dev_close(dev);
     out:
     fp_exit();
     return r;
+
 
 }

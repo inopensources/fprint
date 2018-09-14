@@ -1,5 +1,5 @@
 AM_CFLAGS = -I$(top_srcdir)
-noinst_PROGRAMS = verify_live enroll verify img_capture cpp-test
+noinst_PROGRAMS = verify_live enroll verify img_capture cpp-test main
 
 verify_live_SOURCES = verify_live.c
 verify_live_LDADD = ../libfprint/libfprint.la
@@ -12,6 +12,8 @@ verify_LDADD = ../libfprint/libfprint.la
 
 img_capture_SOURCES = img_capture.c
 img_capture_LDADD = ../libfprint/libfprint.la
+
+main_SOURCES = main.c
 
 cpp_test_SOURCES = cpp-test.cpp
 cpp_test_LDADD = ../libfprint/libfprint.la

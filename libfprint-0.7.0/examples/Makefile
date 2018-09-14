@@ -89,7 +89,8 @@ POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
 noinst_PROGRAMS = verify_live$(EXEEXT) enroll$(EXEEXT) verify$(EXEEXT) \
-	img_capture$(EXEEXT) cpp-test$(EXEEXT) $(am__EXEEXT_1)
+	img_capture$(EXEEXT) cpp-test$(EXEEXT) main$(EXEEXT) \
+	$(am__EXEEXT_1)
 #am__append_1 = img_capture_continuous
 subdir = examples
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -132,6 +133,9 @@ img_capture_continuous_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(img_capture_continuous_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
+am_main_OBJECTS = main.$(OBJEXT)
+main_OBJECTS = $(am_main_OBJECTS)
+main_LDADD = $(LDADD)
 am_verify_OBJECTS = verify.$(OBJEXT)
 verify_OBJECTS = $(am_verify_OBJECTS)
 verify_DEPENDENCIES = ../libfprint/libfprint.la
@@ -191,12 +195,12 @@ am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
 SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) $(img_capture_SOURCES) \
-	$(img_capture_continuous_SOURCES) $(verify_SOURCES) \
-	$(verify_live_SOURCES)
+	$(img_capture_continuous_SOURCES) $(main_SOURCES) \
+	$(verify_SOURCES) $(verify_live_SOURCES)
 DIST_SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) \
 	$(img_capture_SOURCES) \
-	$(am__img_capture_continuous_SOURCES_DIST) $(verify_SOURCES) \
-	$(verify_live_SOURCES)
+	$(am__img_capture_continuous_SOURCES_DIST) $(main_SOURCES) \
+	$(verify_SOURCES) $(verify_live_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -223,18 +227,18 @@ ETAGS = etags
 CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_CFLAGS = -I$(top_srcdir)
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing autoconf
-AUTOHEADER = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing autoheader
-AUTOMAKE = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing automake-1.15
+AUTOCONF = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -lcurl
+CFLAGS = -g -O2
 CPP = gcc -E
 CPPFLAGS = 
 CRYPTO_CFLAGS = -I/usr/include/nss -I/usr/include/nspr
@@ -242,7 +246,7 @@ CRYPTO_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -lcurl
+CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -266,7 +270,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/x86_64-linux-gnu-ld -m elf_x86_64
-LDFLAGS = -lcurl
+LDFLAGS = 
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -276,7 +280,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/missing makeinfo
+MAKEINFO = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -304,10 +308,10 @@ STRIP = strip
 VERSION = 0.7.0
 XV_CFLAGS = 
 XV_LIBS = 
-abs_builddir = /home/leticia/repos/ponto_infarma/libfprint-0.7.0/examples
-abs_srcdir = /home/leticia/repos/ponto_infarma/libfprint-0.7.0/examples
-abs_top_builddir = /home/leticia/repos/ponto_infarma/libfprint-0.7.0
-abs_top_srcdir = /home/leticia/repos/ponto_infarma/libfprint-0.7.0
+abs_builddir = /home/leticia/repos/fprint-infarma/libfprint-0.7.0/examples
+abs_srcdir = /home/leticia/repos/fprint-infarma/libfprint-0.7.0/examples
+abs_top_builddir = /home/leticia/repos/fprint-infarma/libfprint-0.7.0
+abs_top_srcdir = /home/leticia/repos/fprint-infarma/libfprint-0.7.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -337,7 +341,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/leticia/repos/ponto_infarma/libfprint-0.7.0/install-sh
+install_sh = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -370,6 +374,7 @@ verify_SOURCES = verify.c
 verify_LDADD = ../libfprint/libfprint.la
 img_capture_SOURCES = img_capture.c
 img_capture_LDADD = ../libfprint/libfprint.la
+main_SOURCES = main.c
 cpp_test_SOURCES = cpp-test.cpp
 cpp_test_LDADD = ../libfprint/libfprint.la
 #img_capture_continuous_CFLAGS = $(X_CFLAGS) $(XV_CFLAGS)
@@ -434,6 +439,10 @@ img_capture_continuous$(EXEEXT): $(img_capture_continuous_OBJECTS) $(img_capture
 	@rm -f img_capture_continuous$(EXEEXT)
 	$(AM_V_CCLD)$(img_capture_continuous_LINK) $(img_capture_continuous_OBJECTS) $(img_capture_continuous_LDADD) $(LIBS)
 
+main$(EXEEXT): $(main_OBJECTS) $(main_DEPENDENCIES) $(EXTRA_main_DEPENDENCIES) 
+	@rm -f main$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(main_OBJECTS) $(main_LDADD) $(LIBS)
+
 verify$(EXEEXT): $(verify_OBJECTS) $(verify_DEPENDENCIES) $(EXTRA_verify_DEPENDENCIES) 
 	@rm -f verify$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(verify_OBJECTS) $(verify_LDADD) $(LIBS)
@@ -452,6 +461,7 @@ include ./$(DEPDIR)/cpp-test.Po
 include ./$(DEPDIR)/enroll.Po
 include ./$(DEPDIR)/img_capture.Po
 include ./$(DEPDIR)/img_capture_continuous-img_capture_continuous.Po
+include ./$(DEPDIR)/main.Po
 include ./$(DEPDIR)/verify.Po
 include ./$(DEPDIR)/verify_live.Po
 
