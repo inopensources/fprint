@@ -1,0 +1,9 @@
+Biblioteca JSON-C
+
+É preciso instalar a seguinte biblioteca:
+
+    sudo apt-get install libjson0 libjson0-dev
+
+Use o seguinte formato para rodar:
+
+    gcc main.c -l json
