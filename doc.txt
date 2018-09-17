@@ -6,4 +6,4 @@ Biblioteca JSON-C
 
 Use o seguinte formato para rodar:
 
-    gcc main.c -l json
+    gcc metodos.c -l json -lcurl
