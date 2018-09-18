@@ -4,17 +4,9 @@
 ///*controlling the user*///
 
 #include <libfprint/fprint.h>
-
-//create a list of users
-struct node_user * create_list_users();
-//create a list with the content of users
-struct node_user * createList(int id, unsigned char *digital);
-//do a iter over the list of users
-void iterOverList(struct node_user * head);
-//add a user to the end og the list
-void append(struct node_user * head, int id);
-
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 struct node_user * create_list_users(){
 

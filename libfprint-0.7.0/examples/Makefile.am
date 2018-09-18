@@ -4,6 +4,9 @@ noinst_PROGRAMS = verify_live enroll verify img_capture cpp-test main
 verify_live_SOURCES = verify_live.c
 verify_live_LDADD = ../libfprint/libfprint.la
 
+ponto_SOURCES = ponto.c
+ponto_LDADD = ../libfprint/libfprint.la
+
 enroll_SOURCES = enroll.c
 enroll_LDADD = ../libfprint/libfprint.la
 

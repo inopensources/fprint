@@ -2,11 +2,14 @@
 // Created by leticia on 14/09/18.
 //
 
-#include "user.c"
-#include "curl_utils.c"
+#include "user.h"
+#include "curl_utils.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-struct node_user * get_users(void);
-void post_user(int id_usuario, char* digital, int tamanho_array);
+
+
 
 struct node_user * get_users(void){
 

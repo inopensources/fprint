@@ -1,11 +1,13 @@
 //
 // Created by leticia on 14/09/18.
 //
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "utils.h"
+#include "device_utils.h"
+#include <libfprint/fprint.h>
 
-#include "utils.c"
-#include "device_utils.c"
-
-void do_point();
 
 void do_point(){
 

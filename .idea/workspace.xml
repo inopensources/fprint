@@ -10,30 +10,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/user.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/user.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/requests" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/requests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/config.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/config.status" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/config.status" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.deps/main.Po" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.deps/main.Po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.deps/verify_live.Po" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.deps/verify_live.Po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.am" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.am" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/cpp-test" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/cpp-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/enroll" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/enroll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/img_capture" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/img_capture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/user.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.lai" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.lai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-data.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-data.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint-list-udev-rules" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint-list-udev-rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint.la" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint.la" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-data.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-data.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metodos.c" beforeDir="false" afterPath="$PROJECT_DIR$/metodos.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,47 +63,56 @@
     <session id="-1415015511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Makefile" value="2" />
-          <entry key="am" value="2" />
-          <entry key="c" value="19" />
+          <entry key="Makefile" value="9" />
+          <entry key="ac" value="1" />
+          <entry key="am" value="4" />
+          <entry key="c" value="54" />
+          <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
-          <entry key="h" value="1" />
+          <entry key="h" value="27" />
+          <entry key="img_capture" value="1" />
           <entry key="in" value="1" />
-          <entry key="txt" value="5" />
+          <entry key="la" value="2" />
+          <entry key="o" value="2" />
+          <entry key="txt" value="9" />
+          <entry key="verify" value="1" />
           <entry key="verify_live" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="21" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="CMakeLists.txt" value="3" />
+          <entry key="ObjectiveC" value="82" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="5" />
-          <entry key="Doxygen file" value="2" />
-          <entry key="ObjectiveC" value="2360" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="CMakeLists.txt" value="67" />
+          <entry key="Doxygen file" value="5" />
+          <entry key="ObjectiveC" value="3673" />
+          <entry key="PLAIN_TEXT" value="243" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Makefile" value="26" />
-          <entry key="am" value="15" />
-          <entry key="c" value="2362" />
-          <entry key="txt" value="6" />
+          <entry key="Makefile" value="210" />
+          <entry key="am" value="32" />
+          <entry key="c" value="3653" />
+          <entry key="h" value="25" />
+          <entry key="txt" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -97,77 +124,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="493">
+              <caret line="589" column="12" selection-start-line="589" selection-start-column="12" selection-end-line="589" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="-120">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
-                <element signature="e#42#59#0" expanded="true" />
+                <element signature="e#19094#20564#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/user.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="18">
+              <caret line="389" column="4" selection-start-line="389" selection-start-column="4" selection-end-line="389" selection-end-column="4" />
               <folding>
-                <element signature="e#527#822#0" />
+                <element signature="e#1008#1066#1" />
+                <element signature="e#1069#1613#0" />
+                <element signature="e#1514#3313#0" />
+                <element signature="e#3315#5322#0" />
+                <element signature="e#92193#92472#0" />
+                <element signature="e#5324#5878#0" />
+                <element signature="e#5880#6337#0" />
+                <element signature="e#6339#6790#0" />
+                <element signature="e#6792#7105#0" />
+                <element signature="e#10240#10594#0" />
+                <element signature="e#10596#12350#0" />
+                <element signature="e#13590#14778#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metodos.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -176,36 +187,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fp_print_data</find>
-      <find>verify</find>
-      <find>0, 0, 66, 0, 0, 0, -60, 0, 0, 0, 31, 0, 0, 0, 92, 0, 0, 0, -124, 0, 0, 0, -86, 0, 0, 0, 104, 0, 0, 0, -110, 0, 0, 0,</find>
-      <find>malloc</find>
-      <find>data_from</find>
-      <find>14</find>
-      <find>fp_dbg</find>
-      <find>prints</find>
-      <find>fp_print_data_item</find>
-      <find>load_from_file</find>
-      <find>ponto_infarma</find>
-      <find>fprint-</find>
-      <find>-l</find>
-      <find>lib</find>
-      <find>examples</find>
-      <find>cadastrar_</find>
-      <find>CFLAGS</find>
-      <find>LDFLAGS</find>
-      <find>connect_postman</find>
-      <find>get_user</find>
-      <find>createL</find>
-      <find>cadastr</find>
-      <find>str_split</find>
-      <find>read_digital</find>
-      <find>append</find>
-      <find>verify_live</find>
-      <find>fprint_to_string</find>
-      <find>createList</find>
       <find>struct node_user</find>
+      <find>&quot;device_utils</find>
+      <find>&quot;cadastro</find>
+      <find>&quot;user.c</find>
+      <find>&quot;remote_</find>
+      <find>fp_init</find>
+      <find>ponto</find>
+      <find>CFl</find>
+      <find>LDFla</find>
+      <find>verify_live</find>
+      <find>discover_device</find>
       <find>enroll</find>
+      <find>read_digi</find>
+      <find>fp_print_data_free</find>
+      <find>verify</find>
+      <find>fp_verify_finger</find>
+      <find>LDFLAGS</find>
+      <find>CFLAGS</find>
+      <find>pkg</find>
+      <find>assert</find>
+      <find>compare_digital</find>
+      <find>cadastrar_digital</find>
+      <find>FLAGS</find>
+      <find>compare</find>
+      <find>str_</find>
+      <find>read_digital</find>
+      <find>do_point</find>
+      <find>strdup</find>
+      <find>str_split</find>
+      <find>deal_with_json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,18 +229,28 @@
         <option value="$PROJECT_DIR$/ponto_infarma/libfprint-0.7.0/examples/verify_live.c" />
         <option value="$PROJECT_DIR$/ponto_infarma/libfprint-0.7.0/digital2.txt" />
         <option value="$PROJECT_DIR$/ponto_infarma/libfprint-0.7.0/libfprint/data.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.h" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/user.h" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.am" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/main.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/user.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/user.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/main.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" />
+        <option value="$PROJECT_DIR$/metodos.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" />
       </list>
     </option>
   </component>
@@ -239,10 +260,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="436" />
+    <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="930" />
+    <option name="width" value="1299" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -267,7 +289,7 @@
               <item name="fprint-infarma" type="b2602c69:ProjectViewProjectNode" />
               <item name="fprint-infarma" type="462c0819:PsiDirectoryNode" />
               <item name="libfprint-0.7.0" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="libfprint" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,18 +330,21 @@
       <workItem from="1536166878255" duration="13195000" />
       <workItem from="1536253437318" duration="75000" />
       <workItem from="1536945791387" duration="6736000" />
-      <workItem from="1536952590560" duration="471000" />
+      <workItem from="1536952590560" duration="666000" />
+      <workItem from="1537287675644" duration="9669000" />
+      <workItem from="1537298609913" duration="31000" />
+      <workItem from="1537298655632" duration="8838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20477000" />
+    <option name="totallyTimeSpent" value="39210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1963288" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17478053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,7 +356,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.411093" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36215335" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,20 +379,6 @@
     <entry file="file://$PROJECT_DIR$/ponto_infarma/libfprint-0.7.0/digital2.txt" />
     <entry file="file://$PROJECT_DIR$/ponto_infarma/libfprint-0.7.0/libfprint/data.c" />
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/main.cpp" />
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="281" column="19" lean-forward="true" selection-start-line="281" selection-start-column="19" selection-end-line="281" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/Makefile.am">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86" />
@@ -378,93 +389,241 @@
         <state relative-caret-position="-2475" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.am">
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/img_capture">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
+        <state relative-caret-position="-495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify.o">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint.la">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/configure.ac">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/configure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="171" column="6" lean-forward="true" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/user.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="e#527#822#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#42#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/user.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="107" column="1" lean-forward="true" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/cadastro.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/curl_utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/device_utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/remote_database.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/user.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="412" column="27" lean-forward="true" selection-start-line="412" selection-start-column="27" selection-end-line="412" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="589" column="12" selection-start-line="589" selection-start-column="12" selection-end-line="589" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="247" column="25" lean-forward="true" selection-start-line="247" selection-start-column="25" selection-end-line="247" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teste.o">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#19094#20564#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metodos.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="389" column="4" selection-start-line="389" selection-start-column="4" selection-end-line="389" selection-end-column="4" />
+          <folding>
+            <element signature="e#1008#1066#1" />
+            <element signature="e#1069#1613#0" />
+            <element signature="e#1514#3313#0" />
+            <element signature="e#3315#5322#0" />
+            <element signature="e#92193#92472#0" />
+            <element signature="e#5324#5878#0" />
+            <element signature="e#5880#6337#0" />
+            <element signature="e#6339#6790#0" />
+            <element signature="e#6792#7105#0" />
+            <element signature="e#10240#10594#0" />
+            <element signature="e#10596#12350#0" />
+            <element signature="e#13590#14778#0" />
+          </folding>
         </state>
       </provider>
     </entry>

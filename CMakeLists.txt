@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
-project(ponto C)
+project(fprint-infarma)
 
-set(CMAKE_C_STANDARD 99)
 
-add_executable(ponto main.c libfprint-0.7.0/examples/cadastro.c libfprint-0.7.0/examples/main.c)
+set(SOURCE_FILES libfprint-0.7.0/examples/ponto.c)
+add_executable(ponto.c main.c libfprint-0.7.0/examples/cadastro.c libfprint-0.7.0/examples/main.c)

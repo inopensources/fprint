@@ -2,8 +2,9 @@
 // Created by leticia on 14/09/18.
 //
 
-
-static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 struct MemoryStruct {
     char *memory;

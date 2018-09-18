@@ -2,9 +2,9 @@
 // Created by leticia on 14/09/18.
 //
 
-char** str_split(char* a_str, const char a_delim);
-char * read_digital();
-char * fprint_to_string(char * ret, int length);
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 
 char** str_split(char* a_str, const char a_delim)

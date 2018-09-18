@@ -6,12 +6,11 @@
 #include <curl/curl.h>
 #include <string.h>
 #include <stdlib.h>
-#include "remote_database.c"
-#include "device_utils.c"
-#include "utils.c"
+#include "remote_database.h"
+#include "device_utils.h"
+#include "utils.h"
 
 
-void cadastra_user();
 
 void cadastra_user(){
 

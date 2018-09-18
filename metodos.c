@@ -7,7 +7,7 @@
 #include <string.h>
 #include <math.h>
 #include <limits.h>
-#include <json/json.h>
+#include <json-c/json.h>
 #include <curl/curl.h>
 
 struct user_list{

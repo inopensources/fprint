@@ -9,9 +9,6 @@
 #include <libfprint/fprint.h>
 #include <assert.h>
 
-struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs);
-struct fp_print_data *enroll(struct fp_dev *dev);
-
 
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 {

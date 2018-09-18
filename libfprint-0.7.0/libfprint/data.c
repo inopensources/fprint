@@ -26,12 +26,11 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-
-
 #include <glib.h>
 #include <glib/gstdio.h>
 
 #include "fp_internal.h"
+#include <fprint.h>
 
 #define DIR_PERMS 0700
 
