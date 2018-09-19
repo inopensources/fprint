@@ -225,12 +225,20 @@ API_EXPORTED int fp_async_verify_start(struct fp_dev *dev,
 	dev->verify_cb_data = user_data;
 	dev->verify_data = data;
 
+
+
 	r = drv->verify_start(dev);
+
+
+
 	if (r < 0) {
 		dev->verify_cb = NULL;
 		dev->state = DEV_STATE_ERROR;
 		fp_err("failed to start verification, error %d", r);
 	}
+
+
+
 	return r;
 }
 

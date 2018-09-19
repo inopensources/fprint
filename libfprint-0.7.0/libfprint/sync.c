@@ -321,8 +321,6 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 	struct fp_print_data *enrolled_print, struct fp_img **img)
 {
 
-
-
 	struct sync_verify_data *vdata;
 	gboolean stopped = FALSE;
 	int r;
@@ -332,7 +330,6 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		return -EINVAL;
 	}
 
-
 	if (!fp_dev_supports_print_data(dev, enrolled_print)) {
 
 		fp_err("print is not compatible with device");
@@ -340,29 +337,41 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 	}
 
 
-
 	fp_dbg("to be handled by %s", dev->drv->name);
 	vdata = g_malloc0(sizeof(struct sync_verify_data));
 	r = fp_async_verify_start(dev, enrolled_print, sync_verify_cb, vdata);
+
+
+
 	if (r < 0) {
 		fp_dbg("verify_start error %d", r);
 		g_free(vdata);
 		return r;
 	}
 
+   //begin?
+
 	while (!vdata->populated) {
+
+
 		r = fp_handle_events();
+
+        //end?
 		if (r < 0) {
 			g_free(vdata);
 			goto err;
 		}
 	}
 
+
+
 	if (img)
 		*img = vdata->img;
 	else
 		fp_img_free(vdata->img);
 
+
+    printf("HERE! ");
 	r = vdata->result;
 	g_free(vdata);
 	switch (r) {
@@ -388,6 +397,8 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		fp_err("unrecognised return code %d", r);
 		r = -EINVAL;
 	}
+
+
 
 err:
 	fp_dbg("ending verification");

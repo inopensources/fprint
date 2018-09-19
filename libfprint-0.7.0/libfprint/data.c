@@ -839,12 +839,12 @@ API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char *ret_reload, 
     struct fp_dscv_dev **discovered_devs;
     struct fp_print_data *data_user;
 
-    printf("length reload: %d\n", length_reload);
+
 	char digital[length_reload];
 
 	data_user = fp_print_data_from_data(ret_reload, length_reload);
 
-	printf("Hello\n");
+	printf("\nComparing..\n");
 	//g_free(ret_reload);
 
     verify(dev, data_user);
