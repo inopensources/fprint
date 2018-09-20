@@ -293,6 +293,7 @@ struct node_user {
     struct node_user * next;
 };
 
+
 int fp_img_get_height(struct fp_img *img);
 int fp_img_get_width(struct fp_img *img);
 unsigned char *fp_img_get_data(struct fp_img *img);
@@ -375,7 +376,6 @@ int fp_async_capture_stop(struct fp_dev *dev, fp_capture_stop_cb callback, void 
 
 int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
 int cadastrar_digital(int id_usuario, char* digital, int tamanho_array);
-
 
 #ifdef __cplusplus
 }

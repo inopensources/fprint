@@ -339,6 +339,9 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 
 	fp_dbg("to be handled by %s", dev->drv->name);
 	vdata = g_malloc0(sizeof(struct sync_verify_data));
+
+
+
 	r = fp_async_verify_start(dev, enrolled_print, sync_verify_cb, vdata);
 
 
@@ -349,21 +352,18 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		return r;
 	}
 
-   //begin?
 
 	while (!vdata->populated) {
 
-
 		r = fp_handle_events();
 
-        //end?
 		if (r < 0) {
+
 			g_free(vdata);
 			goto err;
 		}
+
 	}
-
-
 
 	if (img)
 		*img = vdata->img;
@@ -371,7 +371,7 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		fp_img_free(vdata->img);
 
 
-    printf("HERE! ");
+
 	r = vdata->result;
 	g_free(vdata);
 	switch (r) {
@@ -397,8 +397,6 @@ API_EXPORTED int fp_verify_finger_img(struct fp_dev *dev,
 		fp_err("unrecognised return code %d", r);
 		r = -EINVAL;
 	}
-
-
 
 err:
 	fp_dbg("ending verification");

@@ -801,8 +801,48 @@ int verify(struct fp_dev *dev, struct fp_print_data *data)
         sleep(1);
         printf("\nScan your finger now.\n");
 
+
         r = fp_verify_finger(dev, data);
 
+
+        if (r < 0) {
+            printf("verification failed with error %d :(\n", r);
+            return r;
+        }
+        switch (r) {
+            case FP_VERIFY_NO_MATCH:
+                printf("NO MATCH!\n");
+                return 0;
+            case FP_VERIFY_MATCH:
+                printf("MATCH!\n");
+                return 0;
+            case FP_VERIFY_RETRY:
+                printf("Scan didn't quite work. Please try again.\n");
+                break;
+            case FP_VERIFY_RETRY_TOO_SHORT:
+                printf("Swipe was too short, please try again.\n");
+                break;
+            case FP_VERIFY_RETRY_CENTER_FINGER:
+                printf("Please center your finger on the sensor and try again.\n");
+                break;
+            case FP_VERIFY_RETRY_REMOVE_FINGER:
+                printf("Please remove finger from the sensor and try again.\n");
+                break;
+        }
+    } while (1);
+}
+
+///verifica a digital capturada contra uma lista de digitais
+int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
+
+    int r;
+    size_t *match_offset;
+
+    do {
+        sleep(1);
+        printf("\nScan your finger now.\n");
+
+        r = fp_identify_finger(dev, *print_gallery, match_offset);
 
         if (r < 0) {
             printf("verification failed with error %d :(\n", r);
@@ -838,18 +878,22 @@ API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char *ret_reload, 
     struct fp_dscv_dev *ddev;
     struct fp_dscv_dev **discovered_devs;
     struct fp_print_data *data_user;
+    struct fp_print_data **print_gallery;
+    unsigned char *ret;
 
-
-	char digital[length_reload];
 
 	data_user = fp_print_data_from_data(ret_reload, length_reload);
 
 	printf("\nComparing..\n");
 	//g_free(ret_reload);
 
-    verify(dev, data_user);
-    fp_print_data_free(data_user);
+	///for one by one verification
+    //verify(dev, data_user);
 
+    ///for 1 by many verification
+    identify(dev, *print_gallery);
+
+    fp_print_data_free(print_gallery);
 
     return 0;
 }
