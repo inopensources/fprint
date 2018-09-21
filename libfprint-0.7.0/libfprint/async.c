@@ -331,6 +331,7 @@ API_EXPORTED int fp_async_identify_start(struct fp_dev *dev,
 	dev->state = DEV_STATE_IDENTIFY_STARTING;
 	dev->identify_cb = callback;
 	dev->identify_cb_data = user_data;
+
 	dev->identify_gallery = gallery;
 
 	r = drv->identify_start(dev);

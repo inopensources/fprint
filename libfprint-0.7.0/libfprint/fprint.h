@@ -374,8 +374,8 @@ int fp_async_capture_stop(struct fp_dev *dev, fp_capture_stop_cb callback, void 
 
 
 
-int compare_digital(struct fp_dev *dev, unsigned char *ret, size_t length);
-int cadastrar_digital(int id_usuario, char* digital, int tamanho_array);
+int compare_digital(struct fp_dev *dev, unsigned char ** digitais);
+int cadastrar_digital(int id_usuario,  char* digital, int tamanho_array);
 
 #ifdef __cplusplus
 }

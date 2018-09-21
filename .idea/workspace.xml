@@ -11,21 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/cpp-test" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/cpp-test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/enroll" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/enroll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/img_capture" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/img_capture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/cpp-test.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/cpp-test.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/enroll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/enroll.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/img_capture.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/img_capture.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/fprint-list-udev-rules" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/fprint-list-udev-rules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-aeslib.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-aeslib.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-assembling.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-assembling.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-async.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-async.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-core.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-core.o" afterDir="false" />
@@ -33,9 +23,9 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-drv.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-drv.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-img.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-pixman.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-pixman.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" afterDir="false" />
@@ -43,9 +33,7 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2550.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2550.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2660.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3500.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3500.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3k.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3k.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aesx660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aesx660.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-etes603.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-etes603.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upeksonly.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upeksonly.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc.o" afterDir="false" />
@@ -63,9 +51,7 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2550.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2550.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2660.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3500.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3500.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3k.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3k.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aesx660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aesx660.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-etes603.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-etes603.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upeksonly.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upeksonly.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc.o" afterDir="false" />
@@ -78,8 +64,6 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs5011.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs5011.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint_list_udev_rules-fprint-list-udev-rules.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint_list_udev_rules-fprint-list-udev-rules.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-aeslib.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-aeslib.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-assembling.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-assembling.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-async.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-async.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-core.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-core.o" afterDir="false" />
@@ -87,49 +71,12 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-drv.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-drv.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-img.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-pixman.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-pixman.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-binar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-binar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-block.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-block.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-contour.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-contour.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-detect.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-detect.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-dft.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-dft.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-free.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-globals.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-globals.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-imgutil.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-imgutil.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-loop.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-loop.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-matchpat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-matchpat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-minutia.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-minutia.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-quality.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-quality.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-ridges.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-ridges.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-shape.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-shape.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-util.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-util.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-binar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-binar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-block.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-block.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-contour.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-contour.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-detect.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-detect.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-dft.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-dft.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-free.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-globals.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-globals.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-imgutil.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-imgutil.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-loop.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-loop.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-matchpat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-matchpat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-minutia.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-minutia.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-quality.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-quality.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-ridges.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-ridges.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-shape.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-shape.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-util.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-util.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,15 +89,16 @@
     <session id="-1415015511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -158,10 +106,10 @@
           <entry key="Makefile" value="9" />
           <entry key="ac" value="1" />
           <entry key="am" value="4" />
-          <entry key="c" value="64" />
+          <entry key="c" value="68" />
           <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
-          <entry key="h" value="29" />
+          <entry key="h" value="30" />
           <entry key="img_capture" value="1" />
           <entry key="in" value="1" />
           <entry key="la" value="2" />
@@ -174,15 +122,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="94" />
+          <entry key="ObjectiveC" value="99" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="67" />
-          <entry key="Doxygen file" value="10" />
-          <entry key="ObjectiveC" value="6549" />
+          <entry key="Doxygen file" value="14" />
+          <entry key="ObjectiveC" value="7840" />
           <entry key="PLAIN_TEXT" value="243" />
         </counts>
       </usages-collector>
@@ -190,8 +138,8 @@
         <counts>
           <entry key="Makefile" value="210" />
           <entry key="am" value="32" />
-          <entry key="c" value="6524" />
-          <entry key="h" value="35" />
+          <entry key="c" value="7800" />
+          <entry key="h" value="54" />
           <entry key="txt" value="68" />
         </counts>
       </usages-collector>
@@ -201,42 +149,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="874" column="75" lean-forward="true" selection-start-line="874" selection-start-column="75" selection-end-line="874" selection-end-column="75" />
+            <state relative-caret-position="156">
+              <caret line="930" lean-forward="true" selection-start-line="930" selection-end-line="930" />
               <folding>
                 <element signature="e#19094#20564#0" />
-                <element signature="e#22858#23983#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fp_internal.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metodos.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1735">
+              <caret line="481" column="31" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2605">
+              <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="724" column="8" selection-start-line="724" selection-start-column="8" selection-end-line="724" selection-end-column="8" />
+            <state relative-caret-position="-431">
+              <caret line="638" column="44" selection-start-line="638" selection-start-column="44" selection-end-line="638" selection-end-column="44" />
               <folding>
-                <element signature="e#1243#1787#0" />
-                <element signature="e#1789#3588#0" />
-                <element signature="e#3590#5597#0" />
-                <element signature="e#5631#5722#1" />
-                <element signature="e#5725#6017#0" />
-                <element signature="e#6019#7765#0" />
-                <element signature="e#7767#9798#0" />
-                <element signature="e#9762#10234#0" />
-                <element signature="e#10236#10687#0" />
-                <element signature="e#10689#11002#0" />
-                <element signature="e#11005#12050#0" />
-                <element signature="e#12052#12243#0" />
-                <element signature="e#13471#13968#0" />
-                <element signature="e#13971#14325#0" />
-                <element signature="e#14327#16081#0" />
-                <element signature="e#17461#18647#0" />
-                <element signature="e#18649#19196#0" />
+                <element signature="e#13878#14232#0" />
+                <element signature="e#14234#15988#0" />
+                <element signature="e#103824#105010#0" />
               </folding>
             </state>
           </provider>
@@ -245,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="293" column="2" selection-start-line="293" selection-start-column="2" selection-end-line="293" selection-end-column="2" />
+            <state relative-caret-position="155">
+              <caret line="376" column="49" selection-start-line="376" selection-start-column="49" selection-end-line="376" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -254,8 +223,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="83" column="9" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
+            <state relative-caret-position="311">
+              <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
               <folding>
                 <element signature="e#103#1132#0" />
               </folding>
@@ -267,13 +236,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>str_</find>
-      <find>do_point</find>
-      <find>strdup</find>
-      <find>deal_with_json</find>
-      <find>ret</find>
-      <find>printf</find>
-      <find>get_number_of_users</find>
       <find>FP_VERIFY_NO_MATCH</find>
       <find>fp_dev_supports_print_data</find>
       <find>struct fp_driver</find>
@@ -282,21 +244,28 @@
       <find>fp_handle_events_timeout</find>
       <find>verify</find>
       <find>HERE</find>
-      <find>fp_handle_events</find>
       <find>struct sync_verify_data</find>
       <find>fp_async_verify_start</find>
       <find>gallery</find>
-      <find>fp_verify_finger</find>
-      <find>fp_identify_finger</find>
       <find>sync_verify_cb</find>
-      <find>**</find>
       <find>read_</find>
       <find>str_split</find>
       <find>struct user_list</find>
       <find>read_digita</find>
-      <find>compare_digital</find>
       <find>read_digital</find>
       <find>deal</find>
+      <find>compare_digital</find>
+      <find>**</find>
+      <find>discover_device</find>
+      <find>print_gallery</find>
+      <find>fp_handle_events</find>
+      <find>fp_async_identi</find>
+      <find>fp_identify_finger</find>
+      <find>fp_verify_finger</find>
+      <find>p_identify_finger</find>
+      <find>fp_async_identify_start</find>
+      <find>identify_start</find>
+      <find>*prints</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -330,11 +299,11 @@
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" />
         <option value="$PROJECT_DIR$/metodos.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/poll.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" />
-        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h" />
+        <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" />
       </list>
     </option>
   </component>
@@ -346,10 +315,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="321" />
-    <option name="y" value="27" />
-    <option name="width" value="640" />
-    <option name="height" value="555" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="650" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -390,7 +359,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fprint-c" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -426,18 +395,20 @@
       <workItem from="1537298655632" duration="8838000" />
       <workItem from="1537374775793" duration="11830000" />
       <workItem from="1537461814287" duration="8888000" />
-      <workItem from="1537471062008" duration="5326000" />
+      <workItem from="1537471062008" duration="5578000" />
+      <workItem from="1537547647895" duration="7390000" />
+      <workItem from="1537555617052" duration="11419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65254000" />
+    <option name="totallyTimeSpent" value="84315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19393456" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1637931" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -449,7 +420,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25611746" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3442088" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -686,20 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="517" column="5" lean-forward="true" selection-start-line="517" selection-start-column="5" selection-end-line="517" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/enroll.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-315" />
@@ -712,63 +669,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metodos.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="293" column="2" selection-start-line="293" selection-start-column="2" selection-end-line="293" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="874" column="75" lean-forward="true" selection-start-line="874" selection-start-column="75" selection-end-line="874" selection-end-column="75" />
-          <folding>
-            <element signature="e#19094#20564#0" />
-            <element signature="e#22858#23983#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="83" column="9" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
+        <state relative-caret-position="311">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
           <folding>
             <element signature="e#103#1132#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/metodos.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1735">
+          <caret line="481" column="31" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2605">
+          <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="724" column="8" selection-start-line="724" selection-start-column="8" selection-end-line="724" selection-end-column="8" />
+        <state relative-caret-position="-431">
+          <caret line="638" column="44" selection-start-line="638" selection-start-column="44" selection-end-line="638" selection-end-column="44" />
           <folding>
-            <element signature="e#1243#1787#0" />
-            <element signature="e#1789#3588#0" />
-            <element signature="e#3590#5597#0" />
-            <element signature="e#5631#5722#1" />
-            <element signature="e#5725#6017#0" />
-            <element signature="e#6019#7765#0" />
-            <element signature="e#7767#9798#0" />
-            <element signature="e#9762#10234#0" />
-            <element signature="e#10236#10687#0" />
-            <element signature="e#10689#11002#0" />
-            <element signature="e#11005#12050#0" />
-            <element signature="e#12052#12243#0" />
-            <element signature="e#13471#13968#0" />
-            <element signature="e#13971#14325#0" />
-            <element signature="e#14327#16081#0" />
-            <element signature="e#17461#18647#0" />
-            <element signature="e#18649#19196#0" />
+            <element signature="e#13878#14232#0" />
+            <element signature="e#14234#15988#0" />
+            <element signature="e#103824#105010#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="376" column="49" selection-start-line="376" selection-start-column="49" selection-end-line="376" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fp_internal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="930" lean-forward="true" selection-start-line="930" selection-end-line="930" />
+          <folding>
+            <element signature="e#19094#20564#0" />
           </folding>
         </state>
       </provider>

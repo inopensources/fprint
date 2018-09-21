@@ -467,20 +467,30 @@ API_EXPORTED int fp_identify_finger_img(struct fp_dev *dev,
 	struct fp_print_data **print_gallery, size_t *match_offset,
 	struct fp_img **img)
 {
+
+
+
 	gboolean stopped = FALSE;
 	struct sync_identify_data *idata
 		= g_malloc0(sizeof(struct sync_identify_data));
 	int r;
 
+
+
 	fp_dbg("to be handled by %s", dev->drv->name);
 
 	r = fp_async_identify_start(dev, print_gallery, sync_identify_cb, idata);
+
+
+
 	if (r < 0) {
 		fp_err("identify_start error %d", r);
 		goto err;
 	}
 
+
 	while (!idata->populated) {
+
 		r = fp_handle_events();
 		if (r < 0)
 			goto err_stop;
