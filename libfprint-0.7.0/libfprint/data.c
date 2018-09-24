@@ -851,10 +851,10 @@ int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
         switch (r) {
             case FP_VERIFY_NO_MATCH:
                 printf("NO MATCH!\n");
-                return 0;
+                return -1;
             case FP_VERIFY_MATCH:
                 printf("MATCH!\n");
-                return 0;
+                return match_offset;
             case FP_VERIFY_RETRY:
                 printf("Scan didn't quite work. Please try again.\n");
                 break;
@@ -871,64 +871,36 @@ int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
     } while (1);
 }
 
-API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char ** digitais){
+API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char ** digitais, int num_digitais, int * id_list){
 
     struct fp_dscv_dev *ddev;
     struct fp_dscv_dev **discovered_devs;
     struct fp_print_data *data_user;
     struct fp_print_data **print_gallery = NULL;
-    //unsigned char *ret;
 
-
-//    for (int i = 0; i<2; i++) {
-//        printf("\n%d: \n", *(digitais + i));
-//        for(int j = 0; j < 12; j++){
-//               printf("%d ", *(*(digitais + i)+j));
-//        }
-//    }
     //criando print_gallery
-    //print_gallery = malloc(sizeof(int) * 3);
-    print_gallery = malloc(sizeof(*print_gallery) * (2+1));
-    print_gallery[2] = NULL;
-    //print_gallery = malloc(sizeof(*print_gallery) * 3);
+    print_gallery = malloc(sizeof(*print_gallery) * (num_digitais+1));
+    print_gallery[num_digitais] = NULL;
+
+    ///print_gallery 	NULL-terminated array of pointers to the prints to identify against. Each one must have been previously enrolled with a device compatible to the device selected to perform the scan. *///
 
 
-    ///*	print_gallery 	NULL-terminated array of pointers to the prints to identify against. Each one must have been previously enrolled with a device compatible to the device selected to perform the scan. *///
 
-    for (int i = 0; i<2; i++) {
-        //data_user = fp_print_data_from_data(digitais[i], 12050);
-//        printf("%d", data_user->devtype);
-//        printf("%s", *data_user->prints);
-
-        //(print_gallery + i) =  &data_user;
-       // print_gallery[i] = malloc(sizeof(int));
-       // print_gallery[i] = &data_user;
-        //print_gallery[i] = malloc(sizeof(struct fp_print_data));
+    for (int i = 0; i<num_digitais; i++) {
+        printf("\nnum_digitais: %d | i: %d\n", num_digitais, i);
         print_gallery[i] = fp_print_data_from_data(digitais[i], 12050);
 
     }
 
-//    for (int j = 0; j < 2; j++){
-//        for (int i = 0; i < 12050; i++){
-//            printf("%d ", print_gallery[i][j]);
-//        }
-//    }
-
-/*
-
-	data_user = fp_print_data_from_data(ret_reload, length_reload);
-
-	printf("\nComparing..\n");
-	//g_free(ret_reload);
-
-
-*/
     ///for one by one verification
    //verify(dev, print_gallery[1]);
 
 
     ///for 1 by many verification
-    identify(dev, print_gallery);
+    int index_match = identify(dev, print_gallery);
+
+    if(index_match > -1)
+        printf("index_match: %d | id_user: %d\n", index_match, id_list[index_match]);
 
     //fp_print_data_free(print_gallery);
 

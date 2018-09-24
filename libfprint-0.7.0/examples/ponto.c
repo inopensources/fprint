@@ -56,7 +56,7 @@ void do_point(){
     int length = 12050;
 
     //data = enroll(dev);
-    int result = compare_digital(dev, ret_from_file, length); //chamada em data.c
+    int result = compare_digital(dev, ret_from_file, length, 0); //chamada em data.c
 
     out_close:
     fp_dev_close(dev);

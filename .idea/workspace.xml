@@ -12,6 +12,7 @@
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/.libs/verify_live" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/ponto.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" afterDir="false" />
@@ -25,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" afterDir="false" />
@@ -73,11 +73,12 @@
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +90,7 @@
     <session id="-1415015511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -97,8 +98,9 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="4" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -109,7 +111,7 @@
           <entry key="c" value="68" />
           <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
-          <entry key="h" value="30" />
+          <entry key="h" value="31" />
           <entry key="img_capture" value="1" />
           <entry key="in" value="1" />
           <entry key="la" value="2" />
@@ -122,15 +124,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="99" />
+          <entry key="ObjectiveC" value="100" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="67" />
-          <entry key="Doxygen file" value="14" />
-          <entry key="ObjectiveC" value="7840" />
+          <entry key="Doxygen file" value="15" />
+          <entry key="ObjectiveC" value="8759" />
           <entry key="PLAIN_TEXT" value="243" />
         </counts>
       </usages-collector>
@@ -138,8 +140,8 @@
         <counts>
           <entry key="Makefile" value="210" />
           <entry key="am" value="32" />
-          <entry key="c" value="7800" />
-          <entry key="h" value="54" />
+          <entry key="c" value="8697" />
+          <entry key="h" value="77" />
           <entry key="txt" value="68" />
         </counts>
       </usages-collector>
@@ -152,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="930" lean-forward="true" selection-start-line="930" selection-end-line="930" />
+            <state relative-caret-position="290">
+              <caret line="902" column="8" selection-start-line="902" selection-start-column="8" selection-end-line="902" selection-end-column="8" />
               <folding>
                 <element signature="e#19094#20564#0" />
               </folding>
@@ -162,50 +164,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fp_internal.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metodos.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1735">
-              <caret line="481" column="31" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2605">
-              <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
-              <caret line="638" column="44" selection-start-line="638" selection-start-column="44" selection-end-line="638" selection-end-column="44" />
+            <state relative-caret-position="15">
+              <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
               <folding>
+                <element signature="e#1149#1207#1" />
+                <element signature="e#1210#1754#0" />
+                <element signature="e#1756#3555#0" />
+                <element signature="e#3557#5564#0" />
+                <element signature="e#5598#5689#1" />
+                <element signature="e#5692#5971#0" />
+                <element signature="e#7708#9726#0" />
+                <element signature="e#9729#10201#0" />
+                <element signature="e#10203#10654#0" />
+                <element signature="e#10656#10969#0" />
+                <element signature="e#10972#12017#0" />
+                <element signature="e#12019#12210#0" />
+                <element signature="e#12212#13394#0" />
+                <element signature="e#13378#13875#0" />
                 <element signature="e#13878#14232#0" />
                 <element signature="e#14234#15988#0" />
-                <element signature="e#103824#105010#0" />
+                <element signature="e#104180#105366#0" />
+                <element signature="e#105368#105915#0" />
               </folding>
             </state>
           </provider>
@@ -214,20 +195,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="376" column="49" selection-start-line="376" selection-start-column="49" selection-end-line="376" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
-              <folding>
-                <element signature="e#103#1132#0" />
-              </folding>
+            <state relative-caret-position="227">
+              <caret line="376" column="83" selection-start-line="376" selection-start-column="83" selection-end-line="376" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -236,7 +205,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FP_VERIFY_NO_MATCH</find>
       <find>fp_dev_supports_print_data</find>
       <find>struct fp_driver</find>
       <find>libusb_handle_events_timeout</find>
@@ -254,7 +222,6 @@
       <find>read_digita</find>
       <find>read_digital</find>
       <find>deal</find>
-      <find>compare_digital</find>
       <find>**</find>
       <find>discover_device</find>
       <find>print_gallery</find>
@@ -266,6 +233,8 @@
       <find>fp_async_identify_start</find>
       <find>identify_start</find>
       <find>*prints</find>
+      <find>post_user</find>
+      <find>compare_digital</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -397,18 +366,19 @@
       <workItem from="1537461814287" duration="8888000" />
       <workItem from="1537471062008" duration="5578000" />
       <workItem from="1537547647895" duration="7390000" />
-      <workItem from="1537555617052" duration="11419000" />
+      <workItem from="1537555617052" duration="12116000" />
+      <workItem from="1537805693249" duration="7661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84315000" />
+    <option name="totallyTimeSpent" value="92673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1637931" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16360734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -420,7 +390,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3442088" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.12561175" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -669,9 +639,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7215">
+          <caret line="481" column="31" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5010">
+          <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="1215">
           <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
           <folding>
             <element signature="e#103#1132#0" />
@@ -686,39 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/sync.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1735">
-          <caret line="481" column="31" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/async.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2605">
-          <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="638" column="44" selection-start-line="638" selection-start-column="44" selection-end-line="638" selection-end-column="44" />
-          <folding>
-            <element signature="e#13878#14232#0" />
-            <element signature="e#14234#15988#0" />
-            <element signature="e#103824#105010#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="376" column="49" selection-start-line="376" selection-start-column="49" selection-end-line="376" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fp_internal.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -726,10 +677,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="376" column="83" selection-start-line="376" selection-start-column="83" selection-end-line="376" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+          <folding>
+            <element signature="e#1149#1207#1" />
+            <element signature="e#1210#1754#0" />
+            <element signature="e#1756#3555#0" />
+            <element signature="e#3557#5564#0" />
+            <element signature="e#5598#5689#1" />
+            <element signature="e#5692#5971#0" />
+            <element signature="e#7708#9726#0" />
+            <element signature="e#9729#10201#0" />
+            <element signature="e#10203#10654#0" />
+            <element signature="e#10656#10969#0" />
+            <element signature="e#10972#12017#0" />
+            <element signature="e#12019#12210#0" />
+            <element signature="e#12212#13394#0" />
+            <element signature="e#13378#13875#0" />
+            <element signature="e#13878#14232#0" />
+            <element signature="e#14234#15988#0" />
+            <element signature="e#104180#105366#0" />
+            <element signature="e#105368#105915#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="930" lean-forward="true" selection-start-line="930" selection-end-line="930" />
+        <state relative-caret-position="290">
+          <caret line="902" column="8" selection-start-line="902" selection-start-column="8" selection-end-line="902" selection-end-column="8" />
           <folding>
             <element signature="e#19094#20564#0" />
           </folding>
