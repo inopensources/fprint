@@ -381,15 +381,15 @@ AUTOMAKE = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing a
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -lglib-2.0 -lcurl
+CFLAGS = -g -O2 -lglib-2.0 -lcurl -lwebsockets
 CPP = gcc -E
-CPPFLAGS = -lglib-2.0 -lcurl
+CPPFLAGS = -lglib-2.0 -lcurl -lwebsockets
 CRYPTO_CFLAGS = -I/usr/include/nss -I/usr/include/nspr
 CRYPTO_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -lglib-2.0 -lcurl
+CXXFLAGS = -g -O2 -lglib-2.0 -lcurl -lwebsockets
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -413,7 +413,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/x86_64-linux-gnu-ld -m elf_x86_64
-LDFLAGS =  -lglib-2.0 -lcurl
+LDFLAGS =  -lglib-2.0 -lcurl -lwebsockets
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool

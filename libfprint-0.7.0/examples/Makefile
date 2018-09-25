@@ -194,7 +194,7 @@ AM_V_CXXLD = $(am__v_CXXLD_$(V))
 am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) $(img_capture_SOURCES) \
+SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) $(img_capture_SOURCES) $(ponto_SOURCES) \
 	$(img_capture_continuous_SOURCES) $(main_SOURCES) \
 	$(verify_SOURCES) $(verify_live_SOURCES)
 DIST_SOURCES = $(cpp_test_SOURCES) $(enroll_SOURCES) \
@@ -238,15 +238,15 @@ AUTOMAKE = ${SHELL} /home/leticia/repos/fprint-infarma/libfprint-0.7.0/missing a
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -lcurl -ljson-c
+CFLAGS = -g -O2 -lcurl -ljson-c -lwebsockets -lpthread
 CPP = gcc -E
-CPPFLAGS = -lcurl -ljson-c
+CPPFLAGS = -lcurl -ljson-c -lwebsockets -lpthread
 CRYPTO_CFLAGS = -I/usr/include/nss -I/usr/include/nspr
 CRYPTO_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -lcurl -ljson-c
+CXXFLAGS = -g -O2 -lcurl -ljson-c -lwebsockets -lpthread
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -270,7 +270,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/x86_64-linux-gnu-ld -m elf_x86_64
-LDFLAGS = -lfprint -lcurl -ljson-c
+LDFLAGS = -lfprint -lcurl -ljson-c -lwebsockets -lpthread
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool

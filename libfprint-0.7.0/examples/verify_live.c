@@ -7,6 +7,9 @@
 #include <limits.h>
 #include <json-c/json.h>
 #include <string.h>
+#include <pthread.h>
+#include "client.c"
+#include "server.c"
 
 
 void cadastra_user();
@@ -471,17 +474,24 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 }
 
 struct fp_print_data *enroll(struct fp_dev *dev) {
+
     struct fp_print_data *enrolled_print = NULL;
     int r;
-
-
+    int status = 0;
 
     printf("You will need to successfully scan your finger %d times to "
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
     do {
+
+
+
         sleep(1);
+
         printf("\nScan your finger now.\n");
+
+        set_status(status++);
+        printf("%d/5\n", status);
         r = fp_enroll_finger(dev, &enrolled_print);
         if (r < 0) {
             printf("Enroll failed with error %d\n", r);
@@ -602,7 +612,7 @@ void do_point(){
 
     printf("Opened device. It's now time to enroll your finger.\n");
 
-    ///*Fim inicialização device*///
+    ///Fim inicialização device
 
 
     //ret = read_digital(digital);
@@ -703,9 +713,14 @@ int create_list_users(){
 
 int main() {
 
-
+    //do_point();
     //cadastra_user();
-    do_point();
+
+    pthread_t thread_id;
+    pthread_create(&thread_id, NULL, main_server, NULL);
+    //pthread_join(thread_id, NULL);
+    main_client();
+
 
     return 0;
 }
