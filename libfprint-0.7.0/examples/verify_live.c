@@ -12,6 +12,8 @@
 #include "server.c"
 
 
+struct lws_context * context_client;
+
 void cadastra_user();
 static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs);
@@ -473,25 +475,27 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
     return ddev;
 }
 
+struct lws_context * get_context();
+
+void set_context(struct lws_context * context);
+
 struct fp_print_data *enroll(struct fp_dev *dev) {
 
     struct fp_print_data *enrolled_print = NULL;
     int r;
     int status = 0;
 
+
     printf("You will need to successfully scan your finger %d times to "
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
     do {
 
-
-
         sleep(1);
 
         printf("\nScan your finger now.\n");
 
-        set_status(status++);
-        printf("%d/5\n", status);
+
         r = fp_enroll_finger(dev, &enrolled_print);
         if (r < 0) {
             printf("Enroll failed with error %d\n", r);
@@ -499,13 +503,19 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
         }
         switch (r) {
             case FP_ENROLL_COMPLETE:
-                printf("Enroll complete!\n");
+                printf("Enroll completed!\n");
+                status++;
+                printf("%d/5\n", status);
+                client(status, get_context());
                 break;
             case FP_ENROLL_FAIL:
                 printf("Enroll failed, something wen't wrong :(\n");
                 return NULL;
             case FP_ENROLL_PASS:
                 printf("Enroll stage passed. Yay!\n");
+                status++;
+                printf("%d/5\n", status);
+                client(status, get_context());
                 break;
             case FP_ENROLL_RETRY:
                 printf("Didn't quite catch that. Please try again.\n");
@@ -529,7 +539,6 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
         return NULL;
     }
 
-    printf("Enrollment completed!\n\n");
     return enrolled_print;
 }
 
@@ -622,6 +631,18 @@ void do_point(){
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
 
+    printf("\nResult: %d\n", result);
+
+    if(result != -1){
+        client(result, get_context());
+        sleep(1);
+    }
+    else{
+        client(-1, get_context());
+        sleep(1);
+    }
+
+
     free(digitais);
 
     out_close:
@@ -709,18 +730,31 @@ int create_list_users(){
     return number_of_users;
 }
 
+struct lws_context * get_context(){
+    return context_client;
+}
+
+void set_context(struct lws_context * context){
+    context_client = context;
+}
+
+
 /*Método main*/
 
 int main() {
 
-    //do_point();
+    pthread_t thread_id_server;
+    pthread_create(&thread_id_server, NULL, server, NULL);
+
+    set_context(init_context_client());
+
+    pthread_t thread_id_serving;
+    pthread_create(&thread_id_serving, NULL, serving, get_context());
+
     //cadastra_user();
+    do_point();
 
-    pthread_t thread_id;
-    pthread_create(&thread_id, NULL, main_server, NULL);
-    //pthread_join(thread_id, NULL);
-    main_client();
-
+    destroy_context_client(get_context());
 
     return 0;
 }

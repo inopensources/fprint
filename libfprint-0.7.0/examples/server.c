@@ -70,7 +70,9 @@ static struct lws_protocols protocols[] =
         };
 
 //chamando em verify_live para teste
-void main_server(){
+void server(){
+
+    printf("\nServer running\n");
 
     struct lws_context_creation_info info;
     memset( &info, 0, sizeof(info) );
@@ -84,7 +86,7 @@ void main_server(){
 
     while( 1 )
     {
-        printf("\nServer running\n");
+
         lws_service( context, /* timeout_ms = */ 1000000 );
     }
 

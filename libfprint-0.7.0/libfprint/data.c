@@ -898,11 +898,13 @@ API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char ** digitais, 
 
     ///for 1 by many verification
     int index_match = identify(dev, print_gallery);
+	int id_user_matched = -1;
 
-    if(index_match > -1)
-        printf("index_match: %d | id_user: %d\n", index_match, id_list[index_match]);
-
+    if(index_match > -1){
+    	id_user_matched = id_list[index_match];
+        printf("index_match: %d | id_user: %d\n", index_match, id_user_matched);
+     }
     //fp_print_data_free(print_gallery);
 
-    return 0;
+    return id_user_matched;
 }
