@@ -164,6 +164,42 @@ void post_user(int id_usuario, char* digital, int tamanho_array){
     return 0;
 }
 
+
+void post_ponto(int id_usuario){
+
+    char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
+
+    char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
+    char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+
+    char userIdAsStr[12];
+    sprintf(userIdAsStr, "%d", id_usuario);
+
+    char *result = malloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody4) + 1);
+    strcat(result, requestBody1);
+    strcat(result, userIdAsStr);
+    strcat(result, requestBody4);
+
+
+    CURL *hnd = curl_easy_init();
+
+    curl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_easy_setopt(hnd, CURLOPT_URL, url);
+
+    struct curl_slist *headers = NULL;
+    headers = curl_slist_append(headers, "Postman-Token: 6b970eb6-28cd-4f90-8703-cfea648b0c79");
+    headers = curl_slist_append(headers, "Cache-Control: no-cache");
+    headers = curl_slist_append(headers, "Authorization: Basic VVNFUlRFU1RFOjEyMzQ1");
+    headers = curl_slist_append(headers, "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
+    curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
+
+    curl_easy_setopt(hnd, CURLOPT_POSTFIELDS, result);
+
+    CURLcode ret = curl_easy_perform(hnd);
+
+    return 0;
+}
+
 //remote_database após parser:
 
 struct user_list{
@@ -636,6 +672,7 @@ void do_point(){
     if(result != -1){
         client(result, get_context());
         sleep(1);
+        post_ponto(result);
     }
     else{
         client(-1, get_context());
@@ -751,8 +788,8 @@ int main() {
     pthread_t thread_id_serving;
     pthread_create(&thread_id_serving, NULL, serving, get_context());
 
-    //cadastra_user();
-    do_point();
+    cadastra_user();
+    //do_point();
 
     destroy_context_client(get_context());
 

@@ -42,6 +42,8 @@ static int callback_example_client( struct lws *wsi, enum lws_callback_reasons r
 
             lws_write( wsi, p, n, LWS_WRITE_TEXT );
 
+            free(p);
+
             break;
         }
 
@@ -69,6 +71,7 @@ static int callback_ponto_client( struct lws *wsi, enum lws_callback_reasons rea
 
         case LWS_CALLBACK_CLIENT_RECEIVE:
             /* Handle incomming messages here. */
+            lwsl_notice("Client RX: %s", (char *)in);
             break;
 
         case LWS_CALLBACK_CLIENT_WRITEABLE:
