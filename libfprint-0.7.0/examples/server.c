@@ -16,6 +16,26 @@ static int callback_http( struct lws *wsi, enum lws_callback_reasons reason, voi
     return 0;
 }
 
+int decider(void *in, size_t len){
+    printf("\nActions: %c\n", ((char *) in)[0]);
+    switch (((char *) in)[0])
+    {
+        case '1':
+            printf("\n1: %s\n", "Record user fingerprint");
+            return 0;
+            break;
+
+        case '2':
+            printf("\n2: %s\n", "Clock in/out");
+            return 0;
+            break;
+
+        default:
+            printf("\nError: %s\n", "Don't know how to answer to this. :|");
+            return 1;
+    }
+}
+
 #define EXAMPLE_RX_BUFFER_BYTES (10)
 struct payload
 {

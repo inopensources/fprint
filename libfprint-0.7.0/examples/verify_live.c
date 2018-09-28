@@ -8,16 +8,17 @@
 #include <json-c/json.h>
 #include <string.h>
 #include <pthread.h>
-#include "client.c"
-#include "server.c"
+#include "ws.c"
 
+
+/*
 
 struct lws_context * context_client;
 
 void cadastra_user();
 static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
-struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs);
-struct fp_print_data *enroll(struct fp_dev *dev);
+//struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs);
+//struct fp_print_data *enroll(struct fp_dev *dev);
 void do_point();
 struct node_user * get_users(void);
 void post_user(int id_usuario, char* digital, int tamanho_array);
@@ -30,16 +31,17 @@ void iterOverList(struct node_user * head);
 void append(struct node_user * head, int id);
 char** str_split(char* a_str, const char a_delim);
 void read_digital(char * digital, unsigned char * ret_returned);
-char * fprint_to_string(char * ret, int length);
+//char * fprint_to_string(char * ret, int length);
 //void deal_with_json(char* json_str, struct user_list *list);
 char *get_user_list();
 void get_number_of_users(char* json_str, int* number_of_users);
 
 int create_list_users();
+*/
 
 
 /*De curl_utils.c*/
-
+/*
 struct MemoryStruct {
     char *memory;
     size_t size;
@@ -53,7 +55,7 @@ WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
 
     mem->memory = realloc(mem->memory, mem->size + realsize + 1);
     if(mem->memory == NULL) {
-        /* out of memory! */
+        *//* out of memory! *//*
         printf("not enough memory (realloc returned NULL)\n");
         return 0;
     }
@@ -63,10 +65,10 @@ WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
     mem->memory[mem->size] = 0;
 
     return realsize;
-}
+}*/
 
 /*De remote_database.c*/
-
+/*
 struct node_user * get_users(void){
 
     printf("Connnecting to mock database\n");
@@ -74,16 +76,16 @@ struct node_user * get_users(void){
 
     CURLcode ret;
     struct MemoryStruct chunk;
-    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
-    chunk.size = 0;    /* no data at this point */
+    chunk.memory = malloc(1);  *//* will be grown as needed by the realloc above *//*
+    chunk.size = 0;    *//* no data at this point *//*
 
     CURL *hnd = curl_easy_init();
 
     curl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, "GET");
     curl_easy_setopt(hnd, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
-    /* send all data to this function  */
+    *//* send all data to this function  *//*
     curl_easy_setopt(hnd, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
-    /* we pass our 'chunk' struct to the callback function */
+    *//* we pass our 'chunk' struct to the callback function *//*
     curl_easy_setopt(hnd, CURLOPT_WRITEDATA, (void *)&chunk);
 
     struct curl_slist *headers = NULL;
@@ -94,16 +96,16 @@ struct node_user * get_users(void){
 
     ret = curl_easy_perform(hnd);
 
-    /* check for errors */
+    *//* check for errors *//*
     if(ret != CURLE_OK) {
         fprintf(stderr, "curl_easy_perform() failed: %s\n",
                 curl_easy_strerror(ret));
     }
     else {
-        /*
+        *//*
          * Now, our chunk.memory points to a memory block that is chunk.size
          * bytes big and contains the remote file.
-         */
+         *//*
 
         printf("%lu bytes retrieved\n", (unsigned long)chunk.size);
         //printf("%s\n", chunk.memory);
@@ -112,13 +114,14 @@ struct node_user * get_users(void){
         fprintf(fp, "%s", chunk.memory);
     }
 
-    /* cleanup curl stuff*/
+    *//* cleanup curl stuff*//*
     curl_easy_cleanup(hnd);
     free(chunk.memory);
     curl_global_cleanup();
 
     return head;
-}
+}*/
+/*
 
 void post_user(int id_usuario, char* digital, int tamanho_array){
 
@@ -163,7 +166,9 @@ void post_user(int id_usuario, char* digital, int tamanho_array){
 
     return 0;
 }
+*/
 
+/*
 
 void post_ponto(int id_usuario){
 
@@ -271,12 +276,18 @@ char *get_user_list() {
     char *buf2;
     struct MemoryStruct chunk;
 
-    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
-    chunk.size = 0;    /* no data at this point */
+    chunk.memory = malloc(1);  */
+/* will be grown as needed by the realloc above *//*
+
+    chunk.size = 0;    */
+/* no data at this point *//*
+
 
     curl_global_init(CURL_GLOBAL_ALL);
 
-    /* init the curl session */
+    */
+/* init the curl session *//*
+
     curl_handle = curl_easy_init();
 
     curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
@@ -312,11 +323,12 @@ char *get_user_list() {
     }
     return buf2;
 }
+*/
 
 
 /*De user.c*/
 
-struct node_user * createList(int id, unsigned char *digital){
+//struct node_user * createList(int id, unsigned char *digital){
 
 //
 //    struct node_user * head = NULL;
@@ -332,7 +344,7 @@ struct node_user * createList(int id, unsigned char *digital){
 //    head->id = id;
 //    head->next = NULL;
 //    return head;
-}
+/*}
 
 void iterOverList(struct node_user * head){
 
@@ -355,7 +367,7 @@ void iterOverList(struct node_user * head){
     }
 }
 
-void append(struct node_user * head, int id) {
+void append(struct node_user * head, int id) {*/
 
 //	struct node_user *current = head;
 //	while (current->next != NULL) {
@@ -367,12 +379,12 @@ void append(struct node_user * head, int id) {
 //	current->next->id = id;
 //	current->next->next = NULL;
 
-}
+//}
 
 
 /*De utils.c*/
 
-char** str_split(char* a_str, const char a_delim)
+/*char** str_split(char* a_str, const char a_delim)
 {
     char** result    = 0;
     size_t count     = 0;
@@ -382,7 +394,7 @@ char** str_split(char* a_str, const char a_delim)
     delim[0] = a_delim;
     delim[1] = 0;
 
-    /* Count how many elements will be extracted. */
+    *//* Count how many elements will be extracted. *//*
     while (*tmp)
     {
         if (a_delim == *tmp)
@@ -393,11 +405,11 @@ char** str_split(char* a_str, const char a_delim)
         tmp++;
     }
 
-    /* Add space for trailing token. */
+    *//* Add space for trailing token. *//*
     count += last_comma < (a_str + strlen(a_str) - 1);
 
-    /* Add space for terminating null string so caller
-       knows where the list of returned strings ends. */
+    *//* Add space for terminating null string so caller
+       knows where the list of returned strings ends. *//*
     count++;
 
     result = malloc(sizeof(char*) * count);
@@ -415,9 +427,9 @@ char** str_split(char* a_str, const char a_delim)
         }
         assert(idx == count - 1);
         *(result + idx) = 0;
-    }
+    }*/
 
-    return result;
+ /*   return result;
 }
 
 void removeChar(char *str, char c) {
@@ -431,51 +443,51 @@ void removeChar(char *str, char c) {
         i++;
     }
     str[j]=0;
-}
-
-void read_digital(char * digital, unsigned char * ret_returned){
-
-    ///*get a string and return the array of char*///
-    char digitael[42682];
-    strcpy(digitael, digital);
-
-    //unsigned char *ret_returned = alloca(12050); // todo: generalizar length
-
-    char** tokens;
-
-    //tokens é uma array de char
-    tokens = str_split(digitael, ',');
-    if (tokens)
-    {
-        int  i;
-        int num;
-        for (i = 0; *(tokens + i); i++)
-        {
-            //printf("%c ", atoi(*(tokens + i)));
-
-            if((strchr(*(tokens + i), '[')) != NULL )
-            {
-                removeChar(*(tokens + i), '[');
-            }
-            if((strchr(*(tokens + i), ']')) != NULL)
-            {
-                removeChar(*(tokens + i), ']');
-            }
-            //num é um int com valor  inteiro equivalente ao token
-            num = atoi(*(tokens + i));
-            //printf("%d ",num);
-            //printf("%c ", num);
-            *(ret_returned + i) = num;
-            //printf("%d ", ret_returned[i]);
-            free(*(tokens + i));
-        }
-
-        printf("\nLength digital ON read_digital(): %d\n", i);
-        free(tokens);
-    }
-
-}
-
+}*/
+//
+//void read_digital(char * digital, unsigned char * ret_returned){
+//
+//    ///*get a string and return the array of char*///
+//    char digitael[42682];
+//    strcpy(digitael, digital);
+//
+//    //unsigned char *ret_returned = alloca(12050); // todo: generalizar length
+//
+//    char** tokens;
+//
+//    //tokens é uma array de char
+//    tokens = str_split(digitael, ',');
+//    if (tokens)
+//    {
+//        int  i;
+//        int num;
+//        for (i = 0; *(tokens + i); i++)
+//        {
+//            //printf("%c ", atoi(*(tokens + i)));
+//
+//            if((strchr(*(tokens + i), '[')) != NULL )
+//            {
+//                removeChar(*(tokens + i), '[');
+//            }
+//            if((strchr(*(tokens + i), ']')) != NULL)
+//            {
+//                removeChar(*(tokens + i), ']');
+//            }
+//            //num é um int com valor  inteiro equivalente ao token
+//            num = atoi(*(tokens + i));
+//            //printf("%d ",num);
+//            //printf("%c ", num);
+//            *(ret_returned + i) = num;
+//            //printf("%d ", ret_returned[i]);
+//            free(*(tokens + i));
+//        }
+//
+//        printf("\nLength digital ON read_digital(): %d\n", i);
+//        free(tokens);
+//    }
+//
+//}
+/*
 char * fprint_to_string(char * ret, int length){
 
 
@@ -496,9 +508,9 @@ char * fprint_to_string(char * ret, int length){
 
     return digital;
 
-}
+}*/
 
-/*De devices_utils.c*/
+/*De devices_utils.c*//*
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 {
     struct fp_dscv_dev *ddev = discovered_devs[0];
@@ -509,17 +521,19 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
     drv = fp_dscv_dev_get_driver(ddev);
     printf("Found device claimed by %s driver\n", fp_driver_get_full_name(drv));
     return ddev;
-}
+}*/
+/*
 
 struct lws_context * get_context();
 
 void set_context(struct lws_context * context);
+*/
 
+/*
 struct fp_print_data *enroll(struct fp_dev *dev) {
 
     struct fp_print_data *enrolled_print = NULL;
     int r;
-    int status = 0;
 
 
     printf("You will need to successfully scan your finger %d times to "
@@ -540,18 +554,12 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
         switch (r) {
             case FP_ENROLL_COMPLETE:
                 printf("Enroll completed!\n");
-                status++;
-                printf("%d/5\n", status);
-                client(status, get_context());
                 break;
             case FP_ENROLL_FAIL:
                 printf("Enroll failed, something wen't wrong :(\n");
                 return NULL;
             case FP_ENROLL_PASS:
                 printf("Enroll stage passed. Yay!\n");
-                status++;
-                printf("%d/5\n", status);
-                client(status, get_context());
                 break;
             case FP_ENROLL_RETRY:
                 printf("Didn't quite catch that. Please try again.\n");
@@ -576,178 +584,180 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
     }
 
     return enrolled_print;
-}
+}*/
 
 
-/*de ponto.c*/
-void do_point(){
+//
+///*de ponto.c*/
+//void do_point(){
+//
+//    //lista de digitais
+//    unsigned char **digitais = 0;
+//    int num_digitais = 0;
+//    unsigned char *ret;
+//    int num_ret = 0;
+//
+//
+//    //free this later on
+//    char *json = get_user_list();
+//    printf("%s\n", json);
+//
+//    int number_of_users;
+//    get_number_of_users(json, &number_of_users);
+//    printf("number_of_users: %d\n", number_of_users);
+//
+//    //Allocating structs to fill with user data
+//    //PS: Free this later on
+//    struct user_list *list_of_users = malloc(number_of_users * sizeof(struct user_list));
+//    num_digitais = deal_with_json(json, list_of_users);
+//
+//    //criando lista de digitais
+//    digitais = malloc(sizeof(unsigned char *) * num_digitais);
+//    int ids_list[num_digitais];
+//
+//    for (int i = 0; i < number_of_users; i++){
+//
+//        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
+//
+//            printf("Id: %d\n", (list_of_users)[i].user_id);
+//            printf("Name: %s\n", (list_of_users)[i].name);
+//            ids_list[num_ret] = (list_of_users)[i].user_id;
+//            digitais[num_ret] = malloc(sizeof(unsigned char) * 12050);
+//            read_digital((list_of_users)[i].fingerprint, digitais[num_ret]);
+//            num_ret++;
+//
+//        }
+//    }
+//
+//    ///*Iniciando device*///
+//
+//    int r = 1;
+//    struct fp_dscv_dev *ddev;
+//    struct fp_dscv_dev **discovered_devs;
+//    struct fp_dev *dev;
+//    // struct fp_print_data *data;
+//
+//
+//    r = fp_init();
+//
+//    if (r < 0) {
+//        fprintf(stderr, "Failed to initialize libfprint\n");
+//        exit(1);
+//    }
+//
+//    fp_set_debug(3);
+//
+//    discovered_devs = fp_discover_devs();
+//    if (!discovered_devs) {
+//        fprintf(stderr, "Could not discover devices\n");
+//        goto out;
+//    }
+//    ddev = discover_device(discovered_devs);
+//    if (!ddev) {
+//        fprintf(stderr, "No devices detected.\n");
+//        goto out;
+//    }
+//    dev = fp_dev_open(ddev);
+//    fp_dscv_devs_free(discovered_devs);
+//    if (!dev) {
+//        fprintf(stderr, "Could not open device.\n");
+//        goto out;
+//    }
+//
+//    printf("Opened device. It's now time to enroll your finger.\n");
+//
+//    ///Fim inicialização device
+//
+//
+//    //ret = read_digital(digital);
+//    //int length = 12050;
+//    //data = enroll(dev);
+//    //int result = compare_digital(dev, ret, length); //chamada em data.c
+//
+//    int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+//
+//    printf("\nResult: %d\n", result);
+//
+//   /* if(result != -1){
+//        client(result, get_context());
+//        sleep(1);
+//        post_ponto(result);
+//    }
+//    else{
+//        client(-1, get_context());
+//        sleep(1);
+//    }*/
+//
+//
+//    free(digitais);
+//
+//    out_close:
+//    fp_dev_close(dev);
+//    out:
+//    fp_exit();
+//    return r;
+//
+//
+//}
 
-    //lista de digitais
-    unsigned char **digitais = 0;
-    int num_digitais = 0;
-    unsigned char *ret;
-    int num_ret = 0;
-
-
-    //free this later on
-    char *json = get_user_list();
-    printf("%s\n", json);
-
-    int number_of_users;
-    get_number_of_users(json, &number_of_users);
-    printf("number_of_users: %d\n", number_of_users);
-
-    //Allocating structs to fill with user data
-    //PS: Free this later on
-    struct user_list *list_of_users = malloc(number_of_users * sizeof(struct user_list));
-    num_digitais = deal_with_json(json, list_of_users);
-
-    //criando lista de digitais
-    digitais = malloc(sizeof(unsigned char *) * num_digitais);
-    int ids_list[num_digitais];
-
-    for (int i = 0; i < number_of_users; i++){
-
-        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
-
-            printf("Id: %d\n", (list_of_users)[i].user_id);
-            printf("Name: %s\n", (list_of_users)[i].name);
-            ids_list[num_ret] = (list_of_users)[i].user_id;
-            digitais[num_ret] = malloc(sizeof(unsigned char) * 12050);
-            read_digital((list_of_users)[i].fingerprint, digitais[num_ret]);
-            num_ret++;
-
-        }
-    }
-
-    ///*Iniciando device*///
-
-    int r = 1;
-    struct fp_dscv_dev *ddev;
-    struct fp_dscv_dev **discovered_devs;
-    struct fp_dev *dev;
-    // struct fp_print_data *data;
-
-
-    r = fp_init();
-
-    if (r < 0) {
-        fprintf(stderr, "Failed to initialize libfprint\n");
-        exit(1);
-    }
-
-    fp_set_debug(3);
-
-    discovered_devs = fp_discover_devs();
-    if (!discovered_devs) {
-        fprintf(stderr, "Could not discover devices\n");
-        goto out;
-    }
-    ddev = discover_device(discovered_devs);
-    if (!ddev) {
-        fprintf(stderr, "No devices detected.\n");
-        goto out;
-    }
-    dev = fp_dev_open(ddev);
-    fp_dscv_devs_free(discovered_devs);
-    if (!dev) {
-        fprintf(stderr, "Could not open device.\n");
-        goto out;
-    }
-
-    printf("Opened device. It's now time to enroll your finger.\n");
-
-    ///Fim inicialização device
-
-
-    //ret = read_digital(digital);
-    //int length = 12050;
-    //data = enroll(dev);
-    //int result = compare_digital(dev, ret, length); //chamada em data.c
-
-    int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
-
-    printf("\nResult: %d\n", result);
-
-    if(result != -1){
-        client(result, get_context());
-        sleep(1);
-        post_ponto(result);
-    }
-    else{
-        client(-1, get_context());
-        sleep(1);
-    }
-
-
-    free(digitais);
-
-    out_close:
-    fp_dev_close(dev);
-    out:
-    fp_exit();
-    return r;
-
-
-}
-
-/*De cadastro.c*/
-void cadastra_user(){
-
-    ///*Iniciando device*///
-
-    int r = 1;
-    struct fp_dscv_dev *ddev;
-    struct fp_dscv_dev **discovered_devs;
-    struct fp_dev *dev;
-    unsigned char *ret;
-    struct fp_print_data *data;
-
-    r = fp_init();
-
-    if (r < 0) {
-        fprintf(stderr, "Failed to initialize libfprint\n");
-        exit(1);
-    }
-
-    fp_set_debug(3);
-
-    discovered_devs = fp_discover_devs();
-    if (!discovered_devs) {
-        fprintf(stderr, "Could not discover devices\n");
-        goto out;
-    }
-    ddev = discover_device(discovered_devs);
-    if (!ddev) {
-        fprintf(stderr, "No devices detected.\n");
-        goto out;
-    }
-    dev = fp_dev_open(ddev);
-    fp_dscv_devs_free(discovered_devs);
-    if (!dev) {
-        fprintf(stderr, "Could not open device.\n");
-        goto out;
-    }
-
-    printf("Opened device. It's now time to enroll your finger.\n");
-
-    ///*Fim inicialização device*///
-
-
-    data = enroll(dev);
-    int length = fp_print_data_get_data(data, &ret);
-    post_user(76, fprint_to_string(ret, length), length);
-
-    ///*Encerrando device*///
-    out_close:
-    fp_dev_close(dev);
-    out:
-    fp_exit();
-    return r;
-
-}
+///*De cadastro.c*/
+//void cadastra_user(){
+//
+//    ///*Iniciando device*///
+//
+//    int r = 1;
+//    struct fp_dscv_dev *ddev;
+//    struct fp_dscv_dev **discovered_devs;
+//    struct fp_dev *dev;
+//    unsigned char *ret;
+//    struct fp_print_data *data;
+//
+//    r = fp_init();
+//
+//    if (r < 0) {
+//        fprintf(stderr, "Failed to initialize libfprint\n");
+//        exit(1);
+//    }
+//
+//    fp_set_debug(3);
+//
+//    discovered_devs = fp_discover_devs();
+//    if (!discovered_devs) {
+//        fprintf(stderr, "Could not discover devices\n");
+//        goto out;
+//    }
+//    ddev = discover_device(discovered_devs);
+//    if (!ddev) {
+//        fprintf(stderr, "No devices detected.\n");
+//        goto out;
+//    }
+//    dev = fp_dev_open(ddev);
+//    fp_dscv_devs_free(discovered_devs);
+//    if (!dev) {
+//        fprintf(stderr, "Could not open device.\n");
+//        goto out;
+//    }
+//
+//    printf("Opened device. It's now time to enroll your finger.\n");
+//
+//    ///*Fim inicialização device*///
+//
+//
+//    data = enroll(dev);
+//    int length = fp_print_data_get_data(data, &ret);
+//    post_user(76, fprint_to_string(ret, length), length);
+//
+//    ///*Encerrando device*///
+//    out_close:
+//    fp_dev_close(dev);
+//    out:
+//    fp_exit();
+//    return r;
+//
+//}
 
 //todo: adicionar em User.c
+/*
 int create_list_users(){
     //free this later on
     char *json = get_user_list();
@@ -766,32 +776,25 @@ int create_list_users(){
 
     return number_of_users;
 }
-
-struct lws_context * get_context(){
-    return context_client;
-}
-
-void set_context(struct lws_context * context){
-    context_client = context;
-}
+*/
 
 
 /*Método main*/
 
 int main() {
 
-    pthread_t thread_id_server;
+   /* pthread_t thread_id_server;
     pthread_create(&thread_id_server, NULL, server, NULL);
 
     set_context(init_context_client());
 
     pthread_t thread_id_serving;
-    pthread_create(&thread_id_serving, NULL, serving, get_context());
-
-    cadastra_user();
+    pthread_create(&thread_id_serving, NULL, serving, get_context());*/
+    run_ws();
+    //cadastra_user();
     //do_point();
 
-    destroy_context_client(get_context());
+    //destroy_context_client(get_context());
 
     return 0;
 }
