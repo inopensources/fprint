@@ -32,13 +32,27 @@ int decider(void *in, size_t len, unsigned char **buffer){
         case '0':
             printf("\n0: %s\n", "Requesting user list");
             char * users_json = get_user_list();
-            *buffer = (unsigned char*) malloc(strlen(users_json));
-            strcpy(*buffer, users_json);
+
+            int list_size = strlen(users_json);
+
+            if (list_size > 0){
+                *buffer = (unsigned char*) malloc(strlen(users_json)+3);
+                char bu[list_size+4];
+                sprintf(bu, "%s %s", "LUS", users_json);
+                strcpy(*buffer, bu);
+            } else {
+                *buffer = (unsigned char*) malloc(4);
+                strcpy(*buffer, "LUF");
+            }
+
             return 0;
 
         case '1':
             printf("\n1: %s\n", "Record user fingerprint");
             cadastra_user(); //todo: receber id do user
+            *buffer = (unsigned char*) malloc(5);
+            strcpy(*buffer, "LUF");
+
             return 0;
             break;
 
@@ -106,6 +120,7 @@ static int callback_dumb_increment(struct lws *wsi,
 
             // release memory back into the wild
             free(buf);
+            free(content);
             break;
         }
         default:
