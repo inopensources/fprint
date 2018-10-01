@@ -34,7 +34,7 @@ $(document).ready(function () {
     }
 
     function registerFingerPrint(usuarioId) {
-        websocket.send("1");
+        websocket.send("1 "+usuarioId);
     }
 
     function verifyFingerprint(usuarioId) {
@@ -65,7 +65,7 @@ $(document).ready(function () {
 
     function id() {
         $('.user-list').click(function (e) {
-            registerFingerPrint();
+            registerFingerPrint($(this).attr("id"));
         });
     }
 
