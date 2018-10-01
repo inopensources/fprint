@@ -45,7 +45,7 @@ char * fprint_to_string(char * ret, int length){
 
 
 /*De cadastro.c*/
-void cadastra_user(){
+void cadastra_user(int user_id){
 
     ///*Iniciando device*///
 
@@ -89,7 +89,7 @@ void cadastra_user(){
 
     data = enroll(dev);
     int length = fp_print_data_get_data(data, &ret);
-    post_user(76, fprint_to_string(ret, length), length);
+    post_user(user_id, fprint_to_string(ret, length), length);
 
     ///*Encerrando device*///
     out_close:

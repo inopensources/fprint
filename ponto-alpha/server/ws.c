@@ -27,6 +27,7 @@ static int callback_http(struct lws *wsi,
 }
 
 int decider(struct lws *wsi, void *in, size_t len){
+    char user_id_str[4];
     printf("\nActions: %c\n", ((char *) in)[0]);
     switch (((char *) in)[0])
     {
@@ -48,11 +49,15 @@ int decider(struct lws *wsi, void *in, size_t len){
             return 0;
 
         case '1':
-            printf("\n1: %s\n", "Record user fingerprint");
-            cadastra_user(); //todo: receber id do user
+            //Collection user ID from view
+            for (int i = 0; i < 4; i++){
+                user_id_str[i] = (((char *) in)[2+i]);
+            }
+            int user_id = atoi(user_id_str);
+
+            printf("\n1: Record user fingerprint %s\n", user_id_str);
+            cadastra_user(user_id); //todo: receber id do user
             printf("\n1: %s\n", "Finished Record user fingerprint");
-//            *buffer = (unsigned char*) malloc(5);
-//            strcpy(*buffer, "LUF");
 
             return 0;
             break;
@@ -60,16 +65,11 @@ int decider(struct lws *wsi, void *in, size_t len){
         case '2':
             printf("\n2: %s\n", "Clock in/out");
             do_point();
-//            *buffer = (unsigned char*) malloc(5);
-//            strcpy(*buffer, "CLK");
 
             return 0;
-            break;
-
         default:
             printf("\nError: %s\n", "Don't know how to answer to this. :|");
-//            *buffer = (unsigned char*) malloc(5);
-//            strcpy(*buffer, "DNK");
+            write_back(wsi, "Don't know how to answer to this.");
             return 1;
     }
 }
