@@ -14,10 +14,10 @@ library_names='libfprint.so.0.0.0 libfprint.so.0 libfprint.so'
 old_library='libfprint.a'
 
 # Linker flags that cannot go in dependency_libs.
-inherited_linker_flags=' -pthread'
+inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/lib/x86_64-linux-gnu/libcurl.la -lwebsockets -lm -lusb-1.0 -lglib-2.0 -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4 -lpixman-1'
+dependency_libs=' -lm -lusb-1.0 -lglib-2.0 -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4 -lpixman-1'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

@@ -871,7 +871,7 @@ int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
     } while (1);
 }
 
-API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char ** digitais, int num_digitais, int * id_list){
+API_EXPORTED int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num_digitais, int * id_list){
 
     struct fp_dscv_dev *ddev;
     struct fp_dscv_dev **discovered_devs;
