@@ -8,8 +8,8 @@
 #include <stdlib.h>
 
 struct fp_print_data *enroll(struct fp_dev *dev);
-char *fprint_to_string(char * ret, int length);
-void post_user(int id_usuario, char* digital, int tamanho_array);
+void fprint_to_string(char * ret, int length, char digital[]);
+void post_user(int id_usuario, char digital[], int tamanho_array);
 
 
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
@@ -24,23 +24,53 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
     return ddev;
 }
 
-char * fprint_to_string(char * ret, int length){
+void fprint_to_string(char * ret, int length, char digital[]){
     int i;
-    char *digital = calloc(4*length, sizeof(char));
-    for (i = 0; i<length; i++)
-    {
-        char digital2[50];
-        if (i == 0){
-            sprintf(digital2, "[%d, ", (int)(*(ret+i)));
-        }else if(i == length-1 ){
-            sprintf(digital2, "%d] ", (int)(*(ret+i)));
-        }else{
-            sprintf(digital2, "%d, ", (int)(*(ret+i)));
-        }
-        strncat(digital, digital2, strlen(digital2));
-    }
-    return digital;
+    int ret_temp;
+    int index_digital = 1;
 
+    printf("length: %d", length);
+
+    for(i=0; i<length; i++) {
+        if (i == 0){
+            digital[0] = '[';
+        }
+        ret_temp = ret[i];
+        char ret_string[12];
+        sprintf(ret_string, "%d", ret_temp);
+        for (int j = 0; j < strlen(ret_string); j++) {
+            digital[index_digital++] = ret_string[j];
+        }
+
+        digital[index_digital++] = ',';
+        digital[index_digital++] = ' ';
+    }
+
+    digital[index_digital-2] = ']';
+
+}
+
+
+int get_length_digital(char * ret, int length){
+
+    //gambis achar length
+    int length_dig=0;
+    int i;
+    int ret_temp = 0;
+    printf("ret_length: %d\n", strlen(ret));
+    for(i=0; i<length; i++) {
+
+        ret_temp = ret[i];
+        char ret_string[12];
+        sprintf(ret_string, "%d", ret_temp);
+        for (int j = 0; j < strlen(ret_string); j++) {
+            length_dig++;
+        }
+        length_dig++;
+        length_dig++;
+    }
+
+    return length_dig;
 }
 
 
@@ -68,18 +98,18 @@ void cadastra_user(int user_id){
     discovered_devs = fp_discover_devs();
     if (!discovered_devs) {
         fprintf(stderr, "Could not discover devices\n");
-        goto out;
+        fp_exit();
     }
     ddev = discover_device(discovered_devs);
     if (!ddev) {
         fprintf(stderr, "No devices detected.\n");
-        goto out;
+        fp_exit();
     }
     dev = fp_dev_open(ddev);
     fp_dscv_devs_free(discovered_devs);
     if (!dev) {
         fprintf(stderr, "Could not open device.\n");
-        goto out;
+        fp_exit();
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
@@ -89,13 +119,23 @@ void cadastra_user(int user_id){
 
     data = enroll(dev);
     int length = fp_print_data_get_data(data, &ret);
-    post_user(user_id, fprint_to_string(ret, length), length);
+    //char *digital = (char*)calloc(4*length, sizeof(char));
 
+    //gambis achar length
+    int length_dig = 0;
+    int i;
+    int ret_temp;
+
+    length_dig = get_length_digital(ret, length);
+    printf("length_dig %d\n", length_dig);
+    char digital[length_dig];
+    fprint_to_string(ret, length, digital);
+    post_user(user_id, digital, length_dig);
+    //free(digital);
     ///*Encerrando device*///
     out_close:
     fp_dev_close(dev);
-    out:
-    fp_exit();
+
     return r;
 
 }
@@ -157,7 +197,10 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
 }
 
 
-void post_user(int id_usuario, char* digital, int tamanho_array){
+void post_user(int id_usuario, char digital[], int tamanho_array){
+
+
+    printf("digital on postuser %d \n", strlen(digital));
 
     char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
     // char url[] = "http://192.168.16.111:8080/ponto/cadastro_digital";
@@ -173,7 +216,7 @@ void post_user(int id_usuario, char* digital, int tamanho_array){
     char tamanhoArrayAsStr[12];
     sprintf(tamanhoArrayAsStr, "%d", tamanho_array);
 
-    char *result = malloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody2) + strlen(digital) + strlen(requestBody3) + strlen(tamanhoArrayAsStr) + strlen(requestBody4) + 1);
+    char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody2) + strlen(digital) + strlen(requestBody3) + strlen(tamanhoArrayAsStr) + strlen(requestBody4) + 1, sizeof(char));
     strcat(result, requestBody1);
     strcat(result, userIdAsStr);
     strcat(result, requestBody2);
@@ -200,5 +243,6 @@ void post_user(int id_usuario, char* digital, int tamanho_array){
 
     CURLcode ret = curl_easy_perform(hnd);
 
-    return 0;
+    free(result);
+
 }

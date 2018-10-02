@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 struct fp_print_data *enroll(struct fp_dev *dev);
-char * fprint_to_string(char * ret, int length);
+void fprint_to_string(char * ret, int length, char digital[]);
 void post_user(int id_usuario, char* digital, int tamanho_array);
 
 
@@ -24,31 +24,34 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
     return ddev;
 }
 
-char * fprint_to_string(char * ret, int length){
 
-
+void fprint_to_string(char * ret, int length, char digital[]){
     int i;
-    char *digital = alloca(4*length);
-    for (i = 0; i<length; i++)
-    {
-        unsigned char digital2[12];
+    int ret_temp;
+    int index_digital = 1;
+
+    for(i=0; (*(ret+i)); i++) {
         if (i == 0){
-            sprintf(digital2, "[%d, ", (int)(*(ret+i)));
-        }else if(i == length-1 ){
-            sprintf(digital2, "%d] ", (int)(*(ret+i)));
-        }else{
-            sprintf(digital2, "%d, ", (int)(*(ret+i)));
+            digital[0] = '[';
         }
-        strcat(digital, digital2);
+        ret_temp = (int)(*(ret + i));
+        char ret_string[12];
+        sprintf(ret_string, "%d", ret_temp);
+        for (int j = 0; j < strlen(ret_string); j++) {
+            digital[index_digital++] = ret_string[j];
+        }
+        if (i < 12050){
+            digital[index_digital++] = ',';
+        } else {
+            digital[index_digital++] = ']';
+        }
     }
-
-    return digital;
-
+    printf("digital: %s", digital);
 }
 
 
 /*De cadastro.c*/
-void cadastra_user(){
+void cadastra_user(int user_id){
 
     ///*Iniciando device*///
 
@@ -92,7 +95,11 @@ void cadastra_user(){
 
     data = enroll(dev);
     int length = fp_print_data_get_data(data, &ret);
-    post_user(76, fprint_to_string(ret, length), length);
+    //char *digital = (char*)calloc(4*length, sizeof(char));
+    char digital[4 * 12050];
+    fprint_to_string(ret, length, digital);
+    //post_user(user_id, digital , length);
+    //free(digital);
 
     ///*Encerrando device*///
     out_close:
@@ -102,6 +109,7 @@ void cadastra_user(){
     return r;
 
 }
+
 
 struct fp_print_data *enroll(struct fp_dev *dev) {
 
