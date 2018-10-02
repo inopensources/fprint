@@ -15,12 +15,15 @@ void do_point();
 struct node_user * get_users(void);
 
 char** str_split(char* a_str, const char a_delim);
-void read_digital(char * digital, unsigned char * ret_returned);
+void read_digital(char * digital, unsigned char * fprint_digital);
 char *get_user_list();
 
 void get_number_of_users(char* json_str, int* number_of_users);
 int create_list_users();
 
+//new
+void string_to_fprint(char fprint_string[], unsigned char file[]);
+int size_of_file(char fprint_string[]);
 
 
 struct user_list{
@@ -177,7 +180,6 @@ int deal_with_json(char* json_str, struct user_list *list){
 void do_point(){
 
     //lista de digitais
-    unsigned char **digitais = 0;
     int num_digitais = 0;
     unsigned char *ret;
     int num_ret = 0;
@@ -197,22 +199,19 @@ void do_point(){
     num_digitais = deal_with_json(json, list_of_users);
 
     //criando lista de digitais
-    digitais = malloc(sizeof(unsigned char *) * num_digitais);
+    unsigned char digitais[num_digitais][12050];
     int ids_list[num_digitais];
-
     for (int i = 0; i < number_of_users; i++){
 
         if (strcmp((list_of_users)[i].fingerprint, "") != 0){
-
             printf("Id: %d\n", (list_of_users)[i].user_id);
             printf("Name: %s\n", (list_of_users)[i].name);
             ids_list[num_ret] = (list_of_users)[i].user_id;
-            digitais[num_ret] = malloc(sizeof(unsigned char) * 12050);
-            read_digital((list_of_users)[i].fingerprint, digitais[num_ret]);
+            string_to_fprint((list_of_users)[i].fingerprint, digitais[num_ret]);
             num_ret++;
-
         }
     }
+
 
     ///*Iniciando device*///
 
@@ -255,56 +254,38 @@ void do_point(){
 
 
     //ret = read_digital(digital);
-    //int length = 12050;
-    //data = enroll(dev);
-    //int result = compare_digital(dev, ret, length); //chamada em data.c
+//    int length = 12050;
+//    data = enroll(dev);
+//    int result = compare_digital(dev, ret, length); //chamada em data.c
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
-
-    printf("\nResult: %d\n", result);
-
-   /* if(result != -1){
-        client(result, get_context());
-        sleep(1);
-        post_ponto(result);
-    }
-    else{
-        client(-1, get_context());
-        sleep(1);
-    }*/
-
-
-    free(digitais);
+//
+    printf("\nResult: %d\n", "1");
+//
+//    free(digitais);
 
     out_close:
     fp_dev_close(dev);
     out:
-    fp_exit();
-    return r;
 
+    fp_exit();
 
 }
 
-void read_digital(char * digital, unsigned char * ret_returned){
+void read_digital(char * digital, unsigned char * fprint_digital){
+    printf("Size : %d", strlen(digital));
 
     ///*get a string and return the array of char*///
-    char digitael[42682];
-    strcpy(digitael, digital);
-
-    //unsigned char *ret_returned = alloca(12050); // todo: generalizar length
-
     char** tokens;
+    fprint_digital = malloc(12100);
 
-    //tokens é uma array de char
-    tokens = str_split(digitael, ',');
+    tokens = str_split(digital, ',');
     if (tokens)
     {
         int  i;
         int num;
         for (i = 0; *(tokens + i); i++)
         {
-            //printf("%c ", atoi(*(tokens + i)));
-
             if((strchr(*(tokens + i), '[')) != NULL )
             {
                 removeChar(*(tokens + i), '[');
@@ -315,17 +296,13 @@ void read_digital(char * digital, unsigned char * ret_returned){
             }
             //num é um int com valor  inteiro equivalente ao token
             num = atoi(*(tokens + i));
-            //printf("%d ",num);
-            //printf("%c ", num);
-            *(ret_returned + i) = num;
-            //printf("%d ", ret_returned[i]);
+            *(fprint_digital+i) = num;
             free(*(tokens + i));
         }
 
         printf("\nLength digital ON read_digital(): %d\n", i);
         free(tokens);
     }
-
 }
 
 char** str_split(char* a_str, const char a_delim)
@@ -426,7 +403,61 @@ void post_ponto(int id_usuario){
 //remote_database após parser:
 
 
+///new
 
+void string_to_fprint(char fprint_string[], unsigned char file[]) {
 
+    int fprint_string_length = strlen(fprint_string);
+    int cnt = 0;
 
+    int file_size = size_of_file(fprint_string);
+    unsigned char fprint_file[file_size];
+    int fprint_file_pos = 0;
 
+    for (int i = 0; i < fprint_string_length; i++) {
+        char * num;
+        if (fprint_string[i] != ' ') {
+            if (fprint_string[i] == '[') {
+                i++;
+                cnt = 0;
+                num = calloc(3, sizeof(char));
+                while (fprint_string[i] != ',' && fprint_string[i] != ']') {
+                    num[cnt] = fprint_string[i];
+                    cnt++;
+                    i++;
+                }
+                i--;
+            }
+            if (fprint_string[i] == ',') {
+                i++;
+                cnt = 0;
+                num = calloc(3, sizeof(char));
+                while (fprint_string[i] != ',' && fprint_string[i] != ']') {
+                    num[cnt] = fprint_string[i];
+                    cnt++;
+                    i++;
+                }
+                i--;
+            }
+        }
+//       printf("VL: %d\n", atoi(num));
+        file[fprint_file_pos++] = atoi(num);
+//       fprint_file[fprint_file_pos++] = atoi(num);
+    }
+
+//    for (int i = 0; i < 12050; i++) {
+//        printf("%d", fprint_file[i]);
+//    }
+}
+
+int size_of_file(char fprint_string[]) {
+    int length = strlen(fprint_string);
+    int file_size = 1;
+
+    for (int i = 0; i < length; i++) {
+        if (fprint_string[i] == ',') {
+            file_size++;
+        }
+    }
+    return file_size;
+}
