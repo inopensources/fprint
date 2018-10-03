@@ -8,6 +8,7 @@
 #include "cadastro.c"
 #include "ponto.c"
 #include "ws_utils.c"
+#include "utils.c"
 
 int * wsi_local;
 
@@ -32,6 +33,7 @@ static int callback_http(struct lws *wsi,
 
 int decider(struct lws *wsi, void *in, size_t len){
     char user_id_str[4];
+    char * json;
     printf("\nActions: %c\n", ((char *) in)[0]);
     wsi_local = wsi;
     switch (((char *) in)[0])
@@ -42,15 +44,14 @@ int decider(struct lws *wsi, void *in, size_t len){
 
             int list_size = strlen(users_json);
             printf("\n\nSize: %d\n\n", list_size);
-
             if (list_size > 0){
                 printf("\n\n %s \n\n", users_json);
-                char bu[list_size+4];
-                sprintf(bu, "%s %s", "LUS", users_json);
-                write_back(wsi, bu);
+                json = compose_json_answer("SUCCESS", "get_user_list", users_json);
             } else {
-
+                json = compose_json_answer("ERROR", "get_user_list", "");
             }
+            send_message_via_ws(json);
+            free(json);
             return 0;
 
         case '1':

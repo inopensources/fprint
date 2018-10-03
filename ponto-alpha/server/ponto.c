@@ -68,7 +68,7 @@ char *get_user_list() {
     curl_handle = curl_easy_init();
 
     curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
+    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios_mini");
 
     struct curl_slist *headers = NULL;
     headers = curl_slist_append(headers, "Postman-Token: 193ba1fd-48a2-4777-a0fc-f8600d0251ac");
