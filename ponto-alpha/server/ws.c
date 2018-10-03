@@ -9,7 +9,11 @@
 #include "ponto.c"
 #include "ws_utils.c"
 
+int * wsi_local;
 
+void send_message_via_ws(char message[]){
+    write_back(wsi_local, message);
+}
 
 static int callback_http(struct lws *wsi,
                          enum lws_callback_reasons reason, void *user,
@@ -29,6 +33,7 @@ static int callback_http(struct lws *wsi,
 int decider(struct lws *wsi, void *in, size_t len){
     char user_id_str[4];
     printf("\nActions: %c\n", ((char *) in)[0]);
+    wsi_local = wsi;
     switch (((char *) in)[0])
     {
         case '0':

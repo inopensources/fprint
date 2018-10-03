@@ -78,6 +78,7 @@ int get_length_digital(char * ret, int length){
 void cadastra_user(int user_id){
 
     ///*Iniciando device*///
+    send_message_via_ws("///*Iniciando device*///");
 
     int r = 1;
     struct fp_dscv_dev *ddev;
