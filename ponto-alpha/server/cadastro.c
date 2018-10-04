@@ -11,7 +11,6 @@ struct fp_print_data *enroll(struct fp_dev *dev);
 void fprint_to_string(char * ret, int length, char digital[]);
 void post_user(int id_usuario, char digital[], int tamanho_array);
 
-
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
 {
     struct fp_dscv_dev *ddev = discovered_devs[0];
@@ -75,10 +74,10 @@ int get_length_digital(char * ret, int length){
 
 
 /*De cadastro.c*/
-void cadastra_user(int user_id){
+int cadastra_user(int user_id){
 
     ///*Iniciando device*///
-    send_message_via_ws("///*Iniciando device*///");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Iniciando dispositivo de leitura.", "");
 
     int r = 1;
     struct fp_dscv_dev *ddev;
@@ -91,7 +90,8 @@ void cadastra_user(int user_id){
 
     if (r < 0) {
         fprintf(stderr, "Failed to initialize libfprint\n");
-        exit(1);
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "cadastra_user", "Falha ao inicializar a libfprint", "");
+        return 1;
     }
 
     fp_set_debug(3);
@@ -99,30 +99,31 @@ void cadastra_user(int user_id){
     discovered_devs = fp_discover_devs();
     if (!discovered_devs) {
         fprintf(stderr, "Could not discover devices\n");
-        fp_exit();
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "cadastra_user", "Falha ao descobrir dispositivos", "");
+        return 1;
     }
     ddev = discover_device(discovered_devs);
     if (!ddev) {
         fprintf(stderr, "No devices detected.\n");
-        fp_exit();
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "cadastra_user", "Nenhum dispositivo encontrado", "");
+        return 1;
     }
     dev = fp_dev_open(ddev);
     fp_dscv_devs_free(discovered_devs);
     if (!dev) {
         fprintf(stderr, "Could not open device.\n");
-        fp_exit();
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "cadastra_user", "Falha ao abrir dispositivo", "");
+        return 1;
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Dispositivo inicializado. Cadastre sua digital.", "");
 
     ///*Fim inicialização device*///
 
-
     data = enroll(dev);
     int length = fp_print_data_get_data(data, &ret);
-    //char *digital = (char*)calloc(4*length, sizeof(char));
 
-    //gambis achar length
     int length_dig = 0;
     int i;
     int ret_temp;
@@ -132,13 +133,10 @@ void cadastra_user(int user_id){
     char digital[length_dig];
     fprint_to_string(ret, length, digital);
     post_user(user_id, digital, length_dig);
-    //free(digital);
+
     ///*Encerrando device*///
-    out_close:
     fp_dev_close(dev);
-
-    return r;
-
+    return 0;
 }
 
 struct fp_print_data *enroll(struct fp_dev *dev) {
@@ -150,47 +148,59 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
     printf("You will need to successfully scan your finger %d times to "
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Você precisará escanear sua digital 5 vezes para concluir o processo.", "");
+
     do {
 
         sleep(1);
 
         printf("\nScan your finger now.\n");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Escaneie seu dedo agora.", "");
 
 
         r = fp_enroll_finger(dev, &enrolled_print);
         if (r < 0) {
             printf("Enroll failed with error %d\n", r);
+            compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao escanear.", "");
             return NULL;
         }
         switch (r) {
             case FP_ENROLL_COMPLETE:
                 printf("Enroll completed!\n");
+                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Cadastro concluído com sucesso.", "");
                 break;
             case FP_ENROLL_FAIL:
                 printf("Enroll failed, something wen't wrong :(\n");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao cadastrar.", "");
                 return NULL;
             case FP_ENROLL_PASS:
                 printf("Enroll stage passed. Yay!\n");
+                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Captura bem sucedida.", "");
                 break;
             case FP_ENROLL_RETRY:
                 printf("Didn't quite catch that. Please try again.\n");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao capturar digital. Por favor, tente novamente.", "");
                 break;
             case FP_ENROLL_RETRY_TOO_SHORT:
                 printf("Your swipe was too short, please try again.\n");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Você deixou sua digital por pouco tempo. Por favor, tente novamente.", "");
                 break;
             case FP_ENROLL_RETRY_CENTER_FINGER:
                 printf("Didn't catch that, please center your finger on the "
                        "sensor and try again.\n");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao capturar digital. Por favor, posicione seu dedo sobre o sensor e tente novamente.", "");
                 break;
             case FP_ENROLL_RETRY_REMOVE_FINGER:
                 printf("Scan failed, please remove your finger and then try "
                        "again.\n");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao capturar digital. Por favor, remova seu dedo e tente novamente.", "");
                 break;
         }
     } while (r != FP_ENROLL_COMPLETE);
 
     if (!enrolled_print) {
         fprintf(stderr, "Enroll complete but no print?\n");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao cadastrar.", "");
         return NULL;
     }
 
@@ -199,9 +209,6 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
 
 
 void post_user(int id_usuario, char digital[], int tamanho_array){
-
-
-    printf("digital on postuser %d \n", strlen(digital));
 
     char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
     // char url[] = "http://192.168.16.111:8080/ponto/cadastro_digital";

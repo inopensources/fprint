@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ponto_infarma.dir/verify_live.c.o CMakeFiles/ponto_infarma.dir/decode.c.o CMakeFiles/ponto_infarma.dir/encode.c.o  -o ponto_infarma -lfprint -lcurl -lwebsockets -ljson 

@@ -8,61 +8,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
-
-
-struct node_user * get_users(void){
-
-    printf("Connnecting to mock database\n");
-    struct node_user * head = create_list_users();
-
-    CURLcode ret;
-    struct MemoryStruct chunk;
-    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
-    chunk.size = 0;    /* no data at this point */
-
-    CURL *hnd = curl_easy_init();
-
-    curl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(hnd, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
-    /* send all data to this function  */
-    curl_easy_setopt(hnd, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
-    /* we pass our 'chunk' struct to the callback function */
-    curl_easy_setopt(hnd, CURLOPT_WRITEDATA, (void *)&chunk);
-
-    struct curl_slist *headers = NULL;
-    headers = curl_slist_append(headers, "Postman-Token: a3646a34-01e4-47d5-8f1f-5a7db9987a84");
-    headers = curl_slist_append(headers, "Cache-Control: no-cache");
-    headers = curl_slist_append(headers, "Authorization: Basic TUFSQ1VTOjEyMzQ1");
-    curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
-
-    ret = curl_easy_perform(hnd);
-
-    /* check for errors */
-    if(ret != CURLE_OK) {
-        fprintf(stderr, "curl_easy_perform() failed: %s\n",
-                curl_easy_strerror(ret));
-    }
-    else {
-        /*
-         * Now, our chunk.memory points to a memory block that is chunk.size
-         * bytes big and contains the remote file.
-         */
-
-        printf("%lu bytes retrieved\n", (unsigned long)chunk.size);
-        //printf("%s\n", chunk.memory);
-
-        FILE *fp = fopen("users.txt", "w");
-        fprintf(fp, "%s", chunk.memory);
-    }
-
-    /* cleanup curl stuff*/
-    curl_easy_cleanup(hnd);
-    free(chunk.memory);
-    curl_global_cleanup();
-
-    return head;
-}
 void post_user(int id_usuario, char* digital, int tamanho_array){
 
         char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
@@ -103,6 +48,4 @@ void post_user(int id_usuario, char* digital, int tamanho_array){
         curl_easy_setopt(hnd, CURLOPT_POSTFIELDS, result);
 
         CURLcode ret = curl_easy_perform(hnd);
-
-        return 0;
 }

@@ -33,40 +33,37 @@ static int callback_http(struct lws *wsi,
 
 int decider(struct lws *wsi, void *in, size_t len){
     char user_id_str[4];
-    char * json;
     printf("\nActions: %c\n", ((char *) in)[0]);
     wsi_local = wsi;
     switch (((char *) in)[0])
     {
         case '0':
             printf("\n0: %s\n", "Requesting user list");
-            char * users_json = get_user_list();
+            char * users_json = get_user_list_mini();
 
             int list_size = strlen(users_json);
             printf("\n\nSize: %d\n\n", list_size);
             if (list_size > 0){
                 printf("\n\n %s \n\n", users_json);
-                json = compose_json_answer("SUCCESS", "get_user_list", users_json);
+                compose_json_answer("DATA_RESPONSE", "SUCCESS", "get_user_list", "User list retrieved.", users_json);
             } else {
-                json = compose_json_answer("ERROR", "get_user_list", "");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "get_user_list", "Erro ao obter lista de usuários", "");
             }
-            send_message_via_ws(json);
-            free(json);
+            free(users_json);
             return 0;
 
         case '1':
-            //Collection user ID from view
+            //Collect user ID from view
             for (int i = 0; i < 4; i++){
                 user_id_str[i] = (((char *) in)[2+i]);
             }
             int user_id = atoi(user_id_str);
 
             printf("\n1: Record user fingerprint %s\n", user_id_str);
-            cadastra_user(user_id); //todo: receber id do user
+            cadastra_user(user_id);
             printf("\n1: %s\n", "Finished Record user fingerprint");
 
             return 0;
-            break;
 
         case '2':
             printf("\n2: %s\n", "Clock in/out");
@@ -89,50 +86,10 @@ static int callback_dumb_increment(struct lws *wsi,
             printf("connection established\n");
             break;
         case LWS_CALLBACK_RECEIVE: { // the funny part
-            // create a buffer to hold our response
-            // it has to have some pre and post padding. You don't need to care
-            // what comes there, lwss will do everything for you. For more info see
-            // http://git.warmcat.com/cgi-bin/cgit/lwss/tree/lib/lwss.h#n597
-
-//            unsigned char *content;
-
-//            int i;
-
             // pointer to `void *in` holds the incomming request
             // we're just going to put it in reverse order and put it in `buf` with
             // correct offset. `len` holds length of the request.
             int answer = decider(wsi, in, len);
-//            printf("\nAnswer: %d\n", answer);
-//            printf("\nAnswer: %s\n", content);
-
-//            printf("TAMANHO: %d", strlen(content));
-
-//            int size_of_content = strlen(content);
-//
-//            unsigned char *buf = (unsigned char*) malloc(LWS_SEND_BUFFER_PRE_PADDING + size_of_content +
-//                                                        LWS_SEND_BUFFER_POST_PADDING);
-//
-//            for (i=0; i < size_of_content; i++) {
-//                buf[LWS_SEND_BUFFER_PRE_PADDING + i ] = ((char *) content)[i];
-//            }
-
-
-            // log what we recieved and what we're going to send as a response.
-            // that disco syntax `%.*s` is used to print just a part of our buffer
-            // http://stackoverflow.com/questions/5189071/print-part-of-char-array
-//            printf("received data: %s, replying: %.*s\n", (char *) in, (int) size_of_content,
-//                   buf + LWS_SEND_BUFFER_PRE_PADDING);
-
-            // send response
-            // just notice that we have to tell where exactly our response starts. That's
-            // why there's `buf[LWS_SEND_BUFFER_PRE_PADDING]` and how long it is.
-            // we know that our response has the same length as request because
-            // it's the same message in reverse order.
-//            lws_write(wsi, &buf[LWS_SEND_BUFFER_PRE_PADDING], size_of_content, LWS_WRITE_TEXT);
-
-            // release memory back into the wild
-//            free(buf);
-//            free(content);
             break;
         }
         default:
