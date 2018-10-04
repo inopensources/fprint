@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/caws/Documentos/IDEs/clion-2018.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/charles/Documentos/IDEs/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/caws/Documentos/IDEs/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/charles/Documentos/IDEs/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server
+CMAKE_SOURCE_DIR = /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ponto_infarma.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/ponto_infarma.dir/flags.make
 
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: CMakeFiles/ponto_infarma.dir/flags.make
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../verify_live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ponto_infarma.dir/verify_live.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/verify_live.c.o   -c /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ponto_infarma.dir/verify_live.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/verify_live.c.o   -c /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c
 
 CMakeFiles/ponto_infarma.dir/verify_live.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ponto_infarma.dir/verify_live.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c > CMakeFiles/ponto_infarma.dir/verify_live.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c > CMakeFiles/ponto_infarma.dir/verify_live.c.i
 
 CMakeFiles/ponto_infarma.dir/verify_live.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ponto_infarma.dir/verify_live.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c -o CMakeFiles/ponto_infarma.dir/verify_live.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c -o CMakeFiles/ponto_infarma.dir/verify_live.c.s
 
 CMakeFiles/ponto_infarma.dir/decode.c.o: CMakeFiles/ponto_infarma.dir/flags.make
 CMakeFiles/ponto_infarma.dir/decode.c.o: ../decode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ponto_infarma.dir/decode.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/decode.c.o   -c /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ponto_infarma.dir/decode.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/decode.c.o   -c /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c
 
 CMakeFiles/ponto_infarma.dir/decode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ponto_infarma.dir/decode.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c > CMakeFiles/ponto_infarma.dir/decode.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c > CMakeFiles/ponto_infarma.dir/decode.c.i
 
 CMakeFiles/ponto_infarma.dir/decode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ponto_infarma.dir/decode.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c -o CMakeFiles/ponto_infarma.dir/decode.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c -o CMakeFiles/ponto_infarma.dir/decode.c.s
 
 CMakeFiles/ponto_infarma.dir/encode.c.o: CMakeFiles/ponto_infarma.dir/flags.make
 CMakeFiles/ponto_infarma.dir/encode.c.o: ../encode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ponto_infarma.dir/encode.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/encode.c.o   -c /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ponto_infarma.dir/encode.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ponto_infarma.dir/encode.c.o   -c /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c
 
 CMakeFiles/ponto_infarma.dir/encode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ponto_infarma.dir/encode.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c > CMakeFiles/ponto_infarma.dir/encode.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c > CMakeFiles/ponto_infarma.dir/encode.c.i
 
 CMakeFiles/ponto_infarma.dir/encode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ponto_infarma.dir/encode.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c -o CMakeFiles/ponto_infarma.dir/encode.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c -o CMakeFiles/ponto_infarma.dir/encode.c.s
 
 # Object files for target ponto_infarma
 ponto_infarma_OBJECTS = \
@@ -110,7 +110,7 @@ ponto_infarma: CMakeFiles/ponto_infarma.dir/decode.c.o
 ponto_infarma: CMakeFiles/ponto_infarma.dir/encode.c.o
 ponto_infarma: CMakeFiles/ponto_infarma.dir/build.make
 ponto_infarma: CMakeFiles/ponto_infarma.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ponto_infarma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ponto_infarma"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ponto_infarma.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/ponto_infarma.dir/clean:
 .PHONY : CMakeFiles/ponto_infarma.dir/clean
 
 CMakeFiles/ponto_infarma.dir/depend:
-	cd /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug /home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ponto_infarma.dir/depend
 

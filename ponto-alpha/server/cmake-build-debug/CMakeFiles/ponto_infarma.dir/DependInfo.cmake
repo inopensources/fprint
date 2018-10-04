@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c" "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/decode.c.o"
-  "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c" "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/encode.c.o"
-  "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c" "/home/caws/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o"
+  "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/decode.c" "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/decode.c.o"
+  "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/encode.c" "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/encode.c.o"
+  "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c" "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
