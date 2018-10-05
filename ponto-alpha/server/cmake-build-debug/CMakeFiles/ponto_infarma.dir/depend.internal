@@ -11,6 +11,7 @@ CMakeFiles/ponto_infarma.dir/verify_live.c.o
  /home/leticia/fprint-infarma/ponto-alpha/server/b64.h
  /home/leticia/fprint-infarma/ponto-alpha/server/cadastro.c
  /home/leticia/fprint-infarma/ponto-alpha/server/ponto.c
+ /home/leticia/fprint-infarma/ponto-alpha/server/structs.h
  /home/leticia/fprint-infarma/ponto-alpha/server/utils.c
  /home/leticia/fprint-infarma/ponto-alpha/server/verify_live.c
  /home/leticia/fprint-infarma/ponto-alpha/server/ws.c

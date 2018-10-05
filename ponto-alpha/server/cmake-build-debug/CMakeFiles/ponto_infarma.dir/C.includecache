@@ -25,6 +25,16 @@ stdio.h
 -
 string.h
 -
+structs.h
+/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+
+/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
 
 /home/leticia/fprint-infarma/ponto-alpha/server/utils.c
 stdlib.h

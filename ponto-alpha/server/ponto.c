@@ -4,12 +4,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "structs.h"
 
-
-struct MemoryStruct {
-    char *memory;
-    size_t size;
-};
 
 static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
 int do_point();
@@ -23,13 +19,6 @@ int create_list_users();
 //new
 void string_to_fprint(char fprint_string[], unsigned char file[]);
 int size_of_file(char fprint_string[]);
-
-struct user_list{
-    int user_id;
-    char *name;
-    char *role;
-    char *fingerprint;
-};
 
 static size_t
 WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
@@ -305,8 +294,8 @@ int do_point(){
 
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
-    printf("Result do_point:", result);
-    //post_ponto(result);
+    printf("Result do_point:%d\n", result);
+    post_ponto(76); //post no usuário de teste
 
 
     out_close:

@@ -10,6 +10,7 @@ CMakeFiles/ponto_infarma.dir/encode.c.o: ../encode.c
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../b64.h
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../cadastro.c
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../ponto.c
+CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../structs.h
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../utils.c
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../verify_live.c
 CMakeFiles/ponto_infarma.dir/verify_live.c.o: ../ws.c

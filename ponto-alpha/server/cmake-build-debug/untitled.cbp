@@ -84,6 +84,9 @@
 		<Unit filename="/home/leticia/fprint-infarma/ponto-alpha/server/encode.c">
 			<Option target="ponto_infarma"/>
 		</Unit>
+		<Unit filename="/home/leticia/fprint-infarma/ponto-alpha/server/structs.h">
+			<Option target="ponto_infarma"/>
+		</Unit>
 		<Unit filename="/home/leticia/fprint-infarma/ponto-alpha/server/verify_live.c">
 			<Option target="ponto_infarma"/>
 		</Unit>
