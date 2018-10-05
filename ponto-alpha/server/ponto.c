@@ -6,33 +6,61 @@
 #include <string.h>
 #include "structs.h"
 #include "utils.h"
-
-
-static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
-int do_point();
+#include "remote_database.h"
 
 char *get_user_list_mini();
+
 char *get_full_user_list();
-int create_list_users();
 
-static size_t
-WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
-{
-    size_t realsize = size * nmemb;
-    struct MemoryStruct *mem = (struct MemoryStruct *)userp;
+int do_point();
 
-    mem->memory = realloc(mem->memory, mem->size + realsize + 1);
-    if(mem->memory == NULL) {
-        /* out of memory! */
-        printf("not enough memory (realloc returned NULL)\n");
-        return 0;
+char *get_user_list_mini() {
+    CURL *curl_handle;
+    CURLcode res;
+    char *buf2;
+    struct MemoryStruct chunk;
+
+    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
+    chunk.size = 0;    /* no data at this point */
+
+    curl_global_init(CURL_GLOBAL_ALL);
+
+    /* init the curl session */
+    curl_handle = curl_easy_init();
+
+    curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios_mini");
+
+    struct curl_slist *headers = NULL;
+    headers = curl_slist_append(headers, "Postman-Token: 193ba1fd-48a2-4777-a0fc-f8600d0251ac");
+    headers = curl_slist_append(headers, "Cache-Control: no-cache");
+    headers = curl_slist_append(headers, "Authorization: Basic VVNFUlRFU1RFOjEyMzQ1");
+    headers = curl_slist_append(headers, "usuarioId: 76");
+    headers = curl_slist_append(headers,
+                                "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
+    curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, headers);
+
+    curl_easy_setopt(curl_handle, CURLOPT_POSTFIELDS,
+                     "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n76\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"digital\"\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--");
+
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
+    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *) &chunk);
+
+    res = curl_easy_perform(curl_handle);
+
+    if (res != CURLE_OK) {
+        fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                curl_easy_strerror(res));
+    } else {
+        printf("%lu bytes retrieved\n", (long) chunk.size);
+        unsigned char *buf2 = calloc(chunk.size, sizeof(int));
+        int i = 0;
+        for (i = 0; i < chunk.size; i++) {
+            buf2[i] = chunk.memory[i];
+        }
+        return buf2;
     }
-
-    memcpy(&(mem->memory[mem->size]), contents, realsize);
-    mem->size += realsize;
-    mem->memory[mem->size] = 0;
-
-    return realsize;
+    return buf2;
 }
 
 char *get_full_user_list() {
@@ -84,55 +112,7 @@ char *get_full_user_list() {
     return buf2;
 }
 
-char *get_user_list_mini() {
-    CURL *curl_handle;
-    CURLcode res;
-    char *buf2;
-    struct MemoryStruct chunk;
-
-    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
-    chunk.size = 0;    /* no data at this point */
-
-    curl_global_init(CURL_GLOBAL_ALL);
-
-    /* init the curl session */
-    curl_handle = curl_easy_init();
-
-    curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios_mini");
-
-    struct curl_slist *headers = NULL;
-    headers = curl_slist_append(headers, "Postman-Token: 193ba1fd-48a2-4777-a0fc-f8600d0251ac");
-    headers = curl_slist_append(headers, "Cache-Control: no-cache");
-    headers = curl_slist_append(headers, "Authorization: Basic VVNFUlRFU1RFOjEyMzQ1");
-    headers = curl_slist_append(headers, "usuarioId: 76");
-    headers = curl_slist_append(headers,
-                                "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
-    curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, headers);
-
-    curl_easy_setopt(curl_handle, CURLOPT_POSTFIELDS,
-                     "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n76\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"digital\"\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--");
-
-    curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
-    curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *) &chunk);
-
-    res = curl_easy_perform(curl_handle);
-
-    if (res != CURLE_OK) {
-        fprintf(stderr, "curl_easy_perform() failed: %s\n",
-                curl_easy_strerror(res));
-    } else {
-        printf("%lu bytes retrieved\n", (long) chunk.size);
-        unsigned char *buf2 = calloc(chunk.size, sizeof(int));
-        int i = 0;
-        for (i = 0; i < chunk.size; i++) {
-            buf2[i] = chunk.memory[i];
-        }
-        return buf2;
-    }
-    return buf2;
-}
-
+int create_list_users();
 
 int create_list_users(){
     //free this later on
@@ -152,53 +132,6 @@ int create_list_users(){
     compose_json_answer("CONSOLE_LOG", "SUCCESS", "create_list_users", "Number of users retrieved.", "");
 
     return number_of_users;
-}
-
-int deal_with_json(char* json_str, struct user_list *list){
-
-    int val_type, i;
-    int number_of_digitals = 0;
-    char *val_type_str, *str;
-
-    json_object * jobj = json_tokener_parse(json_str);
-    enum json_type type;
-
-    int length_array = json_object_array_length(jobj);
-
-    json_object * jUobject;
-
-    for (int i = 0; i < length_array; i++){
-        jUobject = json_object_array_get_idx(jobj, i);
-
-        //Writing null to the fingerprint attribute to make sure the .fingerprint attribute isn't ever null
-        list[i].fingerprint =(char *)malloc(strlen(""));
-        list[i].fingerprint = "";
-
-        json_object_object_foreach(jUobject, key, val) {
-            //To read the value of a new field, just copy the following structure
-            //and you should be good to go.
-            if (strcmp(key, "usuarioId") == 0){
-                list[i].user_id = json_object_get_int(val);
-            }
-            if (strcmp(key, "nome") == 0){
-                list[i].name = (char *)malloc(json_object_get_string_len(val)+1);
-                strcpy(list[i].name, json_object_get_string(val));
-            }
-            if (strcmp(key, "perfil") == 0){
-                list[i].role = (char *)malloc(json_object_get_string_len(val)+1);
-                strcpy(list[i].role, json_object_get_string(val));
-            }
-            if (strcmp(key, "digital") == 0){
-                list[i].fingerprint = (char *)malloc(json_object_get_string_len(val)+1);
-                strcpy(list[i].fingerprint, json_object_get_string(val));
-                if (strcmp(list[i].fingerprint, "") != 0){
-                    number_of_digitals++;
-                }
-            }
-        }
-    }
-
-    return number_of_digitals;
 }
 
 int do_point(){
@@ -282,7 +215,7 @@ int do_point(){
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
     printf("Result do_point:%d\n", result);
-    post_ponto(76); //post no usuário de teste
+    post_ponto(result);
 
 
     out_close:
@@ -328,6 +261,7 @@ void post_ponto(int id_usuario){
 
     free(result);
 }
+
 
 ///verifica a digital capturada contra uma lista de digitais
 int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){

@@ -19,6 +19,8 @@ stdlib.h
 -
 utils.h
 /home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+remote_database.h
+/home/leticia/fprint-infarma/ponto-alpha/server/remote_database.h
 
 /home/leticia/fprint-infarma/ponto-alpha/server/ponto.c
 stdlib.h
@@ -31,6 +33,10 @@ structs.h
 /home/leticia/fprint-infarma/ponto-alpha/server/structs.h
 utils.h
 /home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+remote_database.h
+/home/leticia/fprint-infarma/ponto-alpha/server/remote_database.h
+
+/home/leticia/fprint-infarma/ponto-alpha/server/remote_database.h
 
 /home/leticia/fprint-infarma/ponto-alpha/server/structs.h
 stdlib.h

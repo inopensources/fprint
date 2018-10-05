@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/leticia/fprint-infarma/ponto-alpha/server/decode.c" "/home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/decode.c.o"
   "/home/leticia/fprint-infarma/ponto-alpha/server/encode.c" "/home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/encode.c.o"
+  "/home/leticia/fprint-infarma/ponto-alpha/server/remote_database.c" "/home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/remote_database.c.o"
   "/home/leticia/fprint-infarma/ponto-alpha/server/verify_live.c" "/home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

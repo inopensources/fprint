@@ -177,6 +177,33 @@ encode.c.s:
 	$(MAKE) -f CMakeFiles/ponto_infarma.dir/build.make CMakeFiles/ponto_infarma.dir/encode.c.s
 .PHONY : encode.c.s
 
+remote_database.o: remote_database.c.o
+
+.PHONY : remote_database.o
+
+# target to build an object file
+remote_database.c.o:
+	$(MAKE) -f CMakeFiles/ponto_infarma.dir/build.make CMakeFiles/ponto_infarma.dir/remote_database.c.o
+.PHONY : remote_database.c.o
+
+remote_database.i: remote_database.c.i
+
+.PHONY : remote_database.i
+
+# target to preprocess a source file
+remote_database.c.i:
+	$(MAKE) -f CMakeFiles/ponto_infarma.dir/build.make CMakeFiles/ponto_infarma.dir/remote_database.c.i
+.PHONY : remote_database.c.i
+
+remote_database.s: remote_database.c.s
+
+.PHONY : remote_database.s
+
+# target to generate assembly for a file
+remote_database.c.s:
+	$(MAKE) -f CMakeFiles/ponto_infarma.dir/build.make CMakeFiles/ponto_infarma.dir/remote_database.c.s
+.PHONY : remote_database.c.s
+
 verify_live.o: verify_live.c.o
 
 .PHONY : verify_live.o
@@ -219,6 +246,9 @@ help:
 	@echo "... encode.o"
 	@echo "... encode.i"
 	@echo "... encode.s"
+	@echo "... remote_database.o"
+	@echo "... remote_database.i"
+	@echo "... remote_database.s"
 	@echo "... verify_live.o"
 	@echo "... verify_live.i"
 	@echo "... verify_live.s"

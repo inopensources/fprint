@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ponto_infarma.dir/verify_live.c.o"
   "CMakeFiles/ponto_infarma.dir/decode.c.o"
   "CMakeFiles/ponto_infarma.dir/encode.c.o"
+  "CMakeFiles/ponto_infarma.dir/remote_database.c.o"
   "ponto_infarma.pdb"
   "ponto_infarma"
 )
