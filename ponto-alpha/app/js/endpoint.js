@@ -64,9 +64,6 @@ $(document).ready(function () {
     //message received from the C backend
     function typeChecker(json){
         console.log(json);
-        // if (json.status == "ERROR"){
-        //     showErrorModal(json);
-        // } else {
             switch (json.type){
                 case "DATA_RESPONSE":
                     console.log("Data received " + json.message);
@@ -82,8 +79,6 @@ $(document).ready(function () {
                 default:
                     console.log("Don't know what do |: \n" + JSON.stringify(json));
             }
-
-        // }
     }
 
     function dataResponse(json) {
@@ -113,7 +108,6 @@ $(document).ready(function () {
     }
 
     function showErrorModal(json){
-        console.log("AAAA");
         $("#error-modal-description").html("<h5>"+json.message+"<h5>");
         $("#error-modal").modal('toggle');
 
