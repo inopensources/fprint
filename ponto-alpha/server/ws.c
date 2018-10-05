@@ -72,7 +72,7 @@ int decider(struct lws *wsi, void *in, size_t len){
             return 0;
         default:
             printf("\nError: %s\n", "Don't know how to answer to this. :|");
-            write_back(wsi, "Don't know how to answer to this.");
+            compose_json_answer("CONSOLE_LOG", "ERROR", "decider", "Não é possível responder a essa requisição.", "");
             return 1;
     }
 }

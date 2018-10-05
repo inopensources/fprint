@@ -7,6 +7,7 @@
 //    "data" : "W3sidXN1YXJpb0lkIjo1Nywibm9tZSI6IkFORFJFIiwicGVyZm…lIjoiV0VOREVSU09OIiwicGVyZmlsIjoiUk9MRV9TVVAifV0="
 // }
 $(document).ready(function () {
+    let userId = 0;
     window.WebSocket = window.WebSocket || window.MozWebSocket;
     let websocket = new WebSocket('ws://localhost:8000',
         'dumb-increment-protocol');
@@ -17,8 +18,7 @@ $(document).ready(function () {
         $('#mainNav').css('color', 'green');
     };
     websocket.onmessage = function (message) {
-        console.log("Message received,");
-        typeChecker(JSON.parse(message.data));
+       typeChecker(JSON.parse(message.data));
     };
 
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     function id() {
         $('.user-list').click(function (e) {
-            // registerFingerPrint($(this).attr("id"));
+            userId = ($(this).attr("id"));
             $('#modal-manager-permission').modal('toggle');
         });
     }
@@ -52,7 +52,8 @@ $(document).ready(function () {
     // });
 
     $('#register').click(function (e) {
-        registerFingerPrint(76);
+        registerFingerPrint(userId);
+        userId = 0;
     });
 
     $("#manager-check").click(function (e){
@@ -63,9 +64,9 @@ $(document).ready(function () {
     //message received from the C backend
     function typeChecker(json){
         console.log(json);
-        if (json.status == "ERROR"){
-            showErrorModal(json);
-        } else {
+        // if (json.status == "ERROR"){
+        //     showErrorModal(json);
+        // } else {
             switch (json.type){
                 case "DATA_RESPONSE":
                     console.log("Data received " + json.message);
@@ -82,7 +83,7 @@ $(document).ready(function () {
                     console.log("Don't know what do |: \n" + JSON.stringify(json));
             }
 
-        }
+        // }
     }
 
     function dataResponse(json) {
@@ -97,8 +98,16 @@ $(document).ready(function () {
     function screenUpdate(json){
         switch (json.method_name) {
             case "cadastra_user":
-                console.log("Cadastra user" + json.message);
+                console.log("Cadastra user " + json.message);
                 registerUser(json);
+                break;
+            case "enroll":
+                console.log("Matriculando usuário " + json.message);
+                enrollUpdate(json);
+                break;
+            case "do_point":
+                console.log("Verificando digital de usuário " + json.message);
+                alert(json.message);
                 break;
         }
     }
@@ -127,9 +136,10 @@ $(document).ready(function () {
     function registerUser(json){
        switch (json.status) {
            case "SUCCESS":
-
+               enrollUpdate(json);
                break;
            case "ERROR":
+               enrollUpdate(json);
                break;
 
        }
@@ -151,5 +161,8 @@ $(document).ready(function () {
         websocket.send("3");
     }
 
+    function enrollUpdate(json){
+        $("#fingerprint-register-status").html("<h5>"+json.message+"<h5>");
+    }
 
 });

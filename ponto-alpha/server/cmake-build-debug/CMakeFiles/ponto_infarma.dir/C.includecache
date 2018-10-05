@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/leticia/fprint-infarma/ponto-alpha/server/b64.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/b64.h
 
-/home/leticia/fprint-infarma/ponto-alpha/server/cadastro.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cadastro.c
 stdio.h
 -
 curl/curl.h
@@ -18,9 +18,9 @@ string.h
 stdlib.h
 -
 utils.h
-/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/utils.h
 
-/home/leticia/fprint-infarma/ponto-alpha/server/ponto.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ponto.c
 stdlib.h
 -
 stdio.h
@@ -28,11 +28,11 @@ stdio.h
 string.h
 -
 structs.h
-/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/structs.h
 utils.h
-/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/utils.h
 
-/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/structs.h
 stdlib.h
 -
 stdio.h
@@ -40,7 +40,7 @@ stdio.h
 string.h
 -
 
-/home/leticia/fprint-infarma/ponto-alpha/server/utils.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/utils.c
 stdlib.h
 -
 stdio.h
@@ -48,13 +48,13 @@ stdio.h
 string.h
 -
 b64.h
-/home/leticia/fprint-infarma/ponto-alpha/server/b64.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/b64.h
 structs.h
-/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/structs.h
 json-c/json.h
 -
 
-/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/utils.h
 stdlib.h
 -
 stdio.h
@@ -62,7 +62,7 @@ stdio.h
 string.h
 -
 
-/home/leticia/fprint-infarma/ponto-alpha/server/verify_live.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/verify_live.c
 stdlib.h
 -
 stdio.h
@@ -84,9 +84,9 @@ string.h
 pthread.h
 -
 ws.c
-/home/leticia/fprint-infarma/ponto-alpha/server/ws.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ws.c
 
-/home/leticia/fprint-infarma/ponto-alpha/server/ws.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ws.c
 stdio.h
 -
 stdlib.h
@@ -94,15 +94,15 @@ stdlib.h
 libwebsockets.h
 -
 cadastro.c
-/home/leticia/fprint-infarma/ponto-alpha/server/cadastro.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cadastro.c
 ponto.c
-/home/leticia/fprint-infarma/ponto-alpha/server/ponto.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ponto.c
 ws_utils.c
-/home/leticia/fprint-infarma/ponto-alpha/server/ws_utils.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ws_utils.c
 utils.c
-/home/leticia/fprint-infarma/ponto-alpha/server/utils.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/utils.c
 
-/home/leticia/fprint-infarma/ponto-alpha/server/ws_utils.c
+/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/ws_utils.c
 stdio.h
 -
 stdlib.h
