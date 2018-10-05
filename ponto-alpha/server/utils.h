@@ -21,4 +21,7 @@ void fprint_to_string(char * ret, int length, char digital[]);
 
 int get_length_digital(char * ret, int length);
 
+static size_t
+WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
+
 #endif //UNTITLED_UTILS_H
