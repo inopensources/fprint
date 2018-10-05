@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/ponto.dir/main.c.o CMakeFiles/ponto.dir/libfprint-0.7.0/examples/cadastro.c.o  -o ponto 
