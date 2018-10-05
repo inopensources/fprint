@@ -6,9 +6,11 @@
 #include <curl/curl.h>
 #include <string.h>
 #include <stdlib.h>
+#include "utils.h"
+
 
 struct fp_print_data *enroll(struct fp_dev *dev);
-void fprint_to_string(char * ret, int length, char digital[]);
+
 void post_user(int id_usuario, char digital[], int tamanho_array);
 
 struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
@@ -22,56 +24,6 @@ struct fp_dscv_dev *discover_device(struct fp_dscv_dev **discovered_devs)
     printf("Found device claimed by %s driver\n", fp_driver_get_full_name(drv));
     return ddev;
 }
-
-void fprint_to_string(char * ret, int length, char digital[]){
-    int i;
-    int ret_temp;
-    int index_digital = 1;
-
-    printf("length: %d", length);
-
-    for(i=0; i<length; i++) {
-        if (i == 0){
-            digital[0] = '[';
-        }
-        ret_temp = ret[i];
-        char ret_string[12];
-        sprintf(ret_string, "%d", ret_temp);
-        for (int j = 0; j < strlen(ret_string); j++) {
-            digital[index_digital++] = ret_string[j];
-        }
-
-        digital[index_digital++] = ',';
-        digital[index_digital++] = ' ';
-    }
-
-    digital[index_digital-2] = ']';
-
-}
-
-
-int get_length_digital(char * ret, int length){
-
-    //gambis achar length
-    int length_dig=0;
-    int i;
-    int ret_temp = 0;
-    printf("ret_length: %d\n", strlen(ret));
-    for(i=0; i<length; i++) {
-
-        ret_temp = ret[i];
-        char ret_string[12];
-        sprintf(ret_string, "%d", ret_temp);
-        for (int j = 0; j < strlen(ret_string); j++) {
-            length_dig++;
-        }
-        length_dig++;
-        length_dig++;
-    }
-
-    return length_dig;
-}
-
 
 /*De cadastro.c*/
 int cadastra_user(int user_id){
@@ -206,7 +158,6 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
 
     return enrolled_print;
 }
-
 
 void post_user(int id_usuario, char digital[], int tamanho_array){
 

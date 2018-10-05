@@ -17,6 +17,8 @@ string.h
 -
 stdlib.h
 -
+utils.h
+/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
 
 /home/leticia/fprint-infarma/ponto-alpha/server/ponto.c
 stdlib.h
@@ -27,6 +29,8 @@ string.h
 -
 structs.h
 /home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+utils.h
+/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
 
 /home/leticia/fprint-infarma/ponto-alpha/server/structs.h
 stdlib.h
@@ -45,6 +49,18 @@ string.h
 -
 b64.h
 /home/leticia/fprint-infarma/ponto-alpha/server/b64.h
+structs.h
+/home/leticia/fprint-infarma/ponto-alpha/server/structs.h
+json-c/json.h
+-
+
+/home/leticia/fprint-infarma/ponto-alpha/server/utils.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
 
 /home/leticia/fprint-infarma/ponto-alpha/server/verify_live.c
 stdlib.h

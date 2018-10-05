@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "structs.h"
+#include "utils.h"
 
 
 static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp);
@@ -12,13 +13,7 @@ int do_point();
 
 char *get_user_list_mini();
 char *get_full_user_list();
-
-void get_number_of_users(char* json_str, int* number_of_users);
 int create_list_users();
-
-//new
-void string_to_fprint(char fprint_string[], unsigned char file[]);
-int size_of_file(char fprint_string[]);
 
 static size_t
 WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
@@ -138,14 +133,6 @@ char *get_user_list_mini() {
     return buf2;
 }
 
-void get_number_of_users(char* json_str, int* number_of_users){
-    json_object * jobj = json_tokener_parse(json_str);
-    int length_array = json_object_array_length(jobj);
-
-    //Writing the number of users in the JSON to number_of_users
-    *number_of_users = length_array;
-
-}
 
 int create_list_users(){
     //free this later on
@@ -341,63 +328,6 @@ void post_ponto(int id_usuario){
 
     free(result);
 }
-
-//remote_database após parser:
-
-
-///new
-
-void string_to_fprint(char fprint_string[], unsigned char file[]) {
-
-    int fprint_string_length = strlen(fprint_string);
-    int cnt = 0;
-
-    int file_size = size_of_file(fprint_string);
-    unsigned char fprint_file[file_size];
-    int fprint_file_pos = 0;
-
-    for (int i = 0; i < fprint_string_length; i++) {
-        char * num;
-        if (fprint_string[i] != ' ') {
-            if (fprint_string[i] == '[') {
-                i++;
-                cnt = 0;
-                num = calloc(3, sizeof(char));
-                while (fprint_string[i] != ',' && fprint_string[i] != ']') {
-                    num[cnt] = fprint_string[i];
-                    cnt++;
-                    i++;
-                }
-                i--;
-            }
-            if (fprint_string[i] == ',') {
-                i++;
-                cnt = 0;
-                num = calloc(3, sizeof(char));
-                while (fprint_string[i] != ',' && fprint_string[i] != ']') {
-                    num[cnt] = fprint_string[i];
-                    cnt++;
-                    i++;
-                }
-                i--;
-            }
-        }
-        file[fprint_file_pos++] = atoi(num);
-    }
-}
-
-int size_of_file(char fprint_string[]) {
-    int length = strlen(fprint_string);
-    int file_size = 1;
-
-    for (int i = 0; i < length; i++) {
-        if (fprint_string[i] == ',') {
-            file_size++;
-        }
-    }
-    return file_size;
-}
-
 
 ///verifica a digital capturada contra uma lista de digitais
 int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
