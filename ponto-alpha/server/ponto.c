@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 struct MemoryStruct {
     char *memory;
     size_t size;
@@ -304,6 +305,9 @@ int do_point(){
 
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+    printf("Result do_point:", result);
+    //post_ponto(result);
+
 
     out_close:
     fp_dev_close(dev);
@@ -345,6 +349,8 @@ void post_ponto(int id_usuario){
     curl_easy_setopt(hnd, CURLOPT_POSTFIELDS, result);
 
     CURLcode ret = curl_easy_perform(hnd);
+
+    free(result);
 }
 
 //remote_database após parser:
@@ -401,4 +407,89 @@ int size_of_file(char fprint_string[]) {
         }
     }
     return file_size;
+}
+
+
+///verifica a digital capturada contra uma lista de digitais
+int identify(struct fp_dev *dev, struct fp_print_data **print_gallery){
+
+    int r;
+    size_t match_offset = 0;
+
+    do {
+        sleep(1);
+        printf("\nScan your finger now.\n");
+
+        r = fp_identify_finger(dev, print_gallery, &match_offset);
+
+        if (r < 0) {
+            printf("verification failed with error %d :(\n", r);
+            return r;
+        }
+        switch (r) {
+            case FP_VERIFY_NO_MATCH:
+                printf("NO MATCH!\n");
+                return -1;
+            case FP_VERIFY_MATCH:
+                printf("MATCH!\n");
+                return match_offset;
+            case FP_VERIFY_RETRY:
+                printf("Scan didn't quite work. Please try again.\n");
+                break;
+            case FP_VERIFY_RETRY_TOO_SHORT:
+                printf("Swipe was too short, please try again.\n");
+                break;
+            case FP_VERIFY_RETRY_CENTER_FINGER:
+                printf("Please center your finger on the sensor and try again.\n");
+                break;
+            case FP_VERIFY_RETRY_REMOVE_FINGER:
+                printf("Please remove finger from the sensor and try again.\n");
+                break;
+        }
+    } while (1);
+}
+
+int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num_digitais, int * id_list){
+
+    struct fp_dscv_dev *ddev;
+    struct fp_dscv_dev **discovered_devs;
+    struct fp_print_data *data_user;
+    struct fp_print_data **print_gallery = NULL;
+
+    //criando print_gallery
+    print_gallery = malloc(sizeof(*print_gallery) * (num_digitais+1));
+    print_gallery[num_digitais] = NULL;
+
+    ///print_gallery 	NULL-terminated array of pointers to the prints to identify against. Each one must have been previously enrolled with a device compatible to the device selected to perform the scan. *///
+
+
+
+    for (int i = 0; i<num_digitais; i++) {
+        printf("\nnum_digitais: %d | i: %d\n", num_digitais, i);
+        print_gallery[i] = fp_print_data_from_data(digitais[i], 12050);
+
+    }
+
+    ///for one by one verification
+    //verify(dev, print_gallery[1]);
+
+
+    ///for 1 by many verification
+    int index_match = identify(dev, print_gallery);
+    int id_user_matched = -1;
+    char str_user_id[12];
+
+    if(index_match > -1){
+        id_user_matched = id_list[index_match];
+        printf("index_match: %d | id_user: %d\n", index_match, id_user_matched);
+        sprintf(str_user_id, "%d", id_user_matched);
+        printf("user id string: %s\n", str_user_id);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "User matches",  str_user_id);
+
+    }else {
+        compose_json_answer("SCREEN_UPDATE", "FAILED", "verify", "User doesn't match", "-1");
+    }
+    //fp_print_data_free(print_gallery);
+
+    return id_user_matched;
 }

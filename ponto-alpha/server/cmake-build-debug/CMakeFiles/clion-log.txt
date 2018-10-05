@@ -1,5 +1,5 @@
-/home/charles/Documentos/IDEs/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server
--- The C compiler identification is GNU 5.4.0
+/home/leticia/Downloads/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/leticia/fprint-infarma/ponto-alpha/server
+-- The C compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -8,4 +8,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug
+-- Build files have been written to: /home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug

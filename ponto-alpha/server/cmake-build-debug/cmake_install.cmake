@@ -1,4 +1,4 @@
-# Install script for directory: /home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server
+# Install script for directory: /home/leticia/fprint-infarma/ponto-alpha/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/charles/Documentos/Projects/C/fprint-infarma/ponto-alpha/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/leticia/fprint-infarma/ponto-alpha/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

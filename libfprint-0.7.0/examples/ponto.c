@@ -172,117 +172,106 @@ int deal_with_json(char* json_str, struct user_list *list){
 
     return number_of_digitals;
 }
-
-void do_point(){
-
-    //lista de digitais
-    unsigned char **digitais = 0;
-    int num_digitais = 0;
-    unsigned char *ret;
-    int num_ret = 0;
-
-
-    //free this later on
-    char *json = get_user_list();
-    printf("%s\n", json);
-
-    int number_of_users;
-    get_number_of_users(json, &number_of_users);
-    printf("number_of_users: %d\n", number_of_users);
-
-    //Allocating structs to fill with user data
-    //PS: Free this later on
-    struct user_list *list_of_users = malloc(number_of_users * sizeof(struct user_list));
-    num_digitais = deal_with_json(json, list_of_users);
-
-    //criando lista de digitais
-    digitais = malloc(sizeof(unsigned char *) * num_digitais);
-    int ids_list[num_digitais];
-
-    for (int i = 0; i < number_of_users; i++){
-
-        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
-
-            printf("Id: %d\n", (list_of_users)[i].user_id);
-            printf("Name: %s\n", (list_of_users)[i].name);
-            ids_list[num_ret] = (list_of_users)[i].user_id;
-            digitais[num_ret] = malloc(sizeof(unsigned char) * 12050);
-            read_digital((list_of_users)[i].fingerprint, digitais[num_ret]);
-            num_ret++;
-
-        }
-    }
-
-    ///*Iniciando device*///
-
-    int r = 1;
-    struct fp_dscv_dev *ddev;
-    struct fp_dscv_dev **discovered_devs;
-    struct fp_dev *dev;
-    // struct fp_print_data *data;
-
-
-    r = fp_init();
-
-    if (r < 0) {
-        fprintf(stderr, "Failed to initialize libfprint\n");
-        exit(1);
-    }
-
-    fp_set_debug(3);
-
-    discovered_devs = fp_discover_devs();
-    if (!discovered_devs) {
-        fprintf(stderr, "Could not discover devices\n");
-        goto out;
-    }
-    ddev = discover_device(discovered_devs);
-    if (!ddev) {
-        fprintf(stderr, "No devices detected.\n");
-        goto out;
-    }
-    dev = fp_dev_open(ddev);
-    fp_dscv_devs_free(discovered_devs);
-    if (!dev) {
-        fprintf(stderr, "Could not open device.\n");
-        goto out;
-    }
-
-    printf("Opened device. It's now time to enroll your finger.\n");
-
-    ///Fim inicialização device
-
-
-    //ret = read_digital(digital);
-    //int length = 12050;
-    //data = enroll(dev);
-    //int result = compare_digital(dev, ret, length); //chamada em data.c
-
-    int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
-
-    printf("\nResult: %d\n", result);
-
-   /* if(result != -1){
-        client(result, get_context());
-        sleep(1);
-        post_ponto(result);
-    }
-    else{
-        client(-1, get_context());
-        sleep(1);
-    }*/
-
-
-    free(digitais);
-
-    out_close:
-    fp_dev_close(dev);
-    out:
-    fp_exit();
-    return r;
-
-
-}
+//
+//void do_point(){
+//
+//    //lista de digitais
+//    unsigned char **digitais = 0;
+//    int num_digitais = 0;
+//    unsigned char *ret;
+//    int num_ret = 0;
+//
+//
+//    //free this later on
+//    char *json = get_user_list();
+//    printf("%s\n", json);
+//
+//    int number_of_users;
+//    get_number_of_users(json, &number_of_users);
+//    printf("number_of_users: %d\n", number_of_users);
+//
+//    //Allocating structs to fill with user data
+//    //PS: Free this later on
+//    struct user_list *list_of_users = malloc(number_of_users * sizeof(struct user_list));
+//    num_digitais = deal_with_json(json, list_of_users);
+//
+//    //criando lista de digitais
+//    digitais = malloc(sizeof(unsigned char *) * num_digitais);
+//    int ids_list[num_digitais];
+//
+//    for (int i = 0; i < number_of_users; i++){
+//
+//        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
+//
+//            printf("Id: %d\n", (list_of_users)[i].user_id);
+//            printf("Name: %s\n", (list_of_users)[i].name);
+//            ids_list[num_ret] = (list_of_users)[i].user_id;
+//            digitais[num_ret] = malloc(sizeof(unsigned char) * 12050);
+//            read_digital((list_of_users)[i].fingerprint, digitais[num_ret]);
+//            num_ret++;
+//
+//        }
+//    }
+//
+//    ///*Iniciando device*///
+//
+//    int r = 1;
+//    struct fp_dscv_dev *ddev;
+//    struct fp_dscv_dev **discovered_devs;
+//    struct fp_dev *dev;
+//    // struct fp_print_data *data;
+//
+//
+//    r = fp_init();
+//
+//    if (r < 0) {
+//        fprintf(stderr, "Failed to initialize libfprint\n");
+//        exit(1);
+//    }
+//
+//    fp_set_debug(3);
+//
+//    discovered_devs = fp_discover_devs();
+//    if (!discovered_devs) {
+//        fprintf(stderr, "Could not discover devices\n");
+//        goto out;
+//    }
+//    ddev = discover_device(discovered_devs);
+//    if (!ddev) {
+//        fprintf(stderr, "No devices detected.\n");
+//        goto out;
+//    }
+//    dev = fp_dev_open(ddev);
+//    fp_dscv_devs_free(discovered_devs);
+//    if (!dev) {
+//        fprintf(stderr, "Could not open device.\n");
+//        goto out;
+//    }
+//
+//    printf("Opened device. It's now time to enroll your finger.\n");
+//
+//    ///Fim inicialização device
+//
+//
+//    //ret = read_digital(digital);
+//    //int length = 12050;
+//    //data = enroll(dev);
+//    //int result = compare_digital(dev, ret, length); //chamada em data.c
+//
+//    int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+//    post_ponto(result);
+//
+//
+//    free(digitais);
+//
+//    out_close:
+//    fp_dev_close(dev);
+//    out:
+//    fp_exit();
+//    return r;
+//
+//
+//}
 
 void read_digital(char * digital, unsigned char * ret_returned){
 
@@ -386,6 +375,7 @@ void removeChar(char *str, char c) {
     }
     str[j]=0;
 }
+/*
 
 void post_ponto(int id_usuario){
 
@@ -419,8 +409,10 @@ void post_ponto(int id_usuario){
 
     CURLcode ret = curl_easy_perform(hnd);
 
+
     return 0;
 }
+*/
 
 //remote_database após parser:
 
