@@ -12,9 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto_infarma" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto_infarma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
@@ -80,7 +77,7 @@
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="90" />
-          <entry key="ObjectiveC" value="13702" />
+          <entry key="ObjectiveC" value="13741" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -88,7 +85,7 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="13609" />
+          <entry key="c" value="13648" />
           <entry key="h" value="108" />
           <entry key="html" value="90" />
           <entry key="txt" value="68" />
@@ -149,11 +146,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+            <state relative-caret-position="266">
+              <caret line="132" column="139" selection-start-line="132" selection-start-column="139" selection-end-line="132" selection-end-column="139" />
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
                 <element signature="e#3144#4407#0" />
+                <element signature="e#4409#5504#0" />
               </folding>
             </state>
           </provider>
@@ -339,7 +337,7 @@
     </packageJsonPaths>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="716" />
     <option name="y" value="25" />
     <option name="width" value="650" />
@@ -452,12 +450,12 @@
       <workItem from="1538508525591" duration="10147000" />
       <workItem from="1538760247668" duration="8691000" />
       <workItem from="1538768960636" duration="1193000" />
-      <workItem from="1539029719518" duration="3833000" />
+      <workItem from="1539029719518" duration="4742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165875000" />
+    <option name="totallyTimeSpent" value="166784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -471,13 +469,13 @@
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.21044046" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.18107668" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3360522" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.18923327" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21207178" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -884,11 +882,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        <state relative-caret-position="266">
+          <caret line="132" column="139" selection-start-line="132" selection-start-column="139" selection-end-line="132" selection-end-column="139" />
           <folding>
             <element signature="e#41#60#0" expanded="true" />
             <element signature="e#3144#4407#0" />
+            <element signature="e#4409#5504#0" />
           </folding>
         </state>
       </provider>

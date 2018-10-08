@@ -34,14 +34,13 @@ char * compose_json_answer_user_matches(char id_user[], char name_user[]){
 }
 
 char * get_name_by_id(int id, struct user_list * list_of_users, int number_of_users){
-    for (int i = 0; i < number_of_users; i++){
+    for(int i = 0; i < number_of_users; i++){
         if (strcmp((list_of_users)[i].fingerprint, "") != 0){
             if((list_of_users)[i].user_id == id){
                 return (list_of_users)[i].name;
             }
         }
     }
-
 }
 
 int do_point(){
@@ -50,7 +49,6 @@ int do_point(){
     int num_digitais = 0;
     unsigned char *ret;
     int num_ret = 0;
-
 
     //free this later on
     char *json = get_full_user_list();
@@ -66,7 +64,6 @@ int do_point(){
     //criando lista de digitais
     unsigned char digitais[num_digitais][12050];
     int ids_list[num_digitais];
-
 
     for (int i = 0; i < number_of_users; i++){
         if (strcmp((list_of_users)[i].fingerprint, "") != 0){
@@ -127,9 +124,10 @@ int do_point(){
     char userIdAsStr[12];
     sprintf(userIdAsStr, "%d", result);
 
+
     if(result > -1){
         printf("id_user: %d\n", result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches", compose_json_answer_user_matches(userIdAsStr, "testando"));
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }
@@ -200,7 +198,6 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
     for (int i = 0; i<num_digitais; i++) {
         printf("\nnum_digitais: %d | i: %d\n", num_digitais, i);
         print_gallery[i] = fp_print_data_from_data(digitais[i], 12050);
-
     }
 
     ///for 1 by many verification
