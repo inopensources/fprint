@@ -1,93 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Gradient backgrounds - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez"/>
+    <meta name="description" content="fullPage full-screen backgrounds."/>
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen"/>
+    <meta name="Resource-type" content="Document"/>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-  <title>Infarma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+    <link href="css/flipclock.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
 
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <style>
 
-  <!-- Custom styles for this template -->
-  <link href="css/freelancer.css" rel="stylesheet">
-  <link href="css/flipclock.css" rel="stylesheet">
+        a {
+            color: #FFF;
+            text-decoration: none;
+        }
 
+        a:hover {
+            color: #3333ff;
+        }
+
+        a:active {
+            color: white;
+        }
+
+        a.nodec:hover {
+            text-decoration: none;
+        }
+
+        .bottom-left-align-text {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            padding: 20px;
+        }
+
+        .bottom-right-align-text {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            padding: 20px;
+        }
+
+        #overlay {
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+        }
+
+        #text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+
+        .btn-sq-lg {
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        .btn-sq {
+            width: 100px !important;
+            height: 100px !important;
+            font-size: 10px;
+        }
+
+        .btn-sq-sm {
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 10px;
+        }
+
+        .btn-sq-xs {
+            width: 25px !important;
+            height: 25px !important;
+            padding:2px;
+        }
+
+
+    </style>
 </head>
-
-<body id="page-top">
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">Ponto</a>
-    <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-
-      </ul>
+<body>
+<div id="fullpage">
+    <div class="section" id="section0">
+        <a class="nodec" href="#controle">
+            <div class="container text-center" style="height: 100%;">
+                <img src="img/logo.png" class="img-thumbnail" style="height: 10rem">
+                <h1>
+                    <div id="MyClockDisplay" class="clock"></div>
+                </h1>
+            </div>
+        </a>
     </div>
-  </div>
-</nav>
+    <div class="section" id="section1">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <a href="#cadastraUsuario"><i class="far fa-address-book active"
+                                              style="font-size: 256px;"></i>
+                    <h3 style="padding: 10px">Cadastrar usuário</h3></a>
+            </div>
+            <div class="col-sm-6 text-center">
+                <a href="#batePonto"> <i class="fas fa-fingerprint"
+                                         style="font-size: 256px;"></i>
+                    <h3 style="padding: 10px">Bater Ponto</h3>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bottom-left-align-text text-center">
+                <a href="#boasVindas"><i class="fa fa-backward"
+                                         style="font-size: 64px;"></i>
+                    <h3 style="padding: 10px">Voltar</h3></a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="container text-center">
+            <h1>Cadastro de usuário</h1>
+            <div class="row" id="user-list">
 
-<!-- Header -->
-<header class="masthead  bg-primary text-center">
-  <div class="container">
-    <img class="img-fluid mb-5 d-block mx-auto" src="img/logo.png" alt="">
-    <!-- clock -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="bottom-left-align-text text-center">
+                <a href="#boasVindas"><i class="fa fa-backward"
+                                         style="font-size: 64px;"></i>
+                    <h3 style="padding: 10px">Voltar</h3></a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="container text-center">
+            <h1>Batida de ponto</h1>
+            <img src="img/fingerprint.gif" class="img-fluid" style="height: 300px">
+            <div class="device-status p-sm-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="bottom-left-align-text text-center">
+                <a href="#boasVindas"><i class="fa fa-backward"
+                                         style="font-size: 64px;"></i>
+                    <h3 style="padding: 10px">Voltar</h3></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <div id="MyClockDisplay" class="clock"></div>
+<!--overlay-->
+<div id="overlay">
+    <!-- The Modal -->
+    <div class="text">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
 
-    <a id="register-fingerprint" href="register-fingerprint.html" class="btn btn-success col-md-5 btn-register-fingerprint">Cadastrar funcionário</a>
-    <a href="clock-in.html"  class="btn btn-primary col-md-5 btn-clock-in">Bater ponto</a>
-  </div>
-</header>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="modal-title">Permissão do RH/Gerente</h2>
+                    <button type="button"  onclick="off()" class="close" data-dismiss="modal">&times;</button>
+                </div>
 
-<!--<h1 style="color: green;">WebSockets test</h1>-->
-<!--<form>-->
-  <!--<input type="text">-->
-  <!--<button>Send</button>-->
-<!--</form>-->
-<!--<div>-->
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="modal-rh-check-text">
+                        <h3>
+                            É necessária a presença de um Gerente ou Representante do RH para o cadastro de um usuário.
+                        </h3>
+                        <h3>
+                            <b>Caso exista um gerente ou representante do RH presente, pressione o botão abaixo para iniciar a verificação.</b>
+                        </h3>
+                    </div>
+                    <div class="device-status" id="rh-check-device">
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+                    </div>
+                    <div class="user-register" id="user-register">
+                    </div>
+                    <div class="text-center">
+                        <!--<a class="btn btn-sq-lg btn-primary" onclick="rhCheckStart()">-->
+                        <a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">
+                            <i class="fa fa-fingerprint" style="font-size: 84px; padding: 20px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script type="text/javascript" src="js/resources.js"></script>
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/fullpage-controls.js"></script>
+<script type="text/javascript" src="js/flipclock.js"></script>
+<script type="text/javascript" src="js/endpoint.js"></script>
+
+<!--<script type="text/javascript">-->
+
+    <!--$(".user-card").click(function(e){-->
+        <!--rhCheckReset();-->
+        <!--on();-->
+    <!--});-->
+
+    <!--function on() {-->
+        <!--$("#overlay").slideDown(250);-->
+        <!--// document.getElementById("overlay").style.display = "block";-->
+    <!--}-->
+
+    <!--function off() {-->
+        <!--$("#overlay").slideUp(250);-->
+        <!--// document.getElementById("overlay").style.display = "none";-->
+    <!--}-->
+
+    <!--function rhCheckStart(){-->
+        <!--$("#modal-rh-check-text").hide(250);-->
+        <!--$("#rh-check-device").show(250);-->
+    <!--}-->
+
+    <!--function rhCheckReset(){-->
+        <!--$("#modal-rh-check-text").show(250);-->
+        <!--$("#rh-check-device").hide(250);-->
+    <!--}-->
+
+    <!--function updateDeviceStatus(json){-->
+        <!--$(".device-status").html(-->
+            <!--"<h2><b>"+json.message+"</b></h2>"-->
+        <!--)-->
+    <!--}-->
+
+    <!--function resetDeviceStatus(){-->
+        <!--$(".device-status").html(-->
+            <!--"<h2><b>Aguarde...</b></h2>"-->
+        <!--)-->
+    <!--}-->
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-  <script src="js/flipclock.js"></script>
-  <script src="js/endpoint.js"></script>
-  <script src="js/notify.js"></script>
-
+<!--</script>-->
 
 </body>
-
 </html>

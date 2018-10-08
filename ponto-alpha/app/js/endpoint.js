@@ -6,79 +6,49 @@
 //    "message": "User list retrieved.",
 //    "data" : "W3sidXN1YXJpb0lkIjo1Nywibm9tZSI6IkFORFJFIiwicGVyZm…lIjoiV0VOREVSU09OIiwicGVyZmlsIjoiUk9MRV9TVVAifV0="
 // }
-$(document).ready(function () {
+// $(document).ready(function () {
     let userId = 0;
     window.WebSocket = window.WebSocket || window.MozWebSocket;
     let websocket = new WebSocket('ws://localhost:8000',
         'dumb-increment-protocol');
     websocket.onopen = function () {
-        $('h1').css('color', 'green');
+        // $('h1').css('color', 'green');
+        console.log("Websocket opened.");
     };
     websocket.onerror = function () {
         $('#mainNav').css('color', 'green');
     };
     websocket.onmessage = function (message) {
-       typeChecker(JSON.parse(message.data));
+        typeChecker(JSON.parse(message.data));
     };
 
-
-    // $('button').click(function (e) {
-    //     e.preventDefault();
-    //     websocket.send($('input').val());
-    //     $('input').val('');
-    // });
-
-
-    $('#load-user-list').click(function (e) {
-        returnUserList();
-    });
-
-    $('#read-digital').click(function (e) {
-        verifyFingerprint();
-    });
-
     function id() {
-        $('.user-list').click(function (e) {
-            userId = ($(this).attr("id"));
-            $('#modal-manager-permission').modal('toggle');
+        $(".user-card").click(function(e){
+            userId = $(this).attr("user-id");
+            rhCheckReset();
+            on();
         });
     }
-
-    // //For test purpose only
-    // $('button').click(function (e) {
-    //     e.preventDefault();
-    //     websocket.send($('input').val());
-    //     $('input').val('');
-    // });
-
-    $('#register').click(function (e) {
-        registerFingerPrint(userId);
-        userId = 0;
-    });
-
-    $("#manager-check").click(function (e){
-        verifyManagerFingerprint(3);
-    });
 
     //The method below defines the execution flow that's going to be used according to the
     //message received from the C backend
     function typeChecker(json){
         console.log(json);
-            switch (json.type){
-                case "DATA_RESPONSE":
-                    console.log("Data received " + json.message);
-                    dataResponse(json);
-                    break;
-                case "SCREEN_UPDATE":
-                    console.log("Screen update command received " + json.message);
-                    screenUpdate(json);
-                    break;
-                case "CONSOLE_LOG":
-                    console.log("Console log command received " + json.message);
-                    break;
-                default:
-                    console.log("Don't know what do |: \n" + JSON.stringify(json));
-            }
+        switch (json.type){
+            case "DATA_RESPONSE":
+                console.log("Data received " + json.message);
+                dataResponse(json);
+                break;
+            case "SCREEN_UPDATE":
+                console.log("Screen update command received " + json.message);
+                screenUpdate(json);
+                break;
+            case "CONSOLE_LOG":
+                console.log("Console log command received " + json.message);
+                break;
+            default:
+                console.log("Don't know what do |: \n" + JSON.stringify(json));
+        }
     }
 
     function dataResponse(json) {
@@ -102,7 +72,7 @@ $(document).ready(function () {
                 break;
             case "do_point":
                 console.log("Verificando digital de usuário " + json.message);
-                alert(json.message);
+                clockIn(json);
                 break;
         }
     }
@@ -110,53 +80,50 @@ $(document).ready(function () {
     function showErrorModal(json){
         $("#error-modal-description").html("<h5>"+json.message+"<h5>");
         $("#error-modal").modal('toggle');
-
     }
 
     function loadUserList(json) {
         var userList = JSON.parse(atob(json.data));
-        $("#user-list-table").html("");
+        $("#user-list").html("");
 
         for (i in userList) {
-            var userRow = '<tr class="user-list" id="' + userList[i].usuarioId + '">' +
-                '<td>' + userList[i].usuarioId + '</td>' +
-                '<td>' + userList[i].nome + '</td>' +
-                '</tr>'
-            $("#user-list-table").append(userRow);
+            var userRow = "<div class=\"col-sm-2 user-card\" user-id=\""+userList[i].usuarioId+"\" >\n" +
+                "                    <div class=\"card\">\n" +
+                "                        <img class=\"card-img-top\" src=\"img/user.jpg\" alt=\"Card image cap\">\n" +
+                "                        <div class=\"card-body\" style=\"padding: 1px;\">\n" +
+                "                            <h4>"+userList[i].nome+"</h4>\n" +
+                "                        </div>\n" +
+                "                    </div>\n" +
+                "                </div>"
+            $("#user-list").append(userRow);
+            if (i == 11){
+                break;
+            }
         }
         id();
     }
 
     function registerUser(json){
-       switch (json.status) {
-           case "SUCCESS":
-               enrollUpdate(json);
-               break;
-           case "ERROR":
-               enrollUpdate(json);
-               break;
+        switch (json.status) {
+            case "SUCCESS":
+                updateEnrollStatus(json);
+                break;
+            case "ERROR":
+                updateEnrollStatus(json);
+                break;
 
-       }
+        }
     }
 
-    function returnUserList() {
-        websocket.send("0");
+    function clockIn(json){
+        switch (json.status) {
+            case "SUCCESS":
+                updateDeviceStatus(json);
+                break;
+            case "ERROR":
+                updateDeviceStatus(json);
+                break;
+        }
     }
 
-    function registerFingerPrint(usuarioId) {
-        websocket.send("1 "+usuarioId);
-    }
-
-    function verifyFingerprint() {
-        websocket.send("2");
-    }
-
-    function verifyManagerFingerprint() {
-        websocket.send("3");
-    }
-
-    function enrollUpdate(json){
-        $("#fingerprint-register-status").html("<h5>"+json.message+"<h5>");
-    }
-
-});
+// });

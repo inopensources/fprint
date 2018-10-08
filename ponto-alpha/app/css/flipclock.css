@@ -1,11 +1,20 @@
+@font-face
+{
+    font-family: digital;
+    src: local("digital"),
+    local("digital"),
+    url(../fonts/digital.ttf);
+    font-weight: bold;
+}
 
 .clock {
-  position: relative;
-  /*top: 50%;*/
-  /*left: 50%;*/
-  /*transform: translateX(-50%) translateY(-50%);*/
-  color: black;
-  font-size: 90px;
-  letter-spacing: 7px;
-  margin: 20px;
+    position: relative;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    font-family: digital;
+    color: black;
+    font-size: 200px;
+    letter-spacing: 7px;
+    margin: 20px;
 }
