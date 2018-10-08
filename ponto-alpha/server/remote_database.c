@@ -252,7 +252,7 @@ void post_ponto(int id_usuario){
     char userIdAsStr[12];
     sprintf(userIdAsStr, "%d", id_usuario);
 
-    char *result = malloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody4) + 1);
+    char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody4) + 1, sizeof(unsigned char));
     strcat(result, requestBody1);
     strcat(result, userIdAsStr);
     strcat(result, requestBody4);
