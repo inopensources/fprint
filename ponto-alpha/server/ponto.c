@@ -12,6 +12,38 @@
 
 int do_point();
 
+char * compose_json_answer_user_matches(char id_user[], char name_user[]){
+
+    char json_0[] = "{\n";
+    char json_1[] = " \"id\" : ";
+    char json_2[] = " \"name\" : ";
+    char json_3[] = "}\n";
+
+    int json_size = strlen(json_0) +
+                    strlen(json_1) + strlen(id_user) +
+                    strlen(json_2) + strlen(name_user) +
+                    strlen(json_3);
+
+    //+10 to take each \0 into consideration
+    char * json = calloc(json_size + 20, sizeof(char));
+
+    sprintf(json, "{\n \"id\" : \"%s\", \"name\" : \"%s\"\n}", id_user, name_user);
+
+    return json;
+
+}
+
+char * get_name_by_id(int id, struct user_list * list_of_users, int number_of_users){
+    for (int i = 0; i < number_of_users; i++){
+        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
+            if((list_of_users)[i].user_id == id){
+                return (list_of_users)[i].name;
+            }
+        }
+    }
+
+}
+
 int do_point(){
 
     //lista de digitais
@@ -34,17 +66,17 @@ int do_point(){
     //criando lista de digitais
     unsigned char digitais[num_digitais][12050];
     int ids_list[num_digitais];
-    for (int i = 0; i < number_of_users; i++){
 
+
+    for (int i = 0; i < number_of_users; i++){
         if (strcmp((list_of_users)[i].fingerprint, "") != 0){
-//            printf("Id: %d\n", (list_of_users)[i].user_id);
-//            printf("Name: %s\n", (list_of_users)[i].name);
+//          printf("Id: %d\n", (list_of_users)[i].user_id);
+//          printf("Name: %s\n", (list_of_users)[i].name);
             ids_list[num_ret] = (list_of_users)[i].user_id;
             string_to_fprint((list_of_users)[i].fingerprint, digitais[num_ret]);
             num_ret++;
         }
     }
-
 
     ///*Iniciando device*///
 
@@ -90,7 +122,6 @@ int do_point(){
 
     ///Fim inicialização device
 
-
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
 
     char userIdAsStr[12];
@@ -98,12 +129,10 @@ int do_point(){
 
     if(result > -1){
         printf("id_user: %d\n", result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches",  userIdAsStr);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches", compose_json_answer_user_matches(userIdAsStr, "testando"));
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }
-
-
 
     printf("Result do_point:%d\n", result);
     post_ponto(result);
@@ -163,23 +192,16 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
     struct fp_print_data *data_user;
     struct fp_print_data **print_gallery = NULL;
 
-    //criando print_gallery
     print_gallery = malloc(sizeof(*print_gallery) * (num_digitais+1));
     print_gallery[num_digitais] = NULL;
 
     ///print_gallery 	NULL-terminated array of pointers to the prints to identify against. Each one must have been previously enrolled with a device compatible to the device selected to perform the scan. *///
-
-
 
     for (int i = 0; i<num_digitais; i++) {
         printf("\nnum_digitais: %d | i: %d\n", num_digitais, i);
         print_gallery[i] = fp_print_data_from_data(digitais[i], 12050);
 
     }
-
-    ///for one by one verification
-    //verify(dev, print_gallery[1]);
-
 
     ///for 1 by many verification
     int index_match = identify(dev, print_gallery);

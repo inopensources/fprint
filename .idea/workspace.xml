@@ -12,33 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/3.12.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/3.12.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/decode.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/decode.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/encode.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/encode.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/remote_database.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/remote_database.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir/verify_live.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto_infarma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto_infarma" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/ponto_infarma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
@@ -84,7 +60,7 @@
           <entry key="in" value="1" />
           <entry key="la" value="2" />
           <entry key="o" value="2" />
-          <entry key="ponto_infarma (disassembly)" value="2" />
+          <entry key="ponto_infarma (disassembly)" value="3" />
           <entry key="txt" value="10" />
           <entry key="verify" value="1" />
           <entry key="verify_live" value="1" />
@@ -93,7 +69,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="Disassembly" value="2" />
+          <entry key="Disassembly" value="3" />
           <entry key="HTML" value="1" />
           <entry key="ObjectiveC" value="125" />
           <entry key="PLAIN_TEXT" value="35" />
@@ -104,7 +80,7 @@
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="90" />
-          <entry key="ObjectiveC" value="13316" />
+          <entry key="ObjectiveC" value="13702" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -112,7 +88,7 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="13223" />
+          <entry key="c" value="13609" />
           <entry key="h" value="108" />
           <entry key="html" value="90" />
           <entry key="txt" value="68" />
@@ -173,10 +149,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="97" column="4" lean-forward="true" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+            <state relative-caret-position="256">
+              <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
+                <element signature="e#3144#4407#0" />
               </folding>
             </state>
           </provider>
@@ -199,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="644">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="e#42#61#0" expanded="true" />
                 <element signature="e#1436#2606#0" />
@@ -229,8 +206,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+            <state relative-caret-position="216">
+              <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
               <folding>
                 <element signature="e#42#61#0" expanded="true" />
                 <element signature="e#190#734#0" />
@@ -260,7 +237,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gcc</find>
       <find>ponto</find>
       <find>curl</find>
       <find>lweb</find>
@@ -290,6 +266,7 @@
       <find>get_number_of_users</find>
       <find>compose_json_answer</find>
       <find>fprint_to_string</find>
+      <find>send_message_via_ws</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -342,10 +319,10 @@
         <option value="$PROJECT_DIR$/ponto-alpha/server/curl_utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/utils.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
       </list>
     </option>
@@ -362,10 +339,10 @@
     </packageJsonPaths>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="111" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="716" />
     <option name="y" value="25" />
-    <option name="width" value="1255" />
+    <option name="width" value="650" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -475,32 +452,32 @@
       <workItem from="1538508525591" duration="10147000" />
       <workItem from="1538760247668" duration="8691000" />
       <workItem from="1538768960636" duration="1193000" />
-      <workItem from="1539029719518" duration="651000" />
+      <workItem from="1539029719518" duration="3833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162693000" />
+    <option name="totallyTimeSpent" value="165875000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="25" width="1255" height="743" extended-state="4" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24069479" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.015961692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.22185971" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.43556282" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.21044046" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.18107668" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3213703" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.18923327" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -865,10 +842,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+            <element signature="e#190#734#0" />
+            <element signature="e#9135#9765#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="644">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
             <element signature="e#1436#2606#0" />
@@ -893,24 +882,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#190#734#0" />
-            <element signature="e#9135#9765#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="97" column="4" lean-forward="true" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        <state relative-caret-position="256">
+          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
           <folding>
             <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#3144#4407#0" />
           </folding>
         </state>
       </provider>
