@@ -127,7 +127,8 @@ int do_point(){
 
     if(result > -1){
         printf("id_user: %d\n", result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Usuário confirmado", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }

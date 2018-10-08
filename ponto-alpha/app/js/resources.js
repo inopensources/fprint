@@ -34,9 +34,7 @@
 
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
-        $(".device-status").html(
-            "<h2><b>Aguarde...</b></h2>"
-        )
+'    '
     }
 
     //O método abaixo atualiza o status do registro da digital
@@ -89,4 +87,11 @@
     //O método abaixo verifica a digital de um gerente/rh
     function verifyManagerFingerprint() {
         websocket.send("3");
+    }
+
+    function dealWithReturnedUser(json){
+        var base = atob(json.data);
+        $(".device-status").html(
+            "<h2><b>base.namea</b></h2>"
+        )
     }

@@ -70,9 +70,9 @@
                 console.log("Matriculando usuário " + json.message);
                 startEnroll(json);
                 break;
-            case "verify":
-                console.log("Verificando digital de usuário " + json.message);
-                clockIn(json);
+            case "do_point_final":
+                console.log("Concluindo verificação " + json.message);
+                dealWith ReturnedUser(json);
                 break;
             case "do_point":
                 console.log("Verificando digital de usuário " + json.message);

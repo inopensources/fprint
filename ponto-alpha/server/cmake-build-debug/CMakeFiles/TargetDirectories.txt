@@ -1,3 +1,0 @@
-/home/leticia/repos/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/leticia/repos/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/leticia/repos/fprint-infarma/ponto-alpha/server/cmake-build-debug/CMakeFiles/ponto_infarma.dir
