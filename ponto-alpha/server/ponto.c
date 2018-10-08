@@ -92,9 +92,13 @@ int do_point(){
 
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+
+    char userIdAsStr[12];
+    sprintf(userIdAsStr, "%d", result);
+
     if(result > -1){
-        printf("index_match: %d | id_user: %d\n", result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches",  result);
+        printf("id_user: %d\n", result);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches",  userIdAsStr);
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }
@@ -181,6 +185,13 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
     int index_match = identify(dev, print_gallery);
     int id_user_matched = -1;
     char str_user_id[12];
+
+    if(index_match > -1){
+        id_user_matched = id_list[index_match];
+        printf("index_match: %d | id_user: %d\n", index_match, id_user_matched);
+        sprintf(str_user_id, "%d", id_user_matched);
+        printf("user id string: %s\n", str_user_id);
+    }
 
     //fp_print_data_free(print_gallery);
 
