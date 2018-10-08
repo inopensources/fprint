@@ -68,7 +68,11 @@
                 break;
             case "enroll":
                 console.log("Matriculando usuário " + json.message);
-                enrollUpdate(json);
+                startEnroll(json);
+                break;
+            case "verify":
+                console.log("Verificando digital de usuário " + json.message);
+                clockIn(json);
                 break;
             case "do_point":
                 console.log("Verificando digital de usuário " + json.message);
@@ -91,14 +95,14 @@
                 "                    <div class=\"card\">\n" +
                 "                        <img class=\"card-img-top\" src=\"img/user.jpg\" alt=\"Card image cap\">\n" +
                 "                        <div class=\"card-body\" style=\"padding: 1px;\">\n" +
-                "                            <h4>"+userList[i].nome+"</h4>\n" +
+                "                            <h6>"+userList[i].nome+"</h6>\n" +
                 "                        </div>\n" +
                 "                    </div>\n" +
                 "                </div>"
             $("#user-list").append(userRow);
-            if (i == 11){
-                break;
-            }
+            // if (i == 11){
+            //     break;
+            // }
         }
         id();
     }

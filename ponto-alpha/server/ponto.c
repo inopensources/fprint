@@ -86,15 +86,23 @@ int do_point(){
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Dispositivo inicializado. Cadastre sua digital.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Cadastre sua digital.", "");
 
     ///Fim inicialização device
 
 
     int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+    if(result > -1){
+        printf("index_match: %d | id_user: %d\n", result);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "User matches",  result);
+    }else {
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
+    }
+
+
+
     printf("Result do_point:%d\n", result);
     post_ponto(result);
-
 
     out_close:
     fp_dev_close(dev);
@@ -174,16 +182,6 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
     int id_user_matched = -1;
     char str_user_id[12];
 
-    if(index_match > -1){
-        id_user_matched = id_list[index_match];
-        printf("index_match: %d | id_user: %d\n", index_match, id_user_matched);
-        sprintf(str_user_id, "%d", id_user_matched);
-        printf("user id string: %s\n", str_user_id);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "User matches",  str_user_id);
-
-    }else {
-        compose_json_answer("SCREEN_UPDATE", "FAILED", "verify", "User doesn't match", "-1");
-    }
     //fp_print_data_free(print_gallery);
 
     return id_user_matched;
