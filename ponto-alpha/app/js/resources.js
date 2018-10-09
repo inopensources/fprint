@@ -34,7 +34,9 @@
 
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
-'    '
+        $(".device-status").html(
+            "<h2><b>Aguarde...</b></h2>"
+        )
     }
 
     //O método abaixo atualiza o status do registro da digital
@@ -90,8 +92,10 @@
     }
 
     function dealWithReturnedUser(json){
-        var base = atob(json.data);
+        // var base = atob(json.data);
+        var base = JSON.parse(atob(json));
+        alert(JSON.stringify(base));
         $(".device-status").html(
-            "<h2><b>base.namea</b></h2>"
+            "<h2><b>"+base.name+"</b></h2>"
         )
     }

@@ -72,7 +72,7 @@
                 break;
             case "do_point_final":
                 console.log("Concluindo verificação " + json.message);
-                dealWith ReturnedUser(json);
+                dealWithReturnedUser(json);
                 break;
             case "do_point":
                 console.log("Verificando digital de usuário " + json.message);
