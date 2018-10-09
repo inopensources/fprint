@@ -9,6 +9,8 @@
 #ifndef UNTITLED_UTILS_H
 #define UNTITLED_UTILS_H
 
+char * compose_json_answer_user_matches(char id_user[], char name_user[]);
+
 void compose_json_answer(char type[], char status[], char method_name[], char message[], char data[]);
 
 void string_to_fprint(char fprint_string[], unsigned char file[]);

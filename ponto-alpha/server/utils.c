@@ -9,6 +9,27 @@
 #include "structs.h"
 #include <json-c/json.h>
 
+char * compose_json_answer_user_matches(char id_user[], char name_user[]){
+
+    char json_0[] = "{\n";
+    char json_1[] = " \"id\" : ";
+    char json_2[] = " \"name\" : ";
+    char json_3[] = "}\n";
+
+    int json_size = strlen(json_0) +
+                    strlen(json_1) + strlen(id_user) +
+                    strlen(json_2) + strlen(name_user) +
+                    strlen(json_3);
+
+    //+10 to take each \0 into consideration
+    char * json = calloc(json_size + 20, sizeof(char));
+
+    sprintf(json, "{\n \"id\" : \"%s\", \"name\" : \"%s\"\n}", id_user, name_user);
+
+    return json;
+
+}
+
 void compose_json_answer(char type[], char status[], char method_name[], char message[], char data[]){
     char json_0[] = "{\n";
     char json_1[] = " \"type\" : ";

@@ -3,7 +3,7 @@ project(ponto_inf C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(ponto_infarma verify_live.c decode.c encode.c structs.h utils.h remote_database.c remote_database.h)
+add_executable(ponto_infarma verify_live.c decode.c encode.c structs.h utils.h remote_database.c remote_database.h user.c user.h)
 
 target_link_libraries(ponto_infarma fprint)
 target_link_libraries(ponto_infarma curl)

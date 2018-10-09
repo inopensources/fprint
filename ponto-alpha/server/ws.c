@@ -9,6 +9,7 @@
 #include "ponto.c"
 #include "ws_utils.c"
 #include "utils.c"
+#include "user.h"
 
 int * wsi_local;
 
@@ -69,6 +70,10 @@ int decider(struct lws *wsi, void *in, size_t len){
             printf("\n2: %s\n", "Clock in/out");
             do_point();
 
+            return 0;
+        case '3':
+            printf("\n3: %s\n", "Verify Adm");
+            verify_adm();
             return 0;
         default:
             printf("\nError: %s\n", "Don't know how to answer to this. :|");
