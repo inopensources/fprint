@@ -92,10 +92,26 @@
     }
 
     function dealWithReturnedUser(json){
-        // var base = atob(json.data);
-        var base = JSON.parse(atob(json));
-        alert(JSON.stringify(base));
-        $(".device-status").html(
-            "<h2><b>"+base.name+"</b></h2>"
-        )
+        var base = JSON.parse(atob(json.data));
+
+        $(".user-entry").html(
+            "<h1>Entrada de usuário</h1>" +
+            "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
+            "<h2> Olá "+ base.usuario.nome+"</h2>"+
+            "<h2>"+ utf8Decode(base.message)+"</h2>"+
+            "</div>"
+        );
+
+        window.location.href = "#paginaUsuario";
+    }
+
+    function resetProfilePage(){
+        $(".user-entry").html("");
+    }
+
+    function resetScreens(){
+        resetProfilePage();
+        resetUserList();
+        rhCheckReset();
+        resetDeviceStatus();
     }

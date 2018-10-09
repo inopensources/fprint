@@ -1,12 +1,15 @@
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#4A6FB1', '#a6a6a6', '#7BAABE', '#4A6FB1', '#4A6FB1'],
-    anchors: ['boasVindas', 'controle', 'cadastraUsuario', 'batePonto', 'lastPage'],
+    anchors: ['boasVindas', 'controle', 'cadastraUsuario', 'batePonto', 'paginaUsuario'],
     menu: '#menu',
 
     //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
     easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
     afterLoad: function (anchorLink, index) {
         switch (index.anchor) {
+            case "boasVindas":
+                resetScreens();
+                break;
             case "batePonto":
                 // Inicializando dispositivo
                 verifyFingerprint();
@@ -17,6 +20,11 @@ var myFullpage = new fullpage('#fullpage', {
                 resetDeviceStatus();
                 returnUserList();
                 id();
+                break;
+            case "paginaUsuario":
+                setTimeout(function(){
+                    window.location.href = "#boasVindas";
+                }, 5000);
                 break;
         }
     },
@@ -35,3 +43,15 @@ var myFullpage = new fullpage('#fullpage', {
         }
     }
 });
+
+
+// sleep(3000);
+// window.location.href = "#boasVindas";
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+            break;
+        }
+    }
+}
