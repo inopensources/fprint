@@ -9,14 +9,12 @@ void post_user(int id_usuario, char digital[], int tamanho_array);
 
 int deal_with_json(char* json_str, struct user_list *list);
 
-void post_ponto(int id_usuario);
+char *post_ponto(int id_usuario);
 
 char *get_user_list_mini();
 
 char *get_full_user_list();
 
 int create_list_users();
-
-void post_ponto(int id_usuario);
 
 #endif //UNTITLED_REMOTE_DATABASE_H

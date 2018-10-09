@@ -85,7 +85,7 @@ int do_point(){
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Cadastre sua digital.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Registre sua digital.", "");
 
     ///Fim inicialização device
 
@@ -97,19 +97,13 @@ int do_point(){
 
     if(result > -1){
         printf("id_user: %d\n", result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Usuário confirmado", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
-        //compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
+        unsigned char * retorno = post_ponto(result);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "Usuário confirmado", retorno);
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }
 
-    printf("Result do_point:%d\n", result);
-    post_ponto(result);
-
-    out_close:
     fp_dev_close(dev);
-    out:
-
     fp_exit();
 
     return 0;

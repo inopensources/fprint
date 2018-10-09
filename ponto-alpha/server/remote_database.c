@@ -33,7 +33,7 @@ WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
 void post_user(int id_usuario, char digital[], int tamanho_array){
 
         char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
-        // char url[] = "http://192.168.16.111:8080/ponto/cadastro_digital";
+//         char url[] = "http://localhost:8080/ponto/cadastro_digital";
 
         char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
         char requestBody2[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"digital\"\r\n\r\n";
@@ -133,13 +133,16 @@ char *get_user_list_mini() {
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
+    char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios_mini";
+//    char url[] = "http://localhost:8080/ponto/lista_usuarios_mini";
+
     curl_global_init(CURL_GLOBAL_ALL);
 
     /* init the curl session */
     curl_handle = curl_easy_init();
 
     curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios_mini");
+    curl_easy_setopt(curl_handle, CURLOPT_URL, url);
 
     struct curl_slist *headers = NULL;
     headers = curl_slist_append(headers, "Postman-Token: 193ba1fd-48a2-4777-a0fc-f8600d0251ac");
@@ -182,13 +185,16 @@ char *get_full_user_list() {
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
+    char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios";
+//    char url[] = "http://localhost:8080/ponto/lista_usuarios";
+
     curl_global_init(CURL_GLOBAL_ALL);
 
     /* init the curl session */
     curl_handle = curl_easy_init();
 
     curl_easy_setopt(curl_handle, CURLOPT_CUSTOMREQUEST, "GET");
-    curl_easy_setopt(curl_handle, CURLOPT_URL, "http://licenca.infarma.com.br/ponto/lista_usuarios");
+    curl_easy_setopt(curl_handle, CURLOPT_URL, url);
 
     struct curl_slist *headers = NULL;
     headers = curl_slist_append(headers, "Postman-Token: 193ba1fd-48a2-4777-a0fc-f8600d0251ac");
@@ -242,9 +248,15 @@ int create_list_users(){
     return number_of_users;
 }
 
-void post_ponto(int id_usuario){
+char *post_ponto(int id_usuario){
+    unsigned char buf2;
+    struct MemoryStruct chunk;
+
+    chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
+    chunk.size = 0;    /* no data at this point */
 
     char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
+//    char url[] = "http://localhost:8080/ponto/bate_ponto";
 
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
     char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
@@ -269,10 +281,24 @@ void post_ponto(int id_usuario){
     headers = curl_slist_append(headers, "Authorization: Basic VVNFUlRFU1RFOjEyMzQ1");
     headers = curl_slist_append(headers, "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
     curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
-
     curl_easy_setopt(hnd, CURLOPT_POSTFIELDS, result);
+    curl_easy_setopt(hnd, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
+    curl_easy_setopt(hnd, CURLOPT_WRITEDATA, (void *) &chunk);
 
     CURLcode ret = curl_easy_perform(hnd);
 
+    if (ret != CURLE_OK) {
+        fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                curl_easy_strerror(ret));
+    } else {
+        printf("%lu bytes retrieved\n", (long) chunk.size);
+        unsigned char buffer2[chunk.size+5];
+        unsigned char *buf2 = calloc(chunk.size, sizeof(int));
+        int i = 0;
+        for (i = 0; i < chunk.size; i++) {
+            buf2[i] = chunk.memory[i];
+        }
+        return buf2;
+    }
     free(result);
 }
