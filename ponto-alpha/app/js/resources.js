@@ -19,9 +19,54 @@
         //chamar verificação de digital de gerente/rh aqui
     }
 
+    function rhCheckFinishSuccess(json){
+        $("#modal-rh-check-text").html("<h2>"+json.message+"</h2>");
+        $("#rh-check-device").hide();
+        $("#modal-rh-check-text").show(250);
+        setTimeout(function(){
+            setUserRegisterStage();
+            registerFingerPrint(userId);
+        }, 2000);
+    }
+
+    function rhCheckFinishError(json){
+        $("#modal-rh-check-text").html("<h2>"+json.message+"</h2>");
+        $("#rh-check-device").hide();
+        $("#modal-rh-check-text").hide();
+    }
+
     //O método abaixo zera a verificação de digital
     function rhCheckReset(){
         $("#modal-rh-check-text").show(250);
+        $("#modal-rh-register").html("<!-- Modal Header -->\n" +
+            "                <div class=\"modal-header\">\n" +
+            "                    <h2 class=\"modal-title rh-check-title\">Permissão do RH/Gerente</h2>\n" +
+            "                    <button type=\"button\"  onclick=\"off()\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n" +
+            "                </div>\n" +
+            "\n" +
+            "                <!-- Modal body -->\n" +
+            "                <div class=\"modal-body\">\n" +
+            "                    <div id=\"modal-rh-check-text\">\n" +
+            "                        <h3>\n" +
+            "                            É necessária a presença de um Gerente ou Representante do RH para o cadastro de um usuário.\n" +
+            "                        </h3>\n" +
+            "                        <h3>\n" +
+            "                            <b>Caso exista um gerente ou representante do RH presente, pressione o botão abaixo para iniciar a verificação.</b>\n" +
+            "                        </h3>\n" +
+            "                    </div>\n" +
+            "                    <div class=\"device-status\" id=\"rh-check-device\">\n" +
+            "\n" +
+            "                    </div>\n" +
+            "                    <div class=\"user-register\" id=\"user-register\">\n" +
+            "                    </div>\n" +
+            "                    <div class=\"text-center\">\n" +
+            "                        <a class=\"btn btn-sq-lg btn-primary\" onclick=\"resetScreens(); rhCheckStart()\">\n" +
+            "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
+            "                            <i class=\"fa fa-fingerprint\" style=\"font-size: 84px; padding: 20px;\"></i>\n" +
+            "                        </a>\n" +
+            "                    </div>\n" +
+            "                </div>");
+
         $("#rh-check-device").hide(250);
     }
 
@@ -52,6 +97,31 @@
             "<h2>"+json.message+"<h2>"
         );
     }
+
+    //O método abaixo atualiza o status do registro da digital
+    function finishEnroll(json){
+        $(".user-register").html(
+            "<h2>"+json.message+"<h2>"
+        );
+    }
+
+    //O método abaixo atualiza o status do registro da digital
+    function startVerify(json){
+        $(".user-register").html(
+            "<h2>"+json.message+"<h2>"
+        );
+    }
+
+    //O método abaixo atualiza o status do registro da digital
+    function finishVerify(json){
+        $(".user-register").html(
+            "<h2>"+json.message+"<h2>"
+        );
+        setTimeout(function(){
+            resetScreensAndGoHome();
+        }, 5000);
+    }
+
 
     //O método abaixo zera o status do registro da digital
     function resetEnrollStatus(json){
@@ -114,4 +184,19 @@
         resetUserList();
         rhCheckReset();
         resetDeviceStatus();
+    }
+
+    function resetScreensAndGoHome(){
+        resetProfilePage();
+        rhCheckReset();
+        resetDeviceStatus();
+        off();
+
+        window.location.href = "#boasVindas";
+
+    }
+
+    function setUserRegisterStage(){
+        $("#modal-rh-check-text").hide(250);
+        $(".rh-check-title").html("<h2 class='modal-title rg-check-title'>Cadastro de digital</h2>")
     }

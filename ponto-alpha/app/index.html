@@ -218,11 +218,11 @@
     <!-- The Modal -->
     <div class="text">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content" id="modal-rh-register">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h2 class="modal-title">Permissão do RH/Gerente</h2>
+                    <h2 class="modal-title rh-check-title">Permissão do RH/Gerente</h2>
                     <button type="button"  onclick="off()" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -242,8 +242,8 @@
                     <div class="user-register" id="user-register">
                     </div>
                     <div class="text-center">
-                        <!--<a class="btn btn-sq-lg btn-primary" onclick="rhCheckStart()">-->
-                        <a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">
+                        <a class="btn btn-sq-lg btn-primary" onclick="resetScreens(); rhCheckStart()">
+                        <!--<a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">-->
                             <i class="fa fa-fingerprint" style="font-size: 84px; padding: 20px;"></i>
                         </a>
                     </div>

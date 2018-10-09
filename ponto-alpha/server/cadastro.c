@@ -88,7 +88,7 @@ int cadastra_user(int user_id){
 
     //todo: modularizar verificação em um só método
 
-    compose_json_answer("SCREEN_UPDATE", "ALERT", "verify", "Realizando teste", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Realizando teste", "");
 
 
     printf("\nVerifing..\n");
@@ -98,7 +98,7 @@ int cadastra_user(int user_id){
         compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Verificação Falhou", "");
     }else{
         ///match
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Vericação bem sucedida", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify_final", "Vericação bem sucedida", "");
 
     }
 
@@ -136,7 +136,7 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
         switch (r) {
             case FP_ENROLL_COMPLETE:
                 printf("Enroll completed!\n");
-                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Cadastro concluído com sucesso.", "");
+                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll_final", "Cadastro concluído com sucesso.", "");
                 break;
             case FP_ENROLL_FAIL:
                 printf("Enroll failed, something wen't wrong :(\n");
