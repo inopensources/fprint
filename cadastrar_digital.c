@@ -27,7 +27,7 @@ int cadastrar_digital(int id_usuario, char* digital, int tamanho_array) {
     char tamanhoArrayAsStr[12];
     sprintf(tamanhoArrayAsStr, "%d", tamanho_array);
 
-    char *result = malloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody2) + strlen(digital) + strlen(requestBody3) + strlen(tamanhoArrayAsStr) + strlen(requestBody4) + 1);
+    char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody2) + strlen(digital) + strlen(requestBody3) + strlen(tamanhoArrayAsStr) + strlen(requestBody4) + 1, sizeof(char));
     strcat(result, requestBody1);
     strcat(result, userIdAsStr);
     strcat(result, requestBody2);
