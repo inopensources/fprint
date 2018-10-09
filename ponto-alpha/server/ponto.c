@@ -218,7 +218,7 @@ void verify_adm(){
 
     //Allocating structs to fill with user data
     //PS: Free this later on
-    struct user_list *list_of_users = calloc(number_of_users, sizeof(struct user_list));
+    struct user_list *list_of_users = malloc(number_of_users * sizeof(struct user_list));
     num_digitais = deal_with_json(json, list_of_users);
 
     //criando lista de digitais
