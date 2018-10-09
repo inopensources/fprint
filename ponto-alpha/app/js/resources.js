@@ -26,7 +26,7 @@
         setTimeout(function(){
             setUserRegisterStage();
             registerFingerPrint(userId);
-        }, 2000);
+        }, 5000);
     }
 
     function rhCheckFinishError(json){
