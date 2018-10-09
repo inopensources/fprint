@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include "utils.h"
 #include "remote_database.h"
+#include "device_utils.h"
 
 struct fp_print_data *enroll(struct fp_dev *dev);
 
@@ -83,6 +84,24 @@ int cadastra_user(int user_id){
     char digital[length_dig];
     fprint_to_string(ret, length, digital);
     post_user(user_id, digital, length_dig);
+
+
+    //todo: modularizar verificação em um só método
+
+    compose_json_answer("SCREEN_UPDATE", "ALERT", "verify", "Realizando teste", "");
+
+
+    printf("\nVerifing..\n");
+    int result_verify = verify(dev, data);
+    if(result_verify == 0){
+        ///don't match
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Verificação Falhou", "");
+    }else{
+        ///match
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Vericação bem sucedida", "");
+
+    }
+
 
     ///*Encerrando device*///
     fp_dev_close(dev);

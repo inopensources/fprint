@@ -13,8 +13,6 @@
 
 int do_point();
 
-
-
 int do_point(){
 
     //lista de digitais
@@ -190,6 +188,8 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
     return id_user_matched;
 }
 
+
+//todo: mover is_user_adm para user.c
 void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
     for(int i = 0; i < number_of_users; i++){
         if (strcmp((list_of_users)[i].fingerprint, "") != 0){
@@ -208,7 +208,7 @@ void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
     }
 }
 
-
+//todo: mover verify_adm para user.c
 void verify_adm(){
 
     //lista de digitais
