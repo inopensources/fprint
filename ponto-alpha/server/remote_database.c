@@ -32,8 +32,8 @@ WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
 
 void post_user(int id_usuario, char digital[], int tamanho_array){
 
-//        char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
-         char url[] = "http://localhost:8080/ponto/cadastro_digital";
+        char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
+//         char url[] = "http://localhost:8080/ponto/cadastro_digital";
 
         char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
         char requestBody2[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"digital\"\r\n\r\n";
@@ -133,8 +133,8 @@ char *get_user_list_mini() {
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
-    //char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios_mini";
-    char url[] = "http://localhost:8080/ponto/lista_usuarios_mini";
+    char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios_mini";
+//    char url[] = "http://localhost:8080/ponto/lista_usuarios_mini";
 
     curl_global_init(CURL_GLOBAL_ALL);
 
@@ -185,8 +185,8 @@ char *get_full_user_list() {
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
-    //char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios";
-    char url[] = "http://localhost:8080/ponto/lista_usuarios";
+    char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios";
+//    char url[] = "http://localhost:8080/ponto/lista_usuarios";
 
     curl_global_init(CURL_GLOBAL_ALL);
 
@@ -255,8 +255,8 @@ char *post_ponto(int id_usuario){
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
-//    char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
-    char url[] = "http://localhost:8080/ponto/bate_ponto";
+    char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
+//    char url[] = "http://localhost:8080/ponto/bate_ponto";
 
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
     char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";

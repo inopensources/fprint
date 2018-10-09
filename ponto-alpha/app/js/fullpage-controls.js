@@ -1,5 +1,5 @@
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#4A6FB1', '#a6a6a6', '#7BAABE', '#4A6FB1', '#4A6FB1'],
+    sectionsColor: ['#4A6FB1', '#a6a6a6', '#7BAABE', '#4A6FB1', '#C0C0C0'],
     anchors: ['boasVindas', 'controle', 'cadastraUsuario', 'batePonto', 'paginaUsuario'],
     menu: '#menu',
 
