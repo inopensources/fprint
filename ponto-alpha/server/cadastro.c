@@ -85,7 +85,6 @@ int cadastra_user(int user_id){
     fprint_to_string(ret, length, digital);
     post_user(user_id, digital, length_dig);
 
-
     //todo: modularizar verificação em um só método
 
     compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Realizando teste", "");
@@ -93,6 +92,11 @@ int cadastra_user(int user_id){
 
     printf("\nVerifing..\n");
     int result_verify = verify(dev, data);
+
+    ///*Encerrando device*///
+    fp_dev_close(dev);
+    fp_exit();
+
     if(result_verify == 0){
         ///don't match
         compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Verificação Falhou", "");
@@ -102,9 +106,6 @@ int cadastra_user(int user_id){
 
     }
 
-
-    ///*Encerrando device*///
-    fp_dev_close(dev);
     return 0;
 }
 
