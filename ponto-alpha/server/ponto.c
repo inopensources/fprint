@@ -94,6 +94,9 @@ int do_point(){
     char userIdAsStr[12];
     sprintf(userIdAsStr, "%d", result);
 
+    ///*Encerrando device*///
+    fp_dev_close(dev);
+    fp_exit();
 
     if(result > -1){
         printf("id_user: %d\n", result);
@@ -102,9 +105,6 @@ int do_point(){
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
     }
-
-    fp_dev_close(dev);
-    fp_exit();
 
     return 0;
 }
@@ -192,9 +192,9 @@ void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
                 if (strcmp((list_of_users)[i].role, "ROLE_ADM") == 0){
                     char admIdAsStr[12];
                     sprintf(admIdAsStr, "%d", (list_of_users)[i].user_id);
-                    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "is_user_adm", "Usuário é adm", admIdAsStr);
+                    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "is_user_adm", "Usuário é administrador/RH.", admIdAsStr);
                 }else{
-                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Usuário não é adm", "-1");
+                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Usuário não é administrador/RH.", "-1");
 
                 }
             }
@@ -284,23 +284,18 @@ void verify_adm(){
     char userIdAsStr[12];
     sprintf(userIdAsStr, "%d", result);
 
+    ///*Encerrando device*///
+    fp_dev_close(dev);
+    fp_exit();
 
     if(result > -1){
         printf("id_user: %d\n", result);
         is_user_adm(result, list_of_users, number_of_users);
-        //compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "", compose_json_answer_user_matches(userIdAsStr,  get_name_by_id(result, list_of_users, number_of_users)));
     }else {
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "User doesn't match", "-1");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Usuário não é administrador/RH.", "-1");
     }
 
     printf("Result do_point:%d\n", result);
-
-
-    out_close:
-    fp_dev_close(dev);
-    out:
-
-    fp_exit();
 
 }
 

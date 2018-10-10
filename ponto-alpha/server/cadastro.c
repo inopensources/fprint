@@ -102,7 +102,7 @@ int cadastra_user(int user_id){
     }else{
         ///match
         post_user(user_id, digital, length_dig);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify_final", "Vericação bem sucedida", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify_final", "Verificação bem sucedida", "");
 
     }
 
@@ -119,7 +119,7 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
     compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Você precisará escanear sua digital 5 vezes para concluir o processo.", "");
-
+    sleep(5);
     do {
 
         sleep(1);

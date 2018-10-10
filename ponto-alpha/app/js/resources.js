@@ -26,13 +26,13 @@
         setTimeout(function(){
             setUserRegisterStage();
             registerFingerPrint(userId);
-        }, 5000);
+        }, 3000);
     }
 
     function rhCheckFinishError(json){
         $("#modal-rh-check-text").html("<h2>"+json.message+"</h2>");
         $("#rh-check-device").hide();
-        $("#modal-rh-check-text").hide();
+        $("#modal-rh-check-text").show(250);
     }
 
     //O método abaixo zera a verificação de digital
@@ -181,16 +181,16 @@
 
     function resetScreens(){
         resetProfilePage();
-        resetUserList();
+        // resetUserList();
         rhCheckReset();
         resetDeviceStatus();
     }
 
     function resetScreensAndGoHome(){
+        off();
         resetProfilePage();
         rhCheckReset();
         resetDeviceStatus();
-        off();
 
         window.location.href = "#boasVindas";
 
