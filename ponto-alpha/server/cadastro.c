@@ -204,7 +204,7 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
     compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Você precisará escanear sua digital 5 vezes para concluir o processo.", "");
-    sleep(5);
+    sleep(2);
     do {
 
         sleep(1);
