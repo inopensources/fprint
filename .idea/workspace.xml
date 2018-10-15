@@ -355,9 +355,9 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="549" />
-    <option name="y" value="25" />
-    <option name="width" value="817" />
-    <option name="height" value="743" />
+    <option name="y" value="27" />
+    <option name="width" value="807" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -434,7 +434,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ponto_infarma" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ponto_inf" TARGET_NAME="ponto_infarma" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ponto_inf" RUN_TARGET_NAME="ponto_infarma">
+    <configuration name="ponto_infarma" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ponto_infarma" TARGET_NAME="ponto_infarma" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ponto_infarma" RUN_TARGET_NAME="ponto_infarma">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>

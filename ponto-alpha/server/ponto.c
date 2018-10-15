@@ -275,7 +275,7 @@ void verify_adm(){
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Cadastre sua digital.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Posicione sua digital.", "");
 
     ///Fim inicialização device
 
