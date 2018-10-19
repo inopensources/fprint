@@ -45,58 +45,66 @@ int do_point(){
         }
     }
 
-    ///*Iniciando device*///
+   int trying = 1;
+   int result = -22; //iniciando resultado com erro
 
-    int r = 1;
-    struct fp_dscv_dev *ddev;
-    struct fp_dscv_dev **discovered_devs;
-    struct fp_dev *dev;
-    // struct fp_print_data *data;
+   while(result == -22 && trying < 5){
+      	    
+           ///*Iniciando device*///
 
-
-    r = fp_init();
-
-    if (r < 0) {
-        fprintf(stderr, "Failed to initialize libfprint\n");
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao inicializar a libfprint", "");
-        return 1;
+   	    int r = 1;
+	    struct fp_dscv_dev *ddev;
+	    struct fp_dscv_dev **discovered_devs;
+	    struct fp_dev *dev;
+	   
+	
+	    r = fp_init();
+	
+	    if (r < 0) {
+	        fprintf(stderr, "Failed to initialize libfprint\n");
+	        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao inicializar a libfprint", "");
+	        return 1;
+	    }
+	
+	    fp_set_debug(3);
+	
+	    discovered_devs = fp_discover_devs();
+	    if (!discovered_devs) {
+	        fprintf(stderr, "Could not discover devices\n");
+	        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao descobrir dispositivos", "");
+	        return 1;
+	    }
+	    ddev = discover_device(discovered_devs);
+	    if (!ddev) {
+	        fprintf(stderr, "No devices detected.\n");
+	        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Nenhum dispositivo encontrado", "");
+	        return 1;
+	    }
+	    dev = fp_dev_open(ddev);
+	    fp_dscv_devs_free(discovered_devs);
+	    if (!dev) {
+	        fprintf(stderr, "Could not open device.\n");
+	        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao abrir dispositivo", "");
+	        return 1;
+	    }
+	
+	    printf("Opened device. It's now time to enroll your finger.\n");
+	    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Posicione sua digital.", "");
+	
+	    ///Fim inicialização device
+	
+	    result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
+	
+	    printf("\n trying:  %d, result:  %d\n", trying, result);
+	    trying +=1;
+	   
+	    ///*Encerrando device*///
+	    fp_dev_close(dev);
+            fp_exit();
+   
     }
-
-    fp_set_debug(3);
-
-    discovered_devs = fp_discover_devs();
-    if (!discovered_devs) {
-        fprintf(stderr, "Could not discover devices\n");
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao descobrir dispositivos", "");
-        return 1;
-    }
-    ddev = discover_device(discovered_devs);
-    if (!ddev) {
-        fprintf(stderr, "No devices detected.\n");
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Nenhum dispositivo encontrado", "");
-        return 1;
-    }
-    dev = fp_dev_open(ddev);
-    fp_dscv_devs_free(discovered_devs);
-    if (!dev) {
-        fprintf(stderr, "Could not open device.\n");
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Falha ao abrir dispositivo", "");
-        return 1;
-    }
-
-    printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Posicione sua digital.", "");
-
-    ///Fim inicialização device
-
-    int result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
-
     char userIdAsStr[12];
     sprintf(userIdAsStr, "%d", result);
-
-    ///*Encerrando device*///
-    fp_dev_close(dev);
-    fp_exit();
 
     if(result > -1){
         printf("id_user: %d\n", result);
@@ -167,7 +175,7 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
 
     ///for 1 by many verification
     int index_match = identify(dev, print_gallery);
-    int id_user_matched = -1;
+    int id_user_matched;
     char str_user_id[12];
 
     if(index_match > -1){
@@ -175,11 +183,13 @@ int compare_digital(struct fp_dev *dev, unsigned char digitais[][12050], int num
         printf("index_match: %d | id_user: %d\n", index_match, id_user_matched);
         sprintf(str_user_id, "%d", id_user_matched);
         printf("user id string: %s\n", str_user_id);
+ 
+	return id_user_matched;
     }
 
     //fp_print_data_free(print_gallery);
-
-    return id_user_matched;
+   
+    return index_match;
 }
 
 
@@ -203,7 +213,7 @@ void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
 }
 
 //todo: mover verify_adm para user.c
-void verify_adm(){
+int verify_adm(){
 
     //lista de digitais
     int num_digitais = 0;
@@ -291,11 +301,9 @@ void verify_adm(){
     if(result > -1){
         printf("id_user: %d\n", result);
         is_user_adm(result, list_of_users, number_of_users);
-    }else {
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Usuário não é administrador/RH.", "-1");
     }
 
-    printf("Result do_point:%d\n", result);
+   return result;
 
 }
 

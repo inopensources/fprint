@@ -480,7 +480,7 @@ API_EXPORTED int fp_identify_finger_img(struct fp_dev *dev,
 	fp_dbg("to be handled by %s", dev->drv->name);
 
 	r = fp_async_identify_start(dev, print_gallery, sync_identify_cb, idata);
-
+       
 
 
 	if (r < 0) {
@@ -492,6 +492,7 @@ API_EXPORTED int fp_identify_finger_img(struct fp_dev *dev,
 	while (!idata->populated) {
 
 		r = fp_handle_events();
+		
 		if (r < 0)
 			goto err_stop;
 	}
@@ -502,6 +503,7 @@ API_EXPORTED int fp_identify_finger_img(struct fp_dev *dev,
 		fp_img_free(idata->img);
 
 	r = idata->result;
+ 	
 	switch (idata->result) {
 	case FP_VERIFY_NO_MATCH:
 		fp_dbg("result: no match");
@@ -525,6 +527,9 @@ API_EXPORTED int fp_identify_finger_img(struct fp_dev *dev,
 	default:
 		fp_err("unrecognised return code %d", r);
 		r = -EINVAL;
+		if(r == -22){
+			printf("\n r = -22 depois de idata->resultn");
+		}
 	}
 
 err_stop:

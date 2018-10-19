@@ -73,7 +73,17 @@ int decider(struct lws *wsi, void *in, size_t len){
             return 0;
         case '3':
             printf("\n3: %s\n", "Verify Adm");
-            verify_adm();
+
+            int trying = 1;
+            int result_verify_adm = -22; //iniciando resultado com erro
+            while(result_verify_adm == -22 && trying < 5){
+                result_verify_adm = verify_adm();
+                printf("\n trying: %d, result_verify_adm: %d\n", trying, result_verify_adm);
+                trying +=1;
+            }
+            if(result_verify_adm == -1){
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Usuário não é administrador/RH.", "-1");
+            }
             return 0;
         default:
             printf("\nError: %s\n", "Don't know how to answer to this. :|");

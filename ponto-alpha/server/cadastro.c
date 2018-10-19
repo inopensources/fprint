@@ -179,7 +179,16 @@ int cadastra_user(int user_id){
     fp_exit();
 
     printf("\nVerifing..\n");
-    int result_verify = verify(data);
+
+    int trying = 1;
+    int result_verify = -22; //iniciando resultado com erro
+
+    while(result_verify  == -22 && trying < 5){
+        result_verify = verify(data);
+        printf("\n trying: %d, result_verify : %d\n", trying, result_verify);
+        trying +=1;
+    }
+
 
     if(result_verify == 0){
         ///don't match
