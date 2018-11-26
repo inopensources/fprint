@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +81,7 @@
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="98" />
           <entry key="JavaScript" value="35" />
-          <entry key="ObjectiveC" value="15694" />
+          <entry key="ObjectiveC" value="15695" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -91,7 +89,7 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="15581" />
+          <entry key="c" value="15582" />
           <entry key="h" value="128" />
           <entry key="html" value="98" />
           <entry key="js" value="35" />
@@ -157,20 +155,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="87" column="16" lean-forward="true" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+            <state relative-caret-position="395">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="206" column="124" lean-forward="true" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="124" />
+            <state relative-caret-position="160">
+              <caret line="238" column="59" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -187,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/cadastro.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
+            <state relative-caret-position="154">
+              <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
             </state>
           </provider>
         </entry>
@@ -204,7 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>do_point</find>
       <find>size_of_file</find>
       <find>get_number_of_users</find>
       <find>compose_json_answer</find>
@@ -234,6 +231,7 @@
       <find>verify_a</find>
       <find>Usuário não é</find>
       <find>Você</find>
+      <find>!= 57</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -291,8 +289,8 @@
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
       </list>
     </option>
   </component>
@@ -308,7 +306,7 @@
     </packageJsonPaths>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="613" />
     <option name="y" value="25" />
     <option name="width" value="753" />
@@ -436,12 +434,12 @@
       <workItem from="1539029719518" duration="4742000" />
       <workItem from="1539106415629" duration="13134000" />
       <workItem from="1539625675154" duration="1308000" />
-      <workItem from="1543267316601" duration="2109000" />
+      <workItem from="1543267316601" duration="2207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183335000" />
+    <option name="totallyTimeSpent" value="183433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -461,7 +459,7 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3442088" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35073408" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -759,24 +757,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/cadastro.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
+        <state relative-caret-position="154">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="206" column="124" lean-forward="true" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="87" column="16" lean-forward="true" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        <state relative-caret-position="160">
+          <caret line="238" column="59" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
         </state>
       </provider>
     </entry>
