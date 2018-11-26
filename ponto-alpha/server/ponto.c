@@ -89,7 +89,7 @@ int do_point(){
 	    }
 	
 	    printf("Opened device. It's now time to enroll your finger.\n");
-	    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Posicione sua digital.", "");
+	    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Posicione sua digital no sensor", "");
 	
 	    ///Fim inicialização device
 	
@@ -109,9 +109,9 @@ int do_point(){
     if(result > -1){
         printf("id_user: %d\n", result);
         unsigned char * retorno = post_ponto(result);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "Usuário confirmado", retorno);
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "Ponto realizado com sucesso :)", retorno);
     }else {
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Usuário não confirmado", "-1");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Não foi possível realizar o seu ponto :/\n Por favor, procure o setor administrativo.", "-1");
     }
 
     return 0;
@@ -202,9 +202,9 @@ void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
                 if (strcmp((list_of_users)[i].role, "ROLE_ADM") == 0){
                     char admIdAsStr[12];
                     sprintf(admIdAsStr, "%d", (list_of_users)[i].user_id);
-                    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "is_user_adm", "Usuário é administrador/RH.", admIdAsStr);
+                    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "is_user_adm", "Verificação bem sucedida. Olá, Gerente/RH !", admIdAsStr);
                 }else{
-                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Usuário não é administrador/RH.", "-1");
+                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Verificação falhou. Você é um Gerente/RH ?", "-1");
 
                 }
             }
@@ -285,7 +285,7 @@ int verify_adm(){
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Dispositivo inicializado. Posicione sua digital.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Gerente/RH, posicione sua digital no sensor por favor", "");
 
     ///Fim inicialização device
 

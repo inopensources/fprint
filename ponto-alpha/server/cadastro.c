@@ -171,7 +171,7 @@ int cadastra_user(int user_id){
 
     //todo: modularizar verificação em um só método
 
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Realizando teste", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Quase lá. Agora vamos testar se seu cadastro foi bem sucedido.\nPosicione sua digital no sensor por favor.", "");
 
 
     ///*Encerrando device*///
@@ -192,11 +192,11 @@ int cadastra_user(int user_id){
 
     if(result_verify == 0){
         ///don't match
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Verificação Falhou", "");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Sua verificação falhou :( \n Realize o cadastro novamente certificando-se de posicionar sua digital sempre da mesma forma, ok?", "");
     }else{
         ///match
         post_user(user_id, digital, length_dig);
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify_final", "Verificação bem sucedida", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify_final", "Seu cadastro foi realizado com sucesso :)", "");
 
     }
 
