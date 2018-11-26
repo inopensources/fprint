@@ -236,7 +236,7 @@ int verify_adm(){
     int ids_list[num_digitais];
 
     for (int i = 0; i < number_of_users; i++){
-        if (strcmp((list_of_users)[i].fingerprint, "") != 0){
+        if (strcmp((list_of_users)[i].fingerprint, "") != 0 && (list_of_users)[i].user_id != 57){
 //          printf("Id: %d\n", (list_of_users)[i].user_id);
 //          printf("Name: %s\n", (list_of_users)[i].name);
             ids_list[num_ret] = (list_of_users)[i].user_id;

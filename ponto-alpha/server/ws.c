@@ -82,7 +82,7 @@ int decider(struct lws *wsi, void *in, size_t len){
                 trying +=1;
             }
             if(result_verify_adm == -1){
-                compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Verificação falhou. Você é um Gerente/RH ?.", "-1");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Verificação falhou. Você é um Gerente/RH ?", "-1");
             }
             return 0;
         default:

@@ -12,7 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +84,7 @@
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="98" />
           <entry key="JavaScript" value="35" />
-          <entry key="ObjectiveC" value="15695" />
+          <entry key="ObjectiveC" value="15696" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -89,7 +92,7 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="15582" />
+          <entry key="c" value="15583" />
           <entry key="h" value="128" />
           <entry key="html" value="98" />
           <entry key="js" value="35" />
@@ -155,20 +158,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+            <state relative-caret-position="80">
+              <caret line="84" column="117" lean-forward="true" selection-start-line="84" selection-start-column="117" selection-end-line="84" selection-end-column="117" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="238" column="59" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
+            <state relative-caret-position="190">
+              <caret line="240" column="58" selection-start-line="240" selection-start-column="58" selection-end-line="240" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -186,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/cadastro.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+              <caret line="184" selection-start-line="184" selection-end-line="184" />
             </state>
           </provider>
         </entry>
@@ -289,8 +292,8 @@
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
       </list>
     </option>
   </component>
@@ -434,12 +437,12 @@
       <workItem from="1539029719518" duration="4742000" />
       <workItem from="1539106415629" duration="13134000" />
       <workItem from="1539625675154" duration="1308000" />
-      <workItem from="1543267316601" duration="2207000" />
+      <workItem from="1543267316601" duration="2277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183433000" />
+    <option name="totallyTimeSpent" value="183503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -757,24 +760,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/cadastro.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="238" column="59" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
+        <state relative-caret-position="190">
+          <caret line="240" column="58" selection-start-line="240" selection-start-column="58" selection-end-line="240" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="84" column="117" lean-forward="true" selection-start-line="84" selection-start-column="117" selection-end-line="84" selection-end-column="117" />
         </state>
       </provider>
     </entry>
