@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +51,7 @@
           <entry key="Makefile" value="15" />
           <entry key="ac" value="1" />
           <entry key="am" value="4" />
-          <entry key="c" value="99" />
+          <entry key="c" value="100" />
           <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
           <entry key="h" value="39" />
@@ -71,7 +73,7 @@
           <entry key="Disassembly" value="11" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="ObjectiveC" value="139" />
+          <entry key="ObjectiveC" value="140" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
@@ -81,7 +83,7 @@
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="98" />
           <entry key="JavaScript" value="35" />
-          <entry key="ObjectiveC" value="15673" />
+          <entry key="ObjectiveC" value="15694" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -89,7 +91,7 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="15560" />
+          <entry key="c" value="15581" />
           <entry key="h" value="128" />
           <entry key="html" value="98" />
           <entry key="js" value="35" />
@@ -156,10 +158,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="87" column="16" lean-forward="true" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="239" column="59" lean-forward="true" selection-start-line="239" selection-start-column="59" selection-end-line="239" selection-end-column="59" />
+            <state relative-caret-position="116">
+              <caret line="206" column="124" lean-forward="true" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -193,8 +204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>compose</find>
-      <find>do_po</find>
       <find>do_point</find>
       <find>size_of_file</find>
       <find>get_number_of_users</find>
@@ -223,6 +232,8 @@
       <find>porfavor</find>
       <find>admn</find>
       <find>verify_a</find>
+      <find>Usuário não é</find>
+      <find>Você</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,7 +284,6 @@
         <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/utils.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/user.h" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/user.c" />
         <option value="$PROJECT_DIR$/libfprint-0.7.0/libfprint/data.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/device_utils.h" />
@@ -282,6 +292,7 @@
         <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
       </list>
     </option>
   </component>
@@ -297,7 +308,7 @@
     </packageJsonPaths>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="613" />
     <option name="y" value="25" />
     <option name="width" value="753" />
@@ -425,12 +436,12 @@
       <workItem from="1539029719518" duration="4742000" />
       <workItem from="1539106415629" duration="13134000" />
       <workItem from="1539625675154" duration="1308000" />
-      <workItem from="1543267316601" duration="2002000" />
+      <workItem from="1543267316601" duration="2109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183228000" />
+    <option name="totallyTimeSpent" value="183335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -714,7 +725,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/user.c" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c" />
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c" />
     <entry file="file://$PROJECT_DIR$/cadastrar_digital.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-194">
@@ -758,8 +768,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="239" column="59" lean-forward="true" selection-start-line="239" selection-start-column="59" selection-end-line="239" selection-end-column="59" />
+        <state relative-caret-position="116">
+          <caret line="206" column="124" lean-forward="true" selection-start-line="206" selection-start-column="82" selection-end-line="206" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="87" column="16" lean-forward="true" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
         </state>
       </provider>
     </entry>
