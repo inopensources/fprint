@@ -106,7 +106,8 @@ function showErrorModal(json) {
 function loadUserList(json) {
     var userList = JSON.parse(atob(json.data));
     $("#user-list").html("");
-
+    $("#subtitle-msg").html("");
+    $("#subtitle-msg").append("<h2>Escolha um usuário para realizar o cadastro por favor</h2>");
     for (i in userList) {
         var userRow = "<div class=\"col-sm-2 user-card\" user-id=\"" + userList[i].usuarioId + "\" >\n" +
             "                    <div class=\"card\">\n" +
@@ -117,10 +118,13 @@ function loadUserList(json) {
             "                    </div>\n" +
             "                </div>"
         $("#user-list").append(userRow);
+
         // if (i == 11){
         //     break;
         // }
     }
+
+
     id();
 }
 

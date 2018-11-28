@@ -40,7 +40,7 @@
         $("#modal-rh-check-text").show(250);
         $("#modal-rh-register").html("<!-- Modal Header -->\n" +
             "                <div class=\"modal-header\">\n" +
-            "                    <h2 class=\"modal-title rh-check-title\">Solicitação de Permissão</h2>\n" +
+            "                    <h2 class=\"modal-title rh-check-title\">Cadastro de Usuário - Solicitação de Permissão</h2>\n" +
             "                    <button type=\"button\"  onclick=\"off()\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n" +
             "                </div>\n" +
             "\n" +
@@ -51,7 +51,7 @@
             "                             Você precisa ser um Gerente ou um representante do RH para cadastrar um usuário.\n" +
             "                        </h3>\n" +
             "                        <h3>\n" +
-            "                             <b>Caso você seja, pressione o botão abaixo para iniciar a verificação :)</b>\n" +
+            "                             <b>Caso você seja, pressione o botão abaixo para iniciar a verificação</b>\n" +
             "                        </h3>\n" +
             "                    </div>\n" +
             "                    <div class=\"device-status\" id=\"rh-check-device\">\n" +

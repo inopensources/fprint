@@ -64,13 +64,13 @@ int verify(struct fp_print_data *data)
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Dispositivo inicializado. Verifique sua digital.", "");
+
 
     ///*Fim inicialização device*///
 
     do {
         printf("\nScan your finger now.\n");
-
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Posicione sua digital por favor", "");
         r = fp_verify_finger(dev, data);
 
         ///*Encerrando device*///
@@ -113,7 +113,7 @@ int verify(struct fp_print_data *data)
 int cadastra_user(int user_id){
 
     ///*Iniciando device*///
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Iniciando dispositivo de leitura.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Iniciando dispositivo de leitura, aguarde um pouco por favor.", "");
 
     int r = 1;
     struct fp_dscv_dev *ddev;
@@ -153,7 +153,7 @@ int cadastra_user(int user_id){
     }
 
     printf("Opened device. It's now time to enroll your finger.\n");
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Dispositivo inicializado. Cadastre sua digital.", "");
+//    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Posicione sua digital.", "");
 
     ///*Fim inicialização device*///
 
@@ -170,8 +170,7 @@ int cadastra_user(int user_id){
     fprint_to_string(ret, length, digital);
 
     //todo: modularizar verificação em um só método
-
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Quase lá. Agora vamos testar se seu cadastro foi bem sucedido.\nPosicione sua digital no sensor por favor.", "");
+//    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "verificação agora", "");
 
 
     ///*Encerrando device*///
@@ -179,6 +178,7 @@ int cadastra_user(int user_id){
     fp_exit();
 
     printf("\nVerifing..\n");
+    sleep(2);
 
     int trying = 1;
     int result_verify = -22; //iniciando resultado com erro
@@ -192,7 +192,7 @@ int cadastra_user(int user_id){
 
     if(result_verify == 0){
         ///don't match
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Sua verificação falhou :( \n Realize o cadastro novamente certificando-se de posicionar sua digital sempre da mesma forma, ok?", "");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Sua verificação falhou :( Realize o cadastro novamente certificando-se de posicionar sua digital sempre da mesma forma, ok?", "");
     }else{
         ///match
         post_user(user_id, digital, length_dig);
@@ -212,26 +212,26 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
     printf("You will need to successfully scan your finger %d times to "
            "complete the process.\n", fp_dev_get_nr_enroll_stages(dev));
 
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Você precisará escanear sua digital 5 vezes para concluir o processo.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Você precisará escanear sua digital 5 vezes para realizar o cadastro", "");
     sleep(2);
     do {
 
         sleep(1);
 
         printf("\nScan your finger now.\n");
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Escaneie seu dedo agora.", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Posicione sua digital no sensor por favor", "");
 
 
         r = fp_enroll_finger(dev, &enrolled_print);
         if (r < 0) {
             printf("Enroll failed with error %d\n", r);
-            compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao escanear.", "");
+            compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Opa, houve uma falha ao escanear. Tente mais um vez.", "");
             return NULL;
         }
         switch (r) {
             case FP_ENROLL_COMPLETE:
                 printf("Enroll completed!\n");
-                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll_final", "Cadastro concluído com sucesso.", "");
+                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll_final", "Quase lá. Agora vamos testar se seu cadastro foi bem sucedido.", "");
                 break;
             case FP_ENROLL_FAIL:
                 printf("Enroll failed, something wen't wrong :(\n");
@@ -239,11 +239,11 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
                 return NULL;
             case FP_ENROLL_PASS:
                 printf("Enroll stage passed. Yay!\n");
-                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Captura bem sucedida.", "");
+                compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Captura de digital bem sucedida", "");
                 break;
             case FP_ENROLL_RETRY:
                 printf("Didn't quite catch that. Please try again.\n");
-                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Falha ao capturar digital. Por favor, tente novamente.", "");
+                compose_json_answer("SCREEN_UPDATE", "ERROR", "enroll", "Houve uma falha ao capturar digital. Por favor, tente novamente.", "");
                 break;
             case FP_ENROLL_RETRY_TOO_SHORT:
                 printf("Your swipe was too short, please try again.\n");
