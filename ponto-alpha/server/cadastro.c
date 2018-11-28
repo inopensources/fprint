@@ -70,7 +70,7 @@ int verify(struct fp_print_data *data)
 
     do {
         printf("\nScan your finger now.\n");
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Posicione sua digital por favor", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "verify", "Por favor, posicione sua digital", "");
         r = fp_verify_finger(dev, data);
 
         ///*Encerrando device*///
@@ -113,7 +113,7 @@ int verify(struct fp_print_data *data)
 int cadastra_user(int user_id){
 
     ///*Iniciando device*///
-    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Iniciando dispositivo de leitura, aguarde um pouco por favor.", "");
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "cadastra_user", "Iniciando dispositivo de leitura. Por favor, aguarde um pouco", "");
 
     int r = 1;
     struct fp_dscv_dev *ddev;
@@ -219,7 +219,7 @@ struct fp_print_data *enroll(struct fp_dev *dev) {
         sleep(1);
 
         printf("\nScan your finger now.\n");
-        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Posicione sua digital no sensor por favor", "");
+        compose_json_answer("SCREEN_UPDATE", "SUCCESS", "enroll", "Por favor, posicione sua digital no sensor", "");
 
 
         r = fp_enroll_finger(dev, &enrolled_print);
