@@ -107,9 +107,14 @@
         }
 
         .btn-sq-xs {
-            width: 25px !important;
-            height: 25px !important;
-            padding:2px;
+            width: 300px !important;
+            height: 50px !important;
+            padding: -2px;
+            background-color: rgba(102,0,0,0.5);
+            color: rgba(1,1,1,0.5);
+            border-radius: 10px;
+            font-size: 30px;
+            border: 0;
         }
 
         /* width */
@@ -189,8 +194,9 @@
     </div>
     <div class="section" id="section3">
         <div class="container text-center">
-            <h1>Registrar Ponto</h1>
-            <img src="img/fingerprint.gif" class="img-fluid" style="height: 300px">
+            <h1>Por favor, pressione o botão abaixo para realizar o registro do ponto</h1>
+            <button class="btn-sq-xs" type="button" onclick="verifyFingerprint()">Registrar Ponto</button>
+            <!--<img src="img/fingerprint.gif" class="img-fluid" style="height: 300px">-->
             <div class="device-status p-sm-2">
             </div>
         </div>
@@ -235,19 +241,18 @@
                         <h3>
                             Você precisa ser um Gerente ou um representante do RH para cadastrar um usuário
                         </h3>
-                        <h3>
-                            <b>Caso você seja, pressione o botão abaixo para iniciar a verificação</b>
+                        <h3>Pressione o botão abaixo para iniciar a verificação</b>
                         </h3>
                     </div>
                     <div class="device-status" id="rh-check-device">
-
                     </div>
                     <div class="user-register" id="user-register">
                     </div>
                     <div class="text-center">
                         <a class="btn btn-sq-lg btn-primary" onclick="resetScreens(); rhCheckStart()">
-                        <!--<a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">-->
-                            <i class="fa fa-fingerprint" style="font-size: 84px; padding: 20px;"></i>
+                            <!--<a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">-->
+                            <i style="font-size: 84px; padding: 20px;"></i>
+                            Pressione para Cadastrar Digital
                         </a>
                     </div>
                 </div>
@@ -274,42 +279,42 @@
 
 <!--<script type="text/javascript">-->
 
-    <!--$(".user-card").click(function(e){-->
-        <!--rhCheckReset();-->
-        <!--on();-->
-    <!--});-->
+<!--$(".user-card").click(function(e){-->
+<!--rhCheckReset();-->
+<!--on();-->
+<!--});-->
 
-    <!--function on() {-->
-        <!--$("#overlay").slideDown(250);-->
-        <!--// document.getElementById("overlay").style.display = "block";-->
-    <!--}-->
+<!--function on() {-->
+<!--$("#overlay").slideDown(250);-->
+<!--// document.getElementById("overlay").style.display = "block";-->
+<!--}-->
 
-    <!--function off() {-->
-        <!--$("#overlay").slideUp(250);-->
-        <!--// document.getElementById("overlay").style.display = "none";-->
-    <!--}-->
+<!--function off() {-->
+<!--$("#overlay").slideUp(250);-->
+<!--// document.getElementById("overlay").style.display = "none";-->
+<!--}-->
 
-    <!--function rhCheckStart(){-->
-        <!--$("#modal-rh-check-text").hide(250);-->
-        <!--$("#rh-check-device").show(250);-->
-    <!--}-->
+<!--function rhCheckStart(){-->
+<!--$("#modal-rh-check-text").hide(250);-->
+<!--$("#rh-check-device").show(250);-->
+<!--}-->
 
-    <!--function rhCheckReset(){-->
-        <!--$("#modal-rh-check-text").show(250);-->
-        <!--$("#rh-check-device").hide(250);-->
-    <!--}-->
+<!--function rhCheckReset(){-->
+<!--$("#modal-rh-check-text").show(250);-->
+<!--$("#rh-check-device").hide(250);-->
+<!--}-->
 
-    <!--function updateDeviceStatus(json){-->
-        <!--$(".device-status").html(-->
-            <!--"<h2><b>"+json.message+"</b></h2>"-->
-        <!--)-->
-    <!--}-->
+<!--function updateDeviceStatus(json){-->
+<!--$(".device-status").html(-->
+<!--"<h2><b>"+json.message+"</b></h2>"-->
+<!--)-->
+<!--}-->
 
-    <!--function resetDeviceStatus(){-->
-        <!--$(".device-status").html(-->
-            <!--"<h2><b>Aguarde...</b></h2>"-->
-        <!--)-->
-    <!--}-->
+<!--function resetDeviceStatus(){-->
+<!--$(".device-status").html(-->
+<!--"<h2><b>Aguarde...</b></h2>"-->
+<!--)-->
+<!--}-->
 
 
 <!--</script>-->

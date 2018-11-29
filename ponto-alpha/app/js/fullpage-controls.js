@@ -11,8 +11,8 @@ var myFullpage = new fullpage('#fullpage', {
                 resetScreens();
                 break;
             case "batePonto":
-                // Inicializando dispositivo
-                verifyFingerprint();
+                // Inicializando dispositivo para verificação
+                //verifyFingerprint();
                 break;
             case "cadastraUsuario":
                 // Capturando lista de usuários

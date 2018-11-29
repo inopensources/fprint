@@ -15,6 +15,7 @@
     function rhCheckStart(){
         $("#modal-rh-check-text").hide(250);
         $("#rh-check-device").show(250);
+        $("#btn-cadastrar").hide(250);
         verifyManagerFingerprint();
         //chamar verificação de digital de gerente/rh aqui
     }
@@ -40,7 +41,7 @@
         $("#modal-rh-check-text").show(250);
         $("#modal-rh-register").html("<!-- Modal Header -->\n" +
             "                <div class=\"modal-header\">\n" +
-            "                    <h2 class=\"modal-title rh-check-title\">Cadastro de Usuário - Solicitação de Permissão</h2>\n" +
+            "                    <h2 class=\"modal-title rh-check-title\">Cadastro de Digital - Solicitação de Permissão</h2>\n" +
             "                    <button type=\"button\"  onclick=\"off()\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n" +
             "                </div>\n" +
             "\n" +
@@ -51,7 +52,7 @@
             "                             Você precisa ser um Gerente ou um representante do RH para cadastrar um usuário.\n" +
             "                        </h3>\n" +
             "                        <h3>\n" +
-            "                             <b>Caso você seja, pressione o botão abaixo para iniciar a verificação</b>\n" +
+            "                             <b>Pressione o botão abaixo para iniciar a verificação</b>\n" +
             "                        </h3>\n" +
             "                    </div>\n" +
             "                    <div class=\"device-status\" id=\"rh-check-device\">\n" +
@@ -60,9 +61,9 @@
             "                    <div class=\"user-register\" id=\"user-register\">\n" +
             "                    </div>\n" +
             "                    <div class=\"text-center\">\n" +
-            "                        <a class=\"btn btn-sq-lg btn-primary\" onclick=\"resetScreens(); rhCheckStart()\">\n" +
+            "                        <a  id=\"btn-cadastrar\" class=\"btn btn-sq-xs\" onclick=\"resetScreens(); rhCheckStart()\">\n" +
             "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
-            "                            <i class=\"fa fa-fingerprint\" style=\"font-size: 84px; padding: 20px;\"></i>\n" +
+            "                            Cadastrar" +
             "                        </a>\n" +
             "                    </div>\n" +
             "                </div>");
@@ -80,7 +81,7 @@
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
         $(".device-status").html(
-            "<h2><b>Aguarde...</b></h2>"
+           /* "<h2><b>Aguarde...</b></h2>"*/
         )
     }
 
@@ -126,7 +127,7 @@
     //O método abaixo zera o status do registro da digital
     function resetEnrollStatus(json){
         $(".user-register").html(
-            "<h2>Aguarde...<h2>"
+            /*"<h2>Aguarde...<h2>"*/
         );
     }
 
