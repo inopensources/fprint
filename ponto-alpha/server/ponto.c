@@ -204,7 +204,7 @@ void is_user_adm(int id, struct user_list * list_of_users, int number_of_users){
                     sprintf(admIdAsStr, "%d", (list_of_users)[i].user_id);
                     compose_json_answer("SCREEN_UPDATE", "SUCCESS", "is_user_adm", "Verificação bem sucedida. Olá, Gerente/RH !", admIdAsStr);
                 }else{
-                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Verificação falhou. Você é um Gerente/RH ?", "-1");
+                    compose_json_answer("SCREEN_UPDATE", "ERROR", "is_user_adm", "Verificação falhou. Você é um Gerente/RH? Se sim, tente novamente", "-1");
 
                 }
             }

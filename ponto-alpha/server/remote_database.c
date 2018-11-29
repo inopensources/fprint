@@ -133,7 +133,7 @@ char *get_user_list_mini() {
     chunk.size = 0;    /* no data at this point */
 
     char url[] = "http://licenca.infarma.com.br/ponto/lista_usuarios_mini";
-//    char url[] = "http://localhost:8080/ponto/lista_usuarios_mini";
+//  char url[] = "http://localhost:8080/ponto/lista_usuarios_mini";
 
     curl_global_init(CURL_GLOBAL_ALL);
 
@@ -255,8 +255,8 @@ char *post_ponto(int id_usuario){
     chunk.size = 0;    /* no data at this point */
 
     char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
-//  char url[] = "http://localhost:8080/ponto/bate_ponto";
-//    char url[] = "http://192.168.16.111/ponto/bate_ponto";
+    //char url[] = "http://localhost:8080/ponto/bate_ponto";
+    //  char url[] = "http://192.168.16.111/ponto/bate_ponto";
 
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
     char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";

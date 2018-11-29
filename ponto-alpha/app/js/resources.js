@@ -15,25 +15,32 @@
     function rhCheckStart(){
         $("#modal-rh-check-text").hide(250);
         $("#rh-check-device").show(250);
-        $("#btn-cadastrar").hide(250);
+        $("#btn-verificar").hide(250);
+        $("#img-fingerprint").show(250);
         verifyManagerFingerprint();
         //chamar verificação de digital de gerente/rh aqui
     }
 
     function rhCheckFinishSuccess(json){
+        $("#img-fingerprint").hide(250);
         $("#modal-rh-check-text").html("<h2>"+json.message+"</h2>");
         $("#rh-check-device").hide();
         $("#modal-rh-check-text").show(250);
         setTimeout(function(){
+            $("#img-fingerprint").show(250);
             setUserRegisterStage();
             registerFingerPrint(userId);
         }, 3000);
+        resetDeviceStatus();
     }
 
     function rhCheckFinishError(json){
         $("#modal-rh-check-text").html("<h2>"+json.message+"</h2>");
         $("#rh-check-device").hide();
+        $("#img-fingerprint").hide(250);
+        $("#btn-verificar").show(250);
         $("#modal-rh-check-text").show(250);
+        resetDeviceStatus();
     }
 
     //O método abaixo zera a verificação de digital
@@ -61,14 +68,17 @@
             "                    <div class=\"user-register\" id=\"user-register\">\n" +
             "                    </div>\n" +
             "                    <div class=\"text-center\">\n" +
-            "                        <a  id=\"btn-cadastrar\" class=\"btn btn-sq-xs\" onclick=\"resetScreens(); rhCheckStart()\">\n" +
+            "                        <a  id=\"btn-verificar\" class=\"btn btn-sq-xs\" onclick=\"resetScreens(); rhCheckStart()\">\n" +
             "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
-            "                            Cadastrar" +
+            "                            Verificar Permissão" +
             "                        </a>\n" +
+            "                        <img id=\"img-fingerprint\" src=\"img/fingerprint.gif\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
+           /* "                        <i id=\"img-fingerprint\" class=\"fa fa-fingerprint\" style=\"font-size: 84px; padding: 20px;\"></i>\n" +*/
             "                    </div>\n" +
             "                </div>");
 
         $("#rh-check-device").hide(250);
+        $("#img-fingerprint").hide(250);
     }
 
     //O método abaixo atualiza as mensagens do dispositivo
@@ -81,7 +91,7 @@
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
         $(".device-status").html(
-           /* "<h2><b>Aguarde...</b></h2>"*/
+           "<h2></h2>"
         )
     }
 
@@ -149,12 +159,17 @@
 
     //O método abaixo inicia o registro de digital
     function registerFingerPrint(usuarioId) {
+        /*$("#btn-verify-permission").show(250);
+        $("#btn-verificar").hide(250);*/
         websocket.send("1 "+usuarioId);
     }
 
     //O método abaixo verifica a digital
     function verifyFingerprint() {
+        $("#img-fingerprint-registrar").show(250);
+        $("#btn-registrar-ponto").hide(250);
         websocket.send("2");
+
     }
 
     //O método abaixo verifica a digital de um gerente/rh
@@ -192,9 +207,7 @@
         resetProfilePage();
         rhCheckReset();
         resetDeviceStatus();
-
         window.location.href = "#boasVindas";
-
     }
 
     function setUserRegisterStage(){
