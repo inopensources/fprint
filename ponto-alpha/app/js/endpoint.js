@@ -149,6 +149,8 @@ function clockIn(json) {
             //erro ao checar se user é adm(causao por: usuário não cadastrado)
             $("#img-fingerprint").hide(250);
             $("#btn-verificar").show(250);
+            $("#img-fingerprint-registrar").hide(250);
+            $("#btn-registrar-ponto").show(250);
             updateDeviceStatus(json);
             break;
     }

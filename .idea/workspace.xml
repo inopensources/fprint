@@ -11,7 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="" />
+    <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/fullpage-controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/fullpage-controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +89,8 @@
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="15" />
           <entry key="HTML" value="749" />
-          <entry key="JavaScript" value="669" />
-          <entry key="ObjectiveC" value="16025" />
+          <entry key="JavaScript" value="739" />
+          <entry key="ObjectiveC" value="16048" />
           <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
@@ -90,10 +98,10 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="15912" />
+          <entry key="c" value="15935" />
           <entry key="h" value="128" />
           <entry key="html" value="749" />
-          <entry key="js" value="669" />
+          <entry key="js" value="739" />
           <entry key="txt" value="68" />
         </counts>
       </usages-collector>
@@ -183,11 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="217" column="70" lean-forward="true" selection-start-line="217" selection-start-column="70" selection-end-line="217" selection-end-column="70" />
+            <state relative-caret-position="105">
+              <caret line="203" column="60" selection-start-line="203" selection-start-column="60" selection-end-line="203" selection-end-column="60" />
               <folding>
                 <element signature="e#6534#6588#0" expanded="true" />
               </folding>
@@ -210,8 +218,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+            <state relative-caret-position="100">
+              <caret line="109" column="40" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -221,13 +229,14 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="74" column="136" selection-start-line="74" selection-start-column="136" selection-end-line="74" selection-end-column="136" />
+            <state>
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="e#285#292#1" expanded="true" />
+                <element signature="e#1488#1532#0" expanded="true" />
                 <element signature="e#1478#1501#0" expanded="true" />
                 <element signature="e#86#109#0" expanded="true" />
                 <element signature="e#32#62#0" expanded="true" />
@@ -240,8 +249,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+            <state relative-caret-position="-147">
+              <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
               <folding>
                 <element signature="e#239#262#0" expanded="true" />
               </folding>
@@ -280,25 +289,18 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>device-status</find>
-      <find>#bate</find>
-      <find>rhCheckStart</find>
-      <find>Registrar POnto</find>
-      <find>Posicione</find>
       <find>Registrar</find>
       <find>fp-tableCell</find>
       <find>resetProfilePage</find>
       <find>resetScreens</find>
       <find>clockIn</find>
       <find>verifyMat</find>
-      <find>resetDeviceStatus()</find>
       <find>$(&quot;#btn-verificar&quot;)</find>
       <find>updateDeviceStatus</find>
       <find>Verificação Falhou</find>
       <find>checka</find>
       <find>btn-verifi</find>
       <find>img-finger</find>
-      <find>resetDeviceStatus</find>
       <find>btn-cadastrar</find>
       <find>btn-verificar</find>
       <find>rhCheckStart()</find>
@@ -310,6 +312,13 @@
       <find>userList</find>
       <find>loadUserList</find>
       <find>dataResponse</find>
+      <find>admini</find>
+      <find>device-status</find>
+      <find>img-fingerprint-registrar</find>
+      <find>resetDeviceStatus</find>
+      <find>resetDeviceStatus()</find>
+      <find>Entrada</find>
+      <find>Ponto de</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -517,15 +526,16 @@
       <workItem from="1543513597841" duration="43000" />
       <workItem from="1543513665908" duration="21000" />
       <workItem from="1543514053785" duration="14378000" />
-      <workItem from="1543599340654" duration="7807000" />
+      <workItem from="1543599340654" duration="9954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223271000" />
+    <option name="totallyTimeSpent" value="225418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.08938547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -541,7 +551,7 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.41598696" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27406198" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -823,13 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -850,16 +853,6 @@
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/utils.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
-          <folding>
-            <element signature="e#239#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/fullpage-controls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -876,26 +869,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="74" column="136" selection-start-line="74" selection-start-column="136" selection-end-line="74" selection-end-column="136" />
+        <state relative-caret-position="105">
+          <caret line="203" column="60" selection-start-line="203" selection-start-column="60" selection-end-line="203" selection-end-column="60" />
           <folding>
-            <element signature="e#285#292#1" expanded="true" />
-            <element signature="e#1478#1501#0" expanded="true" />
-            <element signature="e#86#109#0" expanded="true" />
-            <element signature="e#32#62#0" expanded="true" />
-            <element signature="e#87#110#0" expanded="true" />
+            <element signature="e#6534#6588#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="217" column="70" lean-forward="true" selection-start-line="217" selection-start-column="70" selection-end-line="217" selection-end-column="70" />
+        <state relative-caret-position="100">
+          <caret line="109" column="40" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
           <folding>
-            <element signature="e#6534#6588#0" expanded="true" />
+            <element signature="e#239#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#285#292#1" expanded="true" />
+            <element signature="e#1488#1532#0" expanded="true" />
+            <element signature="e#1478#1501#0" expanded="true" />
+            <element signature="e#86#109#0" expanded="true" />
+            <element signature="e#32#62#0" expanded="true" />
+            <element signature="e#87#110#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -94,11 +94,14 @@
 
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
+        $(".device-status").html(
+            "<h2></h2>"
+        )
+    }
+
+    function resetRegisterComponents(){
         $("#img-fingerprint-registrar").hide(250);
         $("#btn-registrar-ponto").show(250);
-        $(".device-status").html(
-           "<h2></h2>"
-        )
     }
 
     //O método abaixo atualiza o status do registro da digital
@@ -172,6 +175,7 @@
 
     //O método abaixo verifica a digital
     function verifyFingerprint() {
+        resetDeviceStatus()
         $("#img-fingerprint-registrar").show(250);
         $("#btn-registrar-ponto").hide(250);
         websocket.send("2");
@@ -187,7 +191,7 @@
         var base = JSON.parse(atob(json.data));
 
         $(".user-entry").html(
-            "<h1>Entrada de usuário</h1>" +
+            "<h1>Ponto de usuário</h1>" +
             "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
             "<h2> Olá "+ base.usuario.nome+"</h2>"+
             "<h2>"+ utf8Decode(base.message)+"</h2>"+

@@ -33,6 +33,7 @@ var myFullpage = new fullpage('#fullpage', {
             case "batePonto":
                 //Ao deixar a tela batePonto, o status é zerado
                 resetDeviceStatus();
+                resetRegisterComponents();
                 break;
             case "cadastraUsuario":
                 //Ao deixar a tela cadastraUsuario, a lista de usuários é zerada

@@ -111,7 +111,7 @@ int do_point(){
         unsigned char * retorno = post_ponto(result);
         compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "Ponto realizado com sucesso :)", retorno);
     }else {
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Não foi possível realizar o seu ponto :( Por favor, procure o setor administrativo.", "-1");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Não foi possível realizar o seu ponto :( <br>Por favor, tente novamente ou procure o setor administrativo.", "-1");
     }
 
     return 0;
