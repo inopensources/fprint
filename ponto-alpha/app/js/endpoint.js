@@ -146,6 +146,9 @@ function clockIn(json) {
             updateDeviceStatus(json);
             break;
         case "ERROR":
+            //erro ao checar se user é adm(causao por: usuário não cadastrado)
+            $("#img-fingerprint").hide(250);
+            $("#btn-verificar").show(250);
             updateDeviceStatus(json);
             break;
     }
@@ -169,6 +172,9 @@ function verifyMat(json) {
             startVerify(json);
             break;
         case "ERROR":
+            //verificação pós cadastro falha
+            $("#img-fingerprint").hide(250);
+            $("#btn-cadastrar").show(250);
             startVerify(json);
             break;
     }

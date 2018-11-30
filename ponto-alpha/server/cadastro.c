@@ -192,7 +192,7 @@ int cadastra_user(int user_id){
 
     if(result_verify == 0){
         ///don't match
-        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Sua verificação falhou :( Realize o cadastro novamente certificando-se de posicionar sua digital sempre da mesma forma, ok?", "");
+        compose_json_answer("SCREEN_UPDATE", "ERROR", "verify", "Sua verificação falhou :( <br> Realize o cadastro novamente certificando-se de posicionar sua digital sempre da mesma forma, ok?", "");
     }else{
         ///match
         post_user(user_id, digital, length_dig);

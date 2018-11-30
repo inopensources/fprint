@@ -33,7 +33,7 @@ WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
 void post_user(int id_usuario, char digital[], int tamanho_array){
 
           char url[] = "http://licenca.infarma.com.br/ponto/cadastro_digital";
- //       char url[] = "http://192.168.16.111/ponto/cadastro_digital";
+          //char url[] = "http://192.168.16.111/ponto/cadastro_digital";
 //         char url[] = "http://localhost:8080/ponto/cadastro_digital";
 
         char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";

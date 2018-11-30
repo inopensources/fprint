@@ -72,6 +72,10 @@
             "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
             "                            Verificar Permissão" +
             "                        </a>\n" +
+            "                        <a  id=\"btn-cadastrar\" class=\"btn btn-sq-xs\" onclick=\"registerFingerPrint(userId);\" style=\"display: none; margin-top: 1.5rem;\">\n" +
+            "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
+            "                            Cadastrar" +
+            "                        </a>\n" +
             "                        <img id=\"img-fingerprint\" src=\"img/fingerprint.gif\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
            /* "                        <i id=\"img-fingerprint\" class=\"fa fa-fingerprint\" style=\"font-size: 84px; padding: 20px;\"></i>\n" +*/
             "                    </div>\n" +
@@ -90,6 +94,8 @@
 
     //O método abaixo zera o status do dispositivo
     function resetDeviceStatus(){
+        $("#img-fingerprint-registrar").hide(250);
+        $("#btn-registrar-ponto").show(250);
         $(".device-status").html(
            "<h2></h2>"
         )
@@ -159,8 +165,8 @@
 
     //O método abaixo inicia o registro de digital
     function registerFingerPrint(usuarioId) {
-        /*$("#btn-verify-permission").show(250);
-        $("#btn-verificar").hide(250);*/
+        $("#btn-cadastrar").hide(250);
+        $("#img-fingerprint").show(250);
         websocket.send("1 "+usuarioId);
     }
 
