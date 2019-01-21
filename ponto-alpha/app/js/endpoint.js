@@ -98,6 +98,7 @@ function screenUpdate(json) {
     }
 }
 
+
 function showErrorModal(json) {
     $("#error-modal-description").html("<h5>" + json.message + "<h5>");
     $("#error-modal").modal('toggle');
@@ -123,8 +124,6 @@ function loadUserList(json) {
         //     break;
         // }
     }
-
-
     id();
 }
 

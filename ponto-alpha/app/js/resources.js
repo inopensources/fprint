@@ -11,6 +11,16 @@
         // document.getElementById("overlay").style.display = "none";
     }
 
+    //O método abaixo exibe o overlay confirme user
+    function onconfirm() {
+        $("#confirm-register").slideDown(250);
+    }
+
+    //O método abaixo oculta o overlay confirme user
+    function offconfirm() {
+        $("#confirm-register").slideUp(250);
+    }
+
     //O método abaixo inicia a verificação de digital do RH/Gerente
     function rhCheckStart(){
         $("#modal-rh-check-text").hide(250);
@@ -84,6 +94,33 @@
         $("#rh-check-device").hide(250);
         $("#img-fingerprint").hide(250);
     }
+
+/*
+    //O método abaixo solicita a confirmação do registro da digital
+    function confirmRegister(){
+        $("#modal-confirm-register").html("<!-- Modal Header -->\n" +
+            "                <div class=\"modal-header\">\n" +
+            "                    <h2 class=\"modal-title\">Confirmação de ponto de saída</h2>\n" +
+            "                    <button type=\"button\"  onclick=\"offconfirm()\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n" +
+            "                </div>\n" +
+            "\n" +
+            "                <!-- Modal body -->\n" +
+            "                <div class=\"modal-body\">\n" +
+            "                    <div id=\"modal-rh-check-text\">\n" +
+            "                        <h3>\n" +
+            "                              Tem certeza que deseja bater o ponto de saída?\n" +
+            "                        </h3>\n" +
+            "                    </div>\n" +
+            "                    <div class=\"text-center\">\n" +
+            "                        <a class=\"btn btn-sq-xs\" onclick=\"verifyFingerprint()\">\n" +
+            "                        <!--<a class=\"btn btn-sq-lg btn-primary\" onclick=\"registerFingerPrint(userId)\">-->\n" +
+            "                            Sim" +
+            "                        </a>\n" +
+            "                        <a class=\"btn btn-sq-xs\" onclick=\"resetScreensAndGoHome();\" style=\"display: none; margin-top: 1.5rem;\">\n" +
+            "                        <!--<a class=\"btn btn-
+            "                        </a>\n" +
+            "                </div>");
+    }*/
 
     //O método abaixo atualiza as mensagens do dispositivo
     function updateDeviceStatus(json){
@@ -175,7 +212,9 @@
 
     //O método abaixo verifica a digital
     function verifyFingerprint() {
-        resetDeviceStatus()
+        /*confirmRegister()
+        onconfirm();*/
+        resetDeviceStatus();
         $("#img-fingerprint-registrar").show(250);
         $("#btn-registrar-ponto").hide(250);
         websocket.send("2");

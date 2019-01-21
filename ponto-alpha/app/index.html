@@ -79,6 +79,20 @@
             cursor: pointer; /* Add a pointer on hover */
         }
 
+        #confirm-register{
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+        }
+
         #text{
             position: absolute;
             top: 50%;
@@ -199,6 +213,7 @@
             <div><img id = "img-fingerprint-registrar" src="img/fingerprint.gif" class="img-fluid" style="height: 150px; display: none; margin-top: 4px;"></div>
             <div class="device-status p-sm-2">
             </div>
+            <div >
         </div>
         <div class="row">
             <div class="bottom-left-align-text text-center">
@@ -210,7 +225,6 @@
     </div>
     <div class="section" id="section4">
         <div class="user-entry container text-center">
-
         </div>
         <div class="row">
             <div class="bottom-left-align-text text-center">
@@ -261,11 +275,47 @@
     </div>
 </div>
 
+<!--
+<div id="confirm-register">
+        &lt;!&ndash; The Modal &ndash;&gt;
+        <div class="text">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" id="modal-confirm-register">
+
+                    &lt;!&ndash; Modal Header &ndash;&gt;
+                    <div class="modal-header">
+                        <h2 class="modal-title">Confirmação de ponto de saída</h2>
+                        <button type="button"  onclick="offconfirm()" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    &lt;!&ndash; Modal body &ndash;&gt;
+                    <div class="modal-body">
+                        <div>
+                            <h3>
+                                Tem certeza que deseja bater o ponto de saída?
+                            </h3>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-sq-lg btn-primary" onclick="verifyFingerprint()">
+                                &lt;!&ndash;<a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">&ndash;&gt;
+                                <i style="font-size: 44px; padding: 20px;"></i>
+                                Sim
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-sq-lg btn-primary" onclick="resetScreensAndGoHome()">
+                                &lt;!&ndash;<a class="btn btn-sq-lg btn-primary" onclick="registerFingerPrint(userId)">&ndash;&gt;
+                                <i style="font-size: 44px; padding: 20px;"></i>
+                                Não
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>-->
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
-
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>

@@ -15,6 +15,7 @@ int do_point();
 
 int do_point(){
 
+
     //lista de digitais
     int num_digitais = 0;
     unsigned char *ret;
@@ -89,10 +90,10 @@ int do_point(){
 	    }
 	
 	    printf("Opened device. It's now time to enroll your finger.\n");
+
+	    //enviando request para solicitar batida de ponto
 	    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point", "Posicione sua digital no sensor", "");
-	
 	    ///Fim inicialização device
-	
 	    result = compare_digital(dev, digitais, num_digitais, ids_list); //chamada em data.c
 	
 	    printf("\n trying:  %d, result:  %d\n", trying, result);
