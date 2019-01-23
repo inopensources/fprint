@@ -98,6 +98,7 @@ function rhCheckReset(){
     $("#img-fingerprint").hide(250);
 }
 
+//todo: remove it
 /*//O método abaixo zera o overlay de confirmação de registro após erro
 function confirmRecordUser(){
     $("#modal-rh-check-text").show(250);
@@ -232,16 +233,21 @@ function registerFingerPrint(usuarioId) {
 function verifyFingerprint() {
     resetDeviceStatus()
     //todo: mover chamada de overlay de confirmação pra quando erro por intervalo entre pontos acontecer
-    //onConfirmRecordUser();
     $("#img-fingerprint-registrar").show(250);
     $("#btn-registrar-ponto").hide(250);
     websocket.send("2");
+    onConfirmRecordUser();
 
 }
 
 //O método abaixo verifica a digital de um gerente/rh
 function verifyManagerFingerprint() {
     websocket.send("3");
+}
+
+//método para solicitar remoção de ponto de usuário
+function removePostPoint(usuarioId){
+    websocket.send("4 "+usuarioId);
 }
 
 function dealWithReturnedUser(json){

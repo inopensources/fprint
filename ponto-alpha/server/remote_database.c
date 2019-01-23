@@ -247,7 +247,8 @@ int create_list_users(){
     return number_of_users;
 }
 
-char *post_ponto(int id_usuario){
+char *post_ponto(int id_usuario, int flag_point){
+
     unsigned char buf2;
     struct MemoryStruct chunk;
 
@@ -258,15 +259,18 @@ char *post_ponto(int id_usuario){
     //char url[] = "http://localhost:8080/ponto/bate_ponto";
     //  char url[] = "http://192.168.16.111/ponto/bate_ponto";
 
+
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
     char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
     char userIdAsStr[12];
+    char flagPointAsStr[4];
     sprintf(userIdAsStr, "%d", id_usuario);
+    sprintf(flagPointAsStr, "%d", flag_point);
 
-    char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(requestBody4) + 1, sizeof(unsigned char));
+    char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(flagPointAsStr) + strlen(requestBody4) + 1, sizeof(unsigned char));
     strcat(result, requestBody1);
     strcat(result, userIdAsStr);
+    strcat(result, flagPointAsStr);
     strcat(result, requestBody4);
 
     CURL *hnd = curl_easy_init();
@@ -290,7 +294,7 @@ char *post_ponto(int id_usuario){
         fprintf(stderr, "curl_easy_perform() failed: %s\n",
                 curl_easy_strerror(ret));
     } else {
-        printf("%lu bytes retrieved\n", (long) chunk.size);
+        //printf("%lu bytes retrieved\n", (long) chunk.size);
         unsigned char buffer2[chunk.size+5];
         unsigned char *buf2 = calloc(chunk.size, sizeof(int));
         int i = 0;

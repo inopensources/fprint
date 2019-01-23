@@ -69,7 +69,6 @@ int decider(struct lws *wsi, void *in, size_t len){
         case '2':
             printf("\n2: %s\n", "Clock in/out");
             do_point();
-
             return 0;
         case '3':
             printf("\n3: %s\n", "Verify Adm");
@@ -84,6 +83,17 @@ int decider(struct lws *wsi, void *in, size_t len){
             if(result_verify_adm == -1){
                 compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Verificação falhou. Você está cadastrado?", "-1");
             }
+            return 0;
+        case '4':
+            printf("Requiring remove point");
+            //Collect user ID from view
+            for (int i = 0; i < 4; i++){
+                user_id_str[i] = (((char *) in)[2+i]);
+            }
+            int user_id_required = atoi(user_id_str);
+
+            printf("\n4: requiring for erase point for %s\n", user_id_str);
+            remove_point(user_id_required);
             return 0;
         default:
             printf("\nError: %s\n", "Don't know how to answer to this. :|");

@@ -10,6 +10,10 @@
 #include "user.h"
 
 
+void remove_point(int user_id_required){
+    unsigned char * retorno = post_ponto(user_id_required, 0);
+    //compose_json_answer("SCREEN_UPDATE", "SUCCESS", "remove_point", "Ponto não realizado", retorno);
+}
 
 int do_point();
 
@@ -109,7 +113,7 @@ int do_point(){
 
     if(result > -1){
         printf("id_user: %d\n", result);
-        unsigned char * retorno = post_ponto(result);
+        unsigned char * retorno = post_ponto(result, 1);
         compose_json_answer("SCREEN_UPDATE", "SUCCESS", "do_point_final", "Ponto realizado com sucesso :)", retorno);
     }else {
         compose_json_answer("SCREEN_UPDATE", "ERROR", "do_point", "Não foi possível realizar o seu ponto :( <br>Por favor, tente novamente ou procure o setor administrativo.", "-1");

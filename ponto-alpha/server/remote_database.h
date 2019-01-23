@@ -9,7 +9,7 @@ void post_user(int id_usuario, char digital[], int tamanho_array);
 
 int deal_with_json(char* json_str, struct user_list *list);
 
-char *post_ponto(int id_usuario);
+char *post_ponto(int id_usuario, int flag_point);
 
 char *get_user_list_mini();
 

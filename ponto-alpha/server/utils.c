@@ -42,7 +42,7 @@ void compose_json_answer(char type[], char status[], char method_name[], char me
     //Encoding data to base64
     char *encoded_data = b64_encode(data, strlen(data));
 
-    printf("%s\n", encoded_data); // YnJpYW4gdGhlIG1vbmtleSBhbmQgYnJhZGxleSB0aGUga2lua2Fqb3UgYXJlIGZyaWVuZHM=
+    //printf("%s\n", encoded_data); // YnJpYW4gdGhlIG1vbmtleSBhbmQgYnJhZGxleSB0aGUga2lua2Fqb3UgYXJlIGZyaWVuZHM=
 
     int json_size = strlen(json_0) +
                     strlen(json_1) + strlen(type) +

@@ -13,213 +13,15 @@
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/aclocal.m4" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/aclocal.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/requests" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/requests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/traces.0" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/traces.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/traces.1" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/autom4te.cache/traces.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/config.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/config.status" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/config.status" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/doc/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/examples/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/fprint_list_udev_rules-fprint-list-udev-rules.Po" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/fprint_list_udev_rules-fprint-list-udev-rules.Po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-aeslib.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-aeslib.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-assembling.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-assembling.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-async.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-async.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-core.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-core.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-data.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-data.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-drv.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-drv.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-img.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-img.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-imgdev.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-imgdev.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-pixman.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-pixman.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-poll.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-poll.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-sync.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.deps/libfprint_la-sync.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/fprint-list-udev-rules" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/fprint-list-udev-rules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint.so.0.0.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-aeslib.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-aeslib.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-assembling.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-assembling.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-async.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-async.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-core.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-core.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-data.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-data.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-drv.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-drv.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-img.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-imgdev.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-pixman.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-pixman.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-poll.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/.libs/libfprint_la-sync.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes1610.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes1610.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes1660.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes1660.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2501.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2501.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2550.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2550.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2660.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes2660.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes3500.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes3500.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes3k.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes3k.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes4000.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aes4000.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aesx660.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-aesx660.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-etes603.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-etes603.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upeksonly.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upeksonly.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upektc.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upektc.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upektc_img.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upektc_img.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upekts.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-upekts.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-uru4000.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-uru4000.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vcom5s.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vcom5s.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs0050.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs0050.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs101.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs101.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs301.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs301.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs301_proto.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs301_proto.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs5011.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.deps/libfprint_la-vfs5011.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1610.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes1660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2501.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2501.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2550.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2550.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes2660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3500.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3500.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3k.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes3k.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aes4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aesx660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-aesx660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-etes603.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-etes603.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upeksonly.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upeksonly.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc_img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upektc_img.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upekts.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-upekts.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-uru4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-uru4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vcom5s.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vcom5s.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs0050.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs0050.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs101.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs101.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs301.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs301.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs301_proto.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs301_proto.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs5011.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/.libs/libfprint_la-vfs5011.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes1610.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes1610.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes1660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes1660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2501.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2501.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2550.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2550.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes2660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3500.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3500.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3k.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes3k.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aes4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aesx660.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-aesx660.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-etes603.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-etes603.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upeksonly.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upeksonly.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc_img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upektc_img.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upekts.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-upekts.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-uru4000.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-uru4000.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vcom5s.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vcom5s.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs0050.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs0050.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs101.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs101.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301_proto.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs301_proto.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs5011.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/drivers/libfprint_la-vfs5011.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint-list-udev-rules" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint-list-udev-rules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint_list_udev_rules-fprint-list-udev-rules.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/fprint_list_udev_rules-fprint-list-udev-rules.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-aeslib.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-aeslib.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-assembling.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-assembling.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-async.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-async.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-core.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-core.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-data.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-data.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-drv.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-drv.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-img.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-img.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-imgdev.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-pixman.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-pixman.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-poll.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/libfprint_la-sync.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bozorth3.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bozorth3.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_alloc.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_alloc.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_drvrs.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_drvrs.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_gbls.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_gbls.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_io.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_io.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_sort.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.deps/libfprint_la-bz_sort.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bozorth3.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bozorth3.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_alloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_alloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_drvrs.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_drvrs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_gbls.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_gbls.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_io.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_io.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/.libs/libfprint_la-bz_sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bozorth3.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bozorth3.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_alloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_alloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_drvrs.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_drvrs.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_gbls.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_gbls.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_io.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_io.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/bozorth3/libfprint_la-bz_sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-binar.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-binar.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-block.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-block.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-contour.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-contour.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-detect.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-detect.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-dft.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-dft.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-free.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-free.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-globals.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-globals.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-imgutil.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-imgutil.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-init.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-init.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-line.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-line.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-log.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-log.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-loop.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-loop.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-maps.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-maps.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-matchpat.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-matchpat.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-minutia.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-minutia.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-morph.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-morph.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-quality.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-quality.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-remove.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-remove.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-ridges.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-ridges.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-shape.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-shape.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-sort.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-sort.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-util.Plo" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.deps/libfprint_la-util.Plo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-binar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-binar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-block.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-block.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-contour.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-contour.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-detect.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-detect.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-dft.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-dft.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-free.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-globals.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-globals.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-imgutil.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-imgutil.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-log.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-log.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-loop.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-loop.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-maps.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-matchpat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-matchpat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-minutia.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-minutia.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-morph.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-morph.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-quality.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-quality.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-remove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-ridges.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-ridges.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-shape.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-shape.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-util.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/.libs/libfprint_la-util.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-binar.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-binar.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-block.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-block.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-contour.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-contour.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-detect.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-detect.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-dft.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-dft.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-free.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-globals.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-globals.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-imgutil.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-imgutil.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-init.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-line.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-log.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-log.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-loop.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-loop.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-maps.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-matchpat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-matchpat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-minutia.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-minutia.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-morph.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-morph.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-quality.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-quality.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-remove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-ridges.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-ridges.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-shape.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-shape.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-sort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-util.o" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libfprint/nbis/mindtct/libfprint_la-util.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfprint-0.7.0/libtool" beforeDir="false" afterPath="$PROJECT_DIR$/libfprint-0.7.0/libtool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -258,11 +60,11 @@
           <entry key="Makefile" value="15" />
           <entry key="ac" value="1" />
           <entry key="am" value="4" />
-          <entry key="c" value="104" />
+          <entry key="c" value="107" />
           <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
           <entry key="css" value="1" />
-          <entry key="h" value="39" />
+          <entry key="h" value="40" />
           <entry key="html" value="2" />
           <entry key="img_capture" value="1" />
           <entry key="in" value="1" />
@@ -270,29 +72,29 @@
           <entry key="la" value="2" />
           <entry key="o" value="2" />
           <entry key="ponto_infarma (disassembly)" value="11" />
-          <entry key="txt" value="12" />
+          <entry key="txt" value="16" />
           <entry key="verify" value="1" />
           <entry key="verify_live" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="5" />
+          <entry key="CMakeLists.txt" value="8" />
           <entry key="CSS" value="1" />
           <entry key="Disassembly" value="11" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="8" />
-          <entry key="ObjectiveC" value="144" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="ObjectiveC" value="148" />
+          <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="16" />
-          <entry key="HTML" value="1112" />
-          <entry key="JavaScript" value="1356" />
-          <entry key="ObjectiveC" value="16143" />
+          <entry key="HTML" value="1132" />
+          <entry key="JavaScript" value="1530" />
+          <entry key="ObjectiveC" value="16760" />
           <entry key="PLAIN_TEXT" value="325" />
         </counts>
       </usages-collector>
@@ -300,10 +102,10 @@
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="16031" />
-          <entry key="h" value="128" />
-          <entry key="html" value="1112" />
-          <entry key="js" value="1356" />
+          <entry key="c" value="16614" />
+          <entry key="h" value="162" />
+          <entry key="html" value="1132" />
+          <entry key="js" value="1530" />
           <entry key="txt" value="101" />
         </counts>
       </usages-collector>
@@ -384,11 +186,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="95" column="41" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="304" column="28" lean-forward="true" selection-start-line="304" selection-start-column="28" selection-end-line="304" selection-end-column="28" />
+              <folding>
+                <element signature="e#4912#4933#0" expanded="true" />
+                <element signature="e#4997#5018#0" expanded="true" />
+                <element signature="e#5412#5437#0" expanded="true" />
+                <element signature="e#5467#5488#0" expanded="true" />
+                <element signature="e#5691#5716#0" expanded="true" />
+                <element signature="e#5746#5767#0" expanded="true" />
+                <element signature="e#6036#6060#0" expanded="true" />
+                <element signature="e#6090#6111#0" expanded="true" />
+                <element signature="e#6626#6650#0" expanded="true" />
+                <element signature="e#6680#6701#0" expanded="true" />
+                <element signature="e#7170#7224#0" expanded="true" />
+                <element signature="e#7505#7529#0" expanded="true" />
+                <element signature="e#7559#7580#0" expanded="true" />
+                <element signature="e#7945#7969#0" expanded="true" />
+                <element signature="e#7999#8020#0" expanded="true" />
+                <element signature="e#8564#8571#1" expanded="true" />
+                <element signature="e#9522#9561#0" expanded="true" />
+                <element signature="e#10286#10293#1" expanded="true" />
+                <element signature="e#10845#10869#0" expanded="true" />
+                <element signature="e#11078#11102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="254" column="47" selection-start-line="254" selection-start-column="47" selection-end-line="254" selection-end-column="47" />
+              <folding>
+                <element signature="e#42#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="115" column="38" lean-forward="true" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+              <folding>
+                <element signature="e#41#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+            <state relative-caret-position="-1633">
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
               <folding>
                 <element signature="e#285#292#1" expanded="true" />
                 <element signature="e#1488#1532#0" expanded="true" />
@@ -402,50 +286,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="301" column="92" selection-start-line="301" selection-start-column="92" selection-end-line="301" selection-end-column="92" />
-              <folding>
-                <element signature="e#4276#4297#0" expanded="true" />
-                <element signature="e#4361#4382#0" expanded="true" />
-                <element signature="e#4776#4801#0" expanded="true" />
-                <element signature="e#4831#4852#0" expanded="true" />
-                <element signature="e#5055#5080#0" expanded="true" />
-                <element signature="e#5110#5131#0" expanded="true" />
-                <element signature="e#5400#5424#0" expanded="true" />
-                <element signature="e#5454#5475#0" expanded="true" />
-                <element signature="e#5990#6014#0" expanded="true" />
-                <element signature="e#6044#6065#0" expanded="true" />
-                <element signature="e#6534#6588#0" expanded="true" />
-                <element signature="e#6869#6893#0" expanded="true" />
-                <element signature="e#6923#6944#0" expanded="true" />
-                <element signature="e#7309#7333#0" expanded="true" />
-                <element signature="e#7363#7384#0" expanded="true" />
-                <element signature="e#7928#7935#1" expanded="true" />
-                <element signature="e#8886#8925#0" expanded="true" />
-                <element signature="e#9600#9607#1" expanded="true" />
-                <element signature="e#11244#11283#0" expanded="true" />
-                <element signature="e#10966#10990#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
-              <caret line="92" column="22" lean-forward="true" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            <state relative-caret-position="-345">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <element signature="e#239#262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -461,17 +308,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>resetScreensAndGoHome()</find>
-      <find>on</find>
-      <find>col-sm-2 user-card</find>
-      <find>card</find>
-      <find>id()</find>
-      <find>user-list</find>
-      <find>btn-registrar-ponto</find>
-      <find>user-card</find>
-      <find>off()</find>
-      <find>rhCheckReset()</find>
-      <find>onconfirm()</find>
       <find>verifyFinger</find>
       <find>verifyFingerprint</find>
       <find>registerUser</find>
@@ -484,13 +320,24 @@
       <find>device-status</find>
       <find>updateDeviceStatus</find>
       <find>user-register</find>
-      <find>rhCheckReset</find>
       <find>modal-rh-register</find>
       <find>rh-check-title</find>
       <find>overlay</find>
       <find>modal-rh-check-text</find>
       <find>btn-sq-lg</find>
       <find>update</find>
+      <find>post_po</find>
+      <find>usuarioId</find>
+      <find>post_pon</find>
+      <find>onConfirmRecordUser</find>
+      <find>rhCheckReset</find>
+      <find>user-list</find>
+      <find>registerFingerPrint</find>
+      <find>do_point</find>
+      <find>userId</find>
+      <find>printf(</find>
+      <find>printf</find>
+      <find>post_ponto</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -533,8 +380,6 @@
         <option value="$PROJECT_DIR$/ponto-alpha/server/structs.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/curl_utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/utils.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/user.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/user.c" />
@@ -542,14 +387,16 @@
         <option value="$PROJECT_DIR$/ponto-alpha/server/device_utils.h" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/device_utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/fullpage-controls.js" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" />
-        <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
       </list>
     </option>
   </component>
@@ -566,10 +413,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="191" />
-    <option name="y" value="-4" />
-    <option name="width" value="751" />
-    <option name="height" value="732" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1299" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -577,7 +424,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -594,19 +440,13 @@
               <item name="ponto_infarma" type="b2602c69:ProjectViewProjectNode" />
               <item name="fprint-infarma" type="462c0819:PsiDirectoryNode" />
               <item name="ponto-alpha" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ponto_infarma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fprint-infarma" type="462c0819:PsiDirectoryNode" />
-              <item name="ponto-alpha" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,13 +539,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250186000" />
+    <option name="totallyTimeSpent" value="259585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="967" height="772" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.030270271" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07821229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="0" />
@@ -719,7 +559,7 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19142419" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25285482" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -783,13 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="391" column="45" lean-forward="true" selection-start-line="391" selection-start-column="45" selection-end-line="391" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -915,7 +748,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/verify_live.c" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/clock-in.html" />
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.h" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.h" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/structs.h" />
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/verify_live.c">
@@ -944,18 +776,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/device_utils.c" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/device_utils.h" />
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/CMakeLists.txt" />
     <entry file="file:///usr/include/libwebsockets.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="1608" selection-start-line="1608" selection-end-line="1608" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -985,38 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3615">
-          <caret line="241" column="58" selection-start-line="241" selection-start-column="58" selection-end-line="241" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="16" selection-start-line="40" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/cadastro.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1028,46 +824,41 @@
         <state relative-caret-position="-2385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
+    <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="301" column="92" selection-start-line="301" selection-start-column="92" selection-end-line="301" selection-end-column="92" />
-          <folding>
-            <element signature="e#4276#4297#0" expanded="true" />
-            <element signature="e#4361#4382#0" expanded="true" />
-            <element signature="e#4776#4801#0" expanded="true" />
-            <element signature="e#4831#4852#0" expanded="true" />
-            <element signature="e#5055#5080#0" expanded="true" />
-            <element signature="e#5110#5131#0" expanded="true" />
-            <element signature="e#5400#5424#0" expanded="true" />
-            <element signature="e#5454#5475#0" expanded="true" />
-            <element signature="e#5990#6014#0" expanded="true" />
-            <element signature="e#6044#6065#0" expanded="true" />
-            <element signature="e#6534#6588#0" expanded="true" />
-            <element signature="e#6869#6893#0" expanded="true" />
-            <element signature="e#6923#6944#0" expanded="true" />
-            <element signature="e#7309#7333#0" expanded="true" />
-            <element signature="e#7363#7384#0" expanded="true" />
-            <element signature="e#7928#7935#1" expanded="true" />
-            <element signature="e#8886#8925#0" expanded="true" />
-            <element signature="e#9600#9607#1" expanded="true" />
-            <element signature="e#11244#11283#0" expanded="true" />
-            <element signature="e#10966#10990#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="92" column="22" lean-forward="true" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+        <state relative-caret-position="-1633">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
           <folding>
             <element signature="e#285#292#1" expanded="true" />
             <element signature="e#1488#1532#0" expanded="true" />
@@ -1075,6 +866,72 @@
             <element signature="e#86#109#0" expanded="true" />
             <element signature="e#30#60#0" expanded="true" />
             <element signature="e#85#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="115" column="38" lean-forward="true" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="254" column="47" selection-start-line="254" selection-start-column="47" selection-end-line="254" selection-end-column="47" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#239#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="304" column="28" lean-forward="true" selection-start-line="304" selection-start-column="28" selection-end-line="304" selection-end-column="28" />
+          <folding>
+            <element signature="e#4912#4933#0" expanded="true" />
+            <element signature="e#4997#5018#0" expanded="true" />
+            <element signature="e#5412#5437#0" expanded="true" />
+            <element signature="e#5467#5488#0" expanded="true" />
+            <element signature="e#5691#5716#0" expanded="true" />
+            <element signature="e#5746#5767#0" expanded="true" />
+            <element signature="e#6036#6060#0" expanded="true" />
+            <element signature="e#6090#6111#0" expanded="true" />
+            <element signature="e#6626#6650#0" expanded="true" />
+            <element signature="e#6680#6701#0" expanded="true" />
+            <element signature="e#7170#7224#0" expanded="true" />
+            <element signature="e#7505#7529#0" expanded="true" />
+            <element signature="e#7559#7580#0" expanded="true" />
+            <element signature="e#7945#7969#0" expanded="true" />
+            <element signature="e#7999#8020#0" expanded="true" />
+            <element signature="e#8564#8571#1" expanded="true" />
+            <element signature="e#9522#9561#0" expanded="true" />
+            <element signature="e#10286#10293#1" expanded="true" />
+            <element signature="e#10845#10869#0" expanded="true" />
+            <element signature="e#11078#11102#0" expanded="true" />
           </folding>
         </state>
       </provider>
