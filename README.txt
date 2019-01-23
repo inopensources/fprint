@@ -3,8 +3,8 @@ gcc device_utils.c remote_database.c utils.h decode.c encode.c verify_live.c -lf
 
 #Tutorial
 
-Para instalar liblibfprint:
-./configure; sudo make; sudo make install;
+Para instalar liblibfprint, em pasta /libfprint-0.7.0:
+sudo ./configure; sudo make; sudo make install;
 
 Quando não encontrar libusb-1.0:
 Erro: 
