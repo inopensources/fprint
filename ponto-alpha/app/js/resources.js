@@ -264,7 +264,7 @@ function dealWithReturnedUser(json){
     userId = base.usuario.id;
 
     /**status = 200 => registro realizado, status = 777 => erro intervalo entre pontos*/
-    if(base.status == 777){
+    if(base.status == 204){
         console.log("status: " + base.status);
         onConfirmRecordUser();
     }else{

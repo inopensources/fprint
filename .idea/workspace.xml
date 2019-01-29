@@ -12,17 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws_utils.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +84,7 @@
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="16" />
           <entry key="HTML" value="1132" />
-          <entry key="JavaScript" value="2016" />
+          <entry key="JavaScript" value="2019" />
           <entry key="ObjectiveC" value="16981" />
           <entry key="PLAIN_TEXT" value="374" />
         </counts>
@@ -106,7 +96,7 @@
           <entry key="c" value="16835" />
           <entry key="h" value="162" />
           <entry key="html" value="1132" />
-          <entry key="js" value="2016" />
+          <entry key="js" value="2019" />
           <entry key="txt" value="150" />
         </counts>
       </usages-collector>
@@ -269,8 +259,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
+            <state relative-caret-position="185">
+              <caret line="265" column="60" selection-start-line="265" selection-start-column="60" selection-end-line="265" selection-end-column="60" />
               <folding>
                 <element signature="e#285#292#1" expanded="true" />
                 <element signature="e#1488#1532#0" expanded="true" />
@@ -543,12 +533,12 @@
       <workItem from="1548090004714" duration="6344000" />
       <workItem from="1548163172776" duration="15213000" />
       <workItem from="1548336963021" duration="4776000" />
-      <workItem from="1548764980987" duration="6156000" />
+      <workItem from="1548764980987" duration="6339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273934000" />
+    <option name="totallyTimeSpent" value="274117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -568,7 +558,7 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17944536" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30668843" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -925,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
+        <state relative-caret-position="185">
+          <caret line="265" column="60" selection-start-line="265" selection-start-column="60" selection-end-line="265" selection-end-column="60" />
           <folding>
             <element signature="e#285#292#1" expanded="true" />
             <element signature="e#1488#1532#0" expanded="true" />
