@@ -59,7 +59,6 @@ void compose_json_answer(char type[], char status[], char method_name[], char me
 
     send_message_via_ws(json);
 
-
     free(json);
     free(encoded_data);
 }

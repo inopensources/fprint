@@ -9,6 +9,8 @@
 void write_back(struct lws *wsi, char message[]){
     int size_of_message = strlen(message);
 
+    printf("%s", message);
+
     unsigned char *buf = (unsigned char*) malloc(LWS_SEND_BUFFER_PRE_PADDING + size_of_message +
                                                  LWS_SEND_BUFFER_POST_PADDING);
 

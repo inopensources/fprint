@@ -13,7 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="06af5cc1-632c-447c-941d-d1598f73187f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ponto.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/utils.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ponto-alpha/server/ws_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ponto-alpha/server/ws_utils.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ponto-alpha/server/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,16 +44,16 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,7 +61,7 @@
           <entry key="Makefile" value="15" />
           <entry key="ac" value="1" />
           <entry key="am" value="4" />
-          <entry key="c" value="107" />
+          <entry key="c" value="110" />
           <entry key="configure" value="1" />
           <entry key="cpp" value="1" />
           <entry key="css" value="1" />
@@ -64,7 +73,7 @@
           <entry key="la" value="2" />
           <entry key="o" value="2" />
           <entry key="ponto_infarma (disassembly)" value="11" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="17" />
           <entry key="verify" value="1" />
           <entry key="verify_live" value="1" />
         </counts>
@@ -76,8 +85,8 @@
           <entry key="Disassembly" value="11" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="8" />
-          <entry key="ObjectiveC" value="148" />
-          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="ObjectiveC" value="151" />
+          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -85,20 +94,20 @@
           <entry key="CMakeLists.txt" value="67" />
           <entry key="Doxygen file" value="16" />
           <entry key="HTML" value="1132" />
-          <entry key="JavaScript" value="1530" />
-          <entry key="ObjectiveC" value="16809" />
-          <entry key="PLAIN_TEXT" value="325" />
+          <entry key="JavaScript" value="2016" />
+          <entry key="ObjectiveC" value="16981" />
+          <entry key="PLAIN_TEXT" value="374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="259" />
           <entry key="am" value="32" />
-          <entry key="c" value="16663" />
+          <entry key="c" value="16835" />
           <entry key="h" value="162" />
           <entry key="html" value="1132" />
-          <entry key="js" value="1530" />
-          <entry key="txt" value="101" />
+          <entry key="js" value="2016" />
+          <entry key="txt" value="150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -181,8 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+            <state relative-caret-position="139">
+              <caret line="95" column="24" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -190,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="288" column="62" selection-start-line="288" selection-start-column="62" selection-end-line="288" selection-end-column="62" />
+            <state relative-caret-position="243">
+              <caret line="288" column="76" selection-start-line="288" selection-start-column="76" selection-end-line="288" selection-end-column="76" />
               <folding>
                 <element signature="e#4912#4933#0" expanded="true" />
                 <element signature="e#4997#5018#0" expanded="true" />
@@ -208,33 +217,29 @@
                 <element signature="e#7559#7580#0" expanded="true" />
                 <element signature="e#7945#7969#0" expanded="true" />
                 <element signature="e#7999#8020#0" expanded="true" />
+                <element signature="e#8105#9758#0" />
                 <element signature="e#8564#8571#1" expanded="true" />
                 <element signature="e#9522#9561#0" expanded="true" />
                 <element signature="e#10286#10293#1" expanded="true" />
-                <element signature="e#10845#10869#0" expanded="true" />
-                <element signature="e#11078#11102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="258" column="60" lean-forward="true" selection-start-line="258" selection-start-column="60" selection-end-line="258" selection-end-column="60" />
-              <folding>
-                <element signature="e#42#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.h">
+        <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+            <state relative-caret-position="-597">
+              <caret line="255" column="50" selection-start-line="255" selection-start-column="50" selection-end-line="255" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -242,10 +247,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1290">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="115">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
+                <element signature="e#5093#6372#0" />
               </folding>
             </state>
           </provider>
@@ -254,17 +260,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="70">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="170">
+              <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
               <folding>
                 <element signature="e#285#292#1" expanded="true" />
                 <element signature="e#1488#1532#0" expanded="true" />
@@ -280,11 +286,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="375">
+              <caret line="98" column="24" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="24" />
               <folding>
                 <element signature="e#239#262#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ws.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -300,18 +315,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>verifyFinger</find>
-      <find>verifyFingerprint</find>
-      <find>registerUser</find>
-      <find>screenUpdate</find>
-      <find>typeChecker</find>
-      <find>dealWithReturnedUser</find>
-      <find>finishVerify</find>
-      <find>boas-vindas</find>
-      <find>boasVindas</find>
-      <find>device-status</find>
-      <find>updateDeviceStatus</find>
-      <find>user-register</find>
       <find>modal-rh-register</find>
       <find>rh-check-title</find>
       <find>overlay</find>
@@ -319,9 +322,7 @@
       <find>btn-sq-lg</find>
       <find>update</find>
       <find>post_po</find>
-      <find>usuarioId</find>
       <find>post_pon</find>
-      <find>onConfirmRecordUser</find>
       <find>rhCheckReset</find>
       <find>user-list</find>
       <find>registerFingerPrint</find>
@@ -329,7 +330,21 @@
       <find>printf(</find>
       <find>printf</find>
       <find>post_ponto</find>
+      <find>do_poi</find>
+      <find>websocket.send</find>
+      <find>usuarioId</find>
+      <find>b64_decode_ex</find>
+      <find>sprintf</find>
+      <find>send_message_via_ws</find>
+      <find>write_back</find>
+      <find>Olá</find>
+      <find>onConfirmRecordUser</find>
+      <find>removePostPoint</find>
       <find>userId</find>
+      <find>decider</find>
+      <find>remove_point</find>
+      <find>compose_json_answer</find>
+      <find>dealWithReturnedUser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -380,15 +395,15 @@
         <option value="$PROJECT_DIR$/ponto-alpha/server/device_utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/cadastro.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/app/js/fullpage-controls.js" />
-        <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.h" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" />
-        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
-        <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
         <option value="$PROJECT_DIR$/ponto-alpha/server/remote_database.c" />
+        <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/utils.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/app/index.html" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ws.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/server/ponto.c" />
+        <option value="$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js" />
+        <option value="$PROJECT_DIR$/ponto-alpha/app/js/resources.js" />
       </list>
     </option>
   </component>
@@ -404,10 +419,10 @@
     </packageJsonPaths>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="527" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="839" />
+    <option name="width" value="1299" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -416,6 +431,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -438,7 +454,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,17 +542,19 @@
       <workItem from="1543599340654" duration="11821000" />
       <workItem from="1548090004714" duration="6344000" />
       <workItem from="1548163172776" duration="15213000" />
+      <workItem from="1548336963021" duration="4776000" />
+      <workItem from="1548764980987" duration="6156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263002000" />
+    <option name="totallyTimeSpent" value="273934000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="7" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.07821229" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12290503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="0" />
@@ -551,7 +568,7 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28711256" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17944536" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -604,13 +621,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/fp_internal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/libfprint/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -731,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ws.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/verify_live.c" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/clock-in.html" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.h" />
@@ -768,23 +771,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/device_utils.c" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/device_utils.h" />
-    <entry file="file:///usr/include/libwebsockets.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="1608" selection-start-line="1608" selection-end-line="1608" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/include/libwebsockets.h" />
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws_utils.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/encode.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/css/examples.css">
@@ -816,13 +808,6 @@
         <state relative-caret-position="-2385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -833,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -847,10 +825,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/decode.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/encode.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597">
+          <caret line="255" column="50" selection-start-line="255" selection-start-column="50" selection-end-line="255" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libfprint-0.7.0/examples/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="95" column="24" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#5093#6372#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="24" />
+          <folding>
+            <element signature="e#239#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="288" column="62" selection-start-line="288" selection-start-column="62" selection-end-line="288" selection-end-column="62" />
+        <state relative-caret-position="243">
+          <caret line="288" column="76" selection-start-line="288" selection-start-column="76" selection-end-line="288" selection-end-column="76" />
           <folding>
             <element signature="e#4912#4933#0" expanded="true" />
             <element signature="e#4997#5018#0" expanded="true" />
@@ -867,26 +915,18 @@
             <element signature="e#7559#7580#0" expanded="true" />
             <element signature="e#7945#7969#0" expanded="true" />
             <element signature="e#7999#8020#0" expanded="true" />
+            <element signature="e#8105#9758#0" />
             <element signature="e#8564#8571#1" expanded="true" />
             <element signature="e#9522#9561#0" expanded="true" />
             <element signature="e#10286#10293#1" expanded="true" />
-            <element signature="e#10845#10869#0" expanded="true" />
-            <element signature="e#11078#11102#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ws.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="170">
+          <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
           <folding>
             <element signature="e#285#292#1" expanded="true" />
             <element signature="e#1488#1532#0" expanded="true" />
@@ -894,36 +934,6 @@
             <element signature="e#86#109#0" expanded="true" />
             <element signature="e#30#60#0" expanded="true" />
             <element signature="e#85#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/app/js/endpoint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#239#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/ponto.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#41#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ponto-alpha/server/remote_database.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="258" column="60" lean-forward="true" selection-start-line="258" selection-start-column="60" selection-end-line="258" selection-end-column="60" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

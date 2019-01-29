@@ -236,7 +236,7 @@ function verifyFingerprint() {
     $("#img-fingerprint-registrar").show(250);
     $("#btn-registrar-ponto").hide(250);
     websocket.send("2");
-    onConfirmRecordUser();
+
 
 }
 
@@ -246,22 +246,41 @@ function verifyManagerFingerprint() {
 }
 
 //método para solicitar remoção de ponto de usuário
-function removePostPoint(usuarioId){
-    websocket.send("4 "+usuarioId);
+function removePostPoint(){
+    websocket.send("4 "+userId);
+}
+
+function pointRemoved() {
+    $(".user-entry").html(
+        "<h1>Ponto não realizado</h1>" +
+        "</div>"
+    );
+    window.location.href = "#paginaUsuario";
 }
 
 function dealWithReturnedUser(json){
+
     var base = JSON.parse(atob(json.data));
+    userId = base.usuario.id;
 
-    $(".user-entry").html(
-        "<h1>Ponto de usuário</h1>" +
-        "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
-        "<h2> Olá "+ base.usuario.nome+"</h2>"+
-        "<h2>"+ utf8Decode(base.message)+"</h2>"+
-        "</div>"
-    );
+    /**status = 200 => registro realizado, status = 777 => erro intervalo entre pontos*/
+    if(base.status == 777){
+        console.log("status: " + base.status);
+        onConfirmRecordUser();
+    }else{
+        $(".user-entry").html(
+            "<h1>Ponto de usuário</h1>" +
+            "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
+            "<h2> Olá "+ base.usuario.nome+"</h2>"+
+            "<h2>"+ utf8Decode(base.message)+"</h2>"+
+            "</div>"
+        );
+        window.location.href = "#paginaUsuario";
+    }
 
-    window.location.href = "#paginaUsuario";
+
+
+
 }
 
 function resetProfilePage(){

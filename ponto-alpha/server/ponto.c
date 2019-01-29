@@ -12,7 +12,7 @@
 
 void remove_point(int user_id_required){
     unsigned char * retorno = post_ponto(user_id_required, 0);
-    //compose_json_answer("SCREEN_UPDATE", "SUCCESS", "remove_point", "Ponto não realizado", retorno);
+    compose_json_answer("SCREEN_UPDATE", "SUCCESS", "remove_point", "Ponto não realizado!", retorno);
 }
 
 int do_point();

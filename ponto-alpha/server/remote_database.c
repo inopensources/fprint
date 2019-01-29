@@ -255,13 +255,13 @@ char *post_ponto(int id_usuario, int flag_point){
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
-    //char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
+    char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
     //char url[] = "http://localhost:8080/ponto/bate_ponto";
-    char url[] = "http://192.168.16.111/ponto/bate_ponto";
+    //char url[] = "192.168.16.83:8080/licenca_war/ponto/bate_ponto";
 
 
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
-    char bodyFlag[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"flag\"\r\n\r\n";
+    char bodyFlag[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"flag\"\r\n\r\n";
     char requestBody4[] = "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
     char userIdAsStr[12];
     char flagPointAsStr[4];
@@ -271,6 +271,7 @@ char *post_ponto(int id_usuario, int flag_point){
     char *result = calloc(strlen(requestBody1) + strlen(userIdAsStr) + strlen(bodyFlag) +strlen(flagPointAsStr) + strlen(requestBody4) + 1, sizeof(unsigned char));
     strcat(result, requestBody1);
     strcat(result, userIdAsStr);
+    strcat(result, bodyFlag);
     strcat(result, flagPointAsStr);
     strcat(result, requestBody4);
 

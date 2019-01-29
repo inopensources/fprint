@@ -94,6 +94,10 @@ function screenUpdate(json) {
             console.log("Verificando digital de gerente");
             checkAdm(json);
             break;
+        case "remove_point":
+            console.log("Removendo ponto");
+            pointRemoved();
+            break;
 
     }
 }
