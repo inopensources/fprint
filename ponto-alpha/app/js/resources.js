@@ -1,4 +1,5 @@
 
+var base = null;
 //O método abaixo exibe o overlay
 function on() {
     $("#overlay").slideDown(250);
@@ -20,6 +21,7 @@ function onConfirmRecordUser() {
 //O método abaixo oculta o overlay confirm record user
 function offConfirmRecordUser() {
     $("#overlay-confirm-record-user").slideUp(250);
+    show_user();
     // document.getElementById("overlay").style.display = "none";
 }
 
@@ -258,24 +260,28 @@ function pointRemoved() {
     window.location.href = "#paginaUsuario";
 }
 
+function show_user() {
+    $(".user-entry").html(
+        "<h1>Ponto de usuário</h1>" +
+        "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
+        "<h2> Olá "+ base.usuario.nome+"</h2>"+
+        "<h2>"+ utf8Decode(base.message)+"</h2>"+
+        "</div>"
+    );
+    window.location.href = "#paginaUsuario";
+}
+
 function dealWithReturnedUser(json){
 
-    var base = JSON.parse(atob(json.data));
+    base = JSON.parse(atob(json.data));
     userId = base.usuario.id;
 
-    /**status = 200 => registro realizado, status = 777 => erro intervalo entre pontos*/
+    /**status = 200 => registro realizado | status = 204 => erro intervalo entre pontos*/
     if(base.status == 204){
         console.log("status: " + base.status);
         onConfirmRecordUser();
     }else{
-        $(".user-entry").html(
-            "<h1>Ponto de usuário</h1>" +
-            "<img src=\"data:image/png;base64,"+base.usuario.foto+"\" class=\"img-thumbnail\" style=\"height: 10rem\">"+
-            "<h2> Olá "+ base.usuario.nome+"</h2>"+
-            "<h2>"+ utf8Decode(base.message)+"</h2>"+
-            "</div>"
-        );
-        window.location.href = "#paginaUsuario";
+        show_user();
     }
 
 
