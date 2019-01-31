@@ -255,9 +255,9 @@ char *post_ponto(int id_usuario, int flag_point){
     chunk.memory = malloc(1);  /* will be grown as needed by the realloc above */
     chunk.size = 0;    /* no data at this point */
 
-    //char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
+    char url[] = "http://licenca.infarma.com.br/ponto/bate_ponto";
     //char url[] = "http://localhost:8080/ponto/bate_ponto";
-    char url[] = "192.168.16.83:8080/licenca_war/ponto/bate_ponto";
+    //char url[] = "192.168.16.83:8080/licenca_war/ponto/bate_ponto";
 
 
     char requestBody1[] = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"usuarioId\"\r\n\r\n";
